@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="165.348246">
+<testcase classname="Add Notes to Client Service Request using Related Action-Add Notes" name="Using Add Notes Related Action," time="165.348246">
+<system-out><![CDATA[Given I setup with "CHROME" browser.........................................passed
+When I set appian URL to "https://harbourvesttest.appiancloud.com/suite/portal/login.jsp".passed
+And I set appian version to "19.2"..........................................passed
+And I set appian locale to "en_US"..........................................passed
+Then I login with username "treasuryUser1"..................................passed
+Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service".passed
+Given I wait for "2" seconds................................................passed
+Given I wait for "10" seconds...............................................passed
+Given I click on site page "CLIENT SERVICE REQUESTS"........................passed
+Given I populate field "Search" with "1909".................................passed
+Given I wait for "2" seconds................................................passed
+Given I click on grid "[1]" column "[3]" row "[1]"..........................passed
+Given I wait for "10" seconds...............................................passed
+Given I click on link "Related Actions".....................................passed
+Given I wait for "5" seconds................................................passed
+Given I click on record related action "Add Notes"..........................passed
+Given I wait for "5" seconds................................................passed
+Given I toggle box "Enter Notes" visibility.................................passed
+Given I wait for "3" seconds................................................passed
+Given I toggle box "Enter Notes" visibility.................................passed
+When I populate picker field "Tag People" with partially matching suggestions for.passed
+When I populate field "Notes" with "Comments"...............................passed
+Then I verify button "CANCEL" is present....................................passed
+Then I click on button "SUBMIT".............................................passed
+Then I click on link "Notes/Discussions"....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
+ate(Unknown Source)&#13;&#10;&#9;at java.util.stream.ReferencePipeline.findFirst(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:368)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:159)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:137)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:184)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:171)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:158)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.fixture.BaseFixture.setupWithBrowser(BaseFixture.java:174)&#13;&#10;&#9;at com.appiancorp.ps.cucumber.fixtures.CucumberBaseFixture.setupWithBrowser(CucumberBaseFixture.java:19)&#13;&#10;&#9;at ✽.I setup with &quot;CHROME&quot; browser(src/test/java/testcases/temp_AddNotesRelatedAction.feature:5)&#13;&#10;"><![CDATA[Given I setup with "CHROME" browser.........................................failed
+When I set appian URL to "https://harbourvesttest.appiancloud.com/suite/portal/login.jsp".skipped
+And I set appian version to "19.2"..........................................skipped
+And I set appian locale to "en_US"..........................................skipped
+Then I login with username "treasuryUser1"..................................skipped
+Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service".skipped
+Given I wait for "2" seconds................................................skipped
+Given I wait for "10" seconds...............................................skipped
+Given I click on site page "CLIENT SERVICE REQUESTS"........................skipped
+Given I populate field "Search" with "1909".................................skipped
+Given I wait for "2" seconds................................................skipped
+Given I click on grid "[1]" column "[3]" row "[1]"..........................skipped
+Given I wait for "10" seconds...............................................skipped
+Given I click on link "Related Actions".....................................skipped
+Given I wait for "5" seconds................................................skipped
+Given I click on record related action "Add Notes"..........................skipped
+Given I wait for "5" seconds................................................skipped
+Given I toggle box "Enter Notes" visibility.................................skipped
+Given I wait for "3" seconds................................................skipped
+Given I toggle box "Enter Notes" visibility.................................skipped
+When I populate picker field "Tag People" with partially matching suggestions for.skipped
+When I populate field "Notes" with "Comments"...............................skipped
+Then I verify verify button "CANCEL" is present.............................undefined
+Then I click on button "SUBMIT".............................................skipped
+Then I click on link "Notes/Discussions"....................................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: session not created exception
+from chrome not reachable
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.09 seconds
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'VURAM-2015-0088', ip: '192.168.6.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: ChromeDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$22(ProtocolHandshake.java:365)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:368)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:159)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:137)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:184)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:171)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:158)
+	at com.appiancorp.ps.automatedtest.fixture.BaseFixture.setupWithBrowser(BaseFixture.java:174)
+	at com.appiancorp.ps.cucumber.fixtures.CucumberBaseFixture.setupWithBrowser(CucumberBaseFixture.java:19)
+	at ✽.I setup with "CHROME" browser(src/test/java/testcases/temp_AddNotesRelatedAction.feature:5)
+]]></failure>
+</testcase>
+</testsuite>
