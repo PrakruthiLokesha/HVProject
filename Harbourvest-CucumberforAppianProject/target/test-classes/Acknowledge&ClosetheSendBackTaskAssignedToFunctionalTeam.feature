@@ -28,7 +28,7 @@ Feature: Acknowledge the task send back by Functional Team-Treasury
    Given I click on grid "[1]" column "[3]" row "[1]"
    Given I wait for "4" seconds
    
-   #Acknowledge and Close the task without resopnding back to client
+   #Acknowledge and Close the task without resopnding back to client with Acknowledgement comments
    Given I populate field type "PARAGRAPH" named "[1]" with "$$$Acknowledgement_Comments$$$"
    Given I wait for "5" seconds
    Given I populate field type "FILE_UPLOAD" named "[1]" with "$$$DOCUploadpath$$$"
