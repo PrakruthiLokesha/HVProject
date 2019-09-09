@@ -36,7 +36,7 @@ Feature: Submit the task assigned to Functional Team-Treasury
    Given I click on button "ACCEPT"
    Given I wait for "4" seconds
    
-   #Enter the Reassign Comments
+   #Enter the Reassign Comments and reassign to group
    Given I populate field type "PARAGRAPH" named "[1]" with "Enter this Comments to reassign the task - $$$datetime$$$"
    Given I wait for "5" seconds
    When I click on button "RE-ASSIGN TO GROUP"
