@@ -14,7 +14,7 @@ Feature: Acknowledge the task send back by Functional Team-Treasury
    Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service"
    Given I wait for "2" seconds
    Given I click on link "Add"
-   Given I populate field "Filter Set Name" with "Test the Filter- $$$datetime$$$"
+   Given I populate field "Filter Set Name" with "Test the Filter- 09/09/2019 20:13:47"
    Given I populate field "Search" with "8251"
    Given I populate field "Type" with "Client Reporting"
    Given I wait for "5" seconds
@@ -40,7 +40,7 @@ Feature: Acknowledge the task send back by Functional Team-Treasury
    When I click on button "Complete"
    When I click on button "YES"
    Then I wait for "5" seconds
-   Given I populate field type "PARAGRAPH" named "[1]" with "Enter this Comments to acknowledge the review comments - $$$datetime$$$"
+   Given I populate field type "PARAGRAPH" named "[1]" with "Enter this Comments to acknowledge the review comments - 09/09/2019 20:13:47"
    Given I wait for "5" seconds
    Given I populate field type "FILE_UPLOAD" named "[1]" with "C:\Users\swetar.VURAM.000\Documents\C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC.pdf"
    Given I wait for "7" seconds
@@ -53,7 +53,7 @@ Feature: Acknowledge the task send back by Functional Team-Treasury
    
    #Verify the Status of Request in Client Service Records
    Given I click on site page "CLIENT SERVICE REQUESTS"
-   Given I populate field "Search" with "$$$RequestID$$$"
+   Given I populate field "Search" with "8259"
    Given I wait for "3" seconds
    Given I clear field "Status"
    Given I wait for "5" seconds

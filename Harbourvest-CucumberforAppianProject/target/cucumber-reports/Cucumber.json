@@ -1,0 +1,754 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Login to Appian environment",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 30806496700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I setup with \"CHROME\" browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CHROME",
+                  "offset": 14
+                }
+              ],
+              "location": "CucumberBaseFixture.setupWithBrowser(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2359600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I set appian URL to \"https://harbourvesttest.appiancloud.com/suite/portal/login.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://harbourvesttest.appiancloud.com/suite/portal/login.jsp",
+                  "offset": 21
+                }
+              ],
+              "location": "CucumberBaseFixture.setAppianUrlTo(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1621600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I set appian version to \"19.2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "19.2",
+                  "offset": 25
+                }
+              ],
+              "location": "CucumberBaseFixture.setAppianVersionTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4769500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I set appian locale to \"en_US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "en_US",
+                  "offset": 24
+                }
+              ],
+              "location": "CucumberBaseFixture.setAppianLocaleTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23883565100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I login with username \"csaUser1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "csaUser1",
+                  "offset": 23
+                }
+              ],
+              "location": "CucumberBaseFixture.loginWithUsername(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Reply on added notes/discussion",
+        "description": "",
+        "id": "reply-to-notes/discussions-by-tagged-user;reply-on-added-notes/discussion",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6924765100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I open \"https://harbourvesttest.appiancloud.com/suite/sites/client-service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://harbourvesttest.appiancloud.com/suite/sites/client-service",
+                  "offset": 8
+                }
+              ],
+              "location": "CucumberBaseFixture.open(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10001346500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I wait for \"10\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8823743700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on button \"MY DISCUSSIONS\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MY DISCUSSIONS",
+                  "offset": 19
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnButton(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2035499000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I wait for \"2\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5779397500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I populate field \"Request Id\" with \"8259\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Request Id",
+                  "offset": 18
+                },
+                {
+                  "val": "8259",
+                  "offset": 36
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2024979400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I wait for \"2\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4452515300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click on grid \"[1]\" column \"[10]\" row \"[4]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 17
+                },
+                {
+                  "val": "[10]",
+                  "offset": 30
+                },
+                {
+                  "val": "[4]",
+                  "offset": 41
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnGridColumnRow(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5002054700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I wait for \"5\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6777826600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I populate field \"Notes\" with \"Enter this notes when user reply on added notes-09/09/2019 20:13:47\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Notes",
+                  "offset": 18
+                },
+                {
+                  "val": "Enter this notes when user reply on added notes-09/09/2019 20:13:47",
+                  "offset": 31
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2022127000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I wait for \"2\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 88185000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I verify button \"CANCEL\" is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CANCEL",
+                  "offset": 17
+                }
+              ],
+              "location": "CucumberTempoFixture.verifyButtonIsPresent(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4541600600,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I click on button \"SUBMIT\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SUBMIT",
+                  "offset": 19
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnButton(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5015022000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I wait for \"5\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1363823500,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I click on grid \"[1]\" column \"[9]\" row \"[4]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 17
+                },
+                {
+                  "val": "[9]",
+                  "offset": 30
+                },
+                {
+                  "val": "[4]",
+                  "offset": 40
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnGridColumnRow(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5007944200,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I wait for \"5\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "com.appiancorp.ps.automatedtest.exception.TimeoutTestException: message:\u003c\u003cTimeout period reached: Box\u003e\u003e\r\n\tat com.appiancorp.ps.automatedtest.exception.ExceptionBuilder.build(ExceptionBuilder.java:35)\r\n\tat com.appiancorp.ps.automatedtest.tempo.interfaces.TempoBoxToggle.waitFor(TempoBoxToggle.java:51)\r\n\tat com.appiancorp.ps.automatedtest.fixture.TempoFixture.toggleBoxVisibility(TempoFixture.java:1243)\r\n\tat com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.toggleBoxVisibility(CucumberTempoFixture.java:362)\r\n\tat ✽.I toggle box \"Discussion History\" visibility(src/test/java/testcases/temp_ReplyOnAddedNotesByTaggedUser_My DiscussionsunderTasksTab.feature:36)\r\n",
+              "duration": 10191288800,
+              "status": "failed"
+            },
+            "line": 36,
+            "name": "I toggle box \"Discussion History\" visibility",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Discussion History",
+                  "offset": 14
+                }
+              ],
+              "location": "CucumberTempoFixture.toggleBoxVisibility(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "I wait for \"3\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "I toggle box \"Discussion History\" visibility",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Discussion History",
+                  "offset": 14
+                }
+              ],
+              "location": "CucumberTempoFixture.toggleBoxVisibility(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "I wait for \"2\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "I populate field \"Search Notes[2]\" with \"Enter this notes when user reply on added notes-09/09/2019 20:13:47\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Search Notes[2]",
+                  "offset": 18
+                },
+                {
+                  "val": "Enter this notes when user reply on added notes-09/09/2019 20:13:47",
+                  "offset": 41
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "I wait for \"5\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "I click on button \"CLEAR FILTERS[2]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CLEAR FILTERS[2]",
+                  "offset": 19
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnButton(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "I populate field \"Sort By\" with \"Older First\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sort By",
+                  "offset": 18
+                },
+                {
+                  "val": "Older First",
+                  "offset": 33
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "I wait for \"3\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "I populate field \"Sort By\" with \"Newest First\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sort By",
+                  "offset": 18
+                },
+                {
+                  "val": "Newest First",
+                  "offset": 33
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "I wait for \"5\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "I click on link \"+ Reply\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "+ Reply",
+                  "offset": 17
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnLink(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "I wait for \"5\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "I populate field \"Notes\" with \"Enter this notes when user reply on added notes-09/09/2019 20:13:47\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Notes",
+                  "offset": 18
+                },
+                {
+                  "val": "Enter this notes when user reply on added notes-09/09/2019 20:13:47",
+                  "offset": 31
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "I wait for \"2\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "I verify button \"CANCEL\" is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CANCEL",
+                  "offset": 17
+                }
+              ],
+              "location": "CucumberTempoFixture.verifyButtonIsPresent(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "I click on button \"SUBMIT\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SUBMIT",
+                  "offset": 19
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnButton(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "I wait for \"5\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ReplyOnAddedNotesByTaggedUserusingTasksTab"
+          }
+        ]
+      }
+    ],
+    "name": "Reply to Notes/Discussions By tagged User",
+    "description": "",
+    "id": "reply-to-notes/discussions-by-tagged-user",
+    "keyword": "Feature",
+    "uri": "src/test/java/testcases/temp_ReplyOnAddedNotesByTaggedUser_My DiscussionsunderTasksTab.feature",
+    "tags": [
+      {
+        "name": "@ReplyOnAddedNotesByTaggedUserusingTasksTab",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

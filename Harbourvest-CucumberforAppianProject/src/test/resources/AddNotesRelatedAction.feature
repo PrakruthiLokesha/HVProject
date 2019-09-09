@@ -18,9 +18,9 @@ Feature: Add Notes to Client Service Request using Related Action-Add Notes
     Given I click on grid "[1]" column "[3]" row "[1]"
     Given I wait for "10" seconds
     Given I click on link "Related Actions"
-    Given I wait for "5" seconds
+    Given I wait for "2" seconds
     Given I click on record related action "Add Notes"
-    Given I wait for "5" seconds
+    Given I wait for "2" seconds
     Given I toggle box "Enter Notes" visibility
     Given I wait for "3" seconds
     Given I toggle box "Enter Notes" visibility
@@ -28,31 +28,58 @@ Feature: Add Notes to Client Service Request using Related Action-Add Notes
       | csa  |
       | test |
     When I populate field "Notes" with "$$$Add_this_comments_to_check_the_notes$$$"
+    When I wait for "5" seconds
     Then I verify button "CANCEL" is present
     Then I click on button "SUBMIT"
     
     #Navigate to Notes/Discussions Dashbaord to view the added Notes
     Then I click on link "Notes/Discussions"
+    Then I wait for "5" seconds
     
    #Set the filters to search notes and sort the grid
-   Given I populate field "Search Notes" with "$$$Add_this_comments_to_check_the_notes$$$"
-   Given I wait for "3" seconds
-   Given I populate picker field "Tagged People" with partially matching suggestions for "csa"
+   Given I populate field "Search Notes[1]" with "$$$Add_this_comments_to_check_the_notes$$$"
    Given I wait for "5" seconds
    Given I sort grid "[1]" by column "Notes/Discussions"
+   Given I wait for "2" seconds
    Given I sort grid "[1]" by column "Added On"
+   Given I wait for "2" seconds
    Given I sort grid "[1]" by column "Added By"
+   Given I wait for "2" seconds
    Given I sort grid "[1]" by column "Last Added On"
+   Given I wait for "2" seconds
    Given I sort grid "[1]" by column "Last Added By"
+   Given I wait for "5" seconds
    
-   #View More details of added notes by clicking More Details icon
+    #Reply to the notes added
+  Given I click on grid "[1]" column "[8]" row "[1]"
+  Given I wait for "5" seconds
+  When I populate field "Notes" with "$$$Add_this_Reply_comments_to_check_the_notes$$$"
+  When I wait for "2" seconds
+  When I verify button "CANCEL" is present
+  Then I click on button "SUBMIT"
+  Then I wait for "5" seconds
+  
+  #View More details of added notes by clicking More Details icon
    
    Given I click on grid "[1]" column "[7]" row "[1]"
-   Given I verify box "Discussion History" visibility
+   Given I toggle box "Discussion History" visibility
    Given I wait for "2" seconds
-   Given I verify box "Discussion History" visibility
+   Given I toggle box "Discussion History" visibility
+   Given I wait for "2" seconds
+   Given I populate field "Search Notes[2]" with "$$$Add_this_Reply_comments_to_check_the_notes$$$"
+   Given I wait for "5" seconds
+   Given I click on button "CLEAR FILTERS[2]" 
+   
    Given I populate field "Sort By" with "Older First"
    Given I wait for "3" seconds
    Given I populate field "Sort By" with "Newest First"
+   Given I wait for "5" seconds
+   Given I click on link "+ Reply"
+   Given I wait for "5" seconds
+   When I populate field "Notes" with "$$$Add_this_Reply_comments_to_check_the_notes$$$"
+   When I wait for "2" seconds
+   When I verify button "CANCEL" is present
+   Then I click on button "SUBMIT"
+   Then I wait for "5" seconds
    
    
