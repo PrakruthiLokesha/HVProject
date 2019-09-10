@@ -17,27 +17,31 @@ Feature: Reply to Notes/Discussions By tagged User
     Given I wait for "2" seconds
    
    #Set filters
-    Given I populate field "Request Id" with "8259"
+    Given I populate field "Request Id" with "1909-8476"
     Given I wait for "2" seconds
     
     #Reply to the notes added
   Given I click on grid "[1]" column "[10]" row "[4]"
   Given I wait for "5" seconds
-  When I populate field "Notes" with "Enter this notes when user reply on added notes-09/09/2019 20:13:47"
+  When I populate field "Notes" with "Enter this notes when user reply on added notes-09/10/2019 16:42:23"
   When I wait for "2" seconds
   When I verify button "CANCEL" is present
   Then I click on button "SUBMIT"
   Then I wait for "5" seconds
   
   #View More details of added notes by clicking More Details icon
-   
+  
+   Given I click on button "MY DISCUSSIONS"
+   Given I wait for "2" seconds 
+   Given I populate field "Request Id" with "1909-8476"
+   Given I wait for "2" seconds
    Given I click on grid "[1]" column "[9]" row "[4]"
    Given I wait for "5" seconds
    Given I toggle box "Discussion History" visibility
    Given I wait for "3" seconds
    Given I toggle box "Discussion History" visibility
    Given I wait for "2" seconds
-   Given I populate field "Search Notes[2]" with "Enter this notes when user reply on added notes-09/09/2019 20:13:47"
+   Given I populate field "Search Notes[2]" with "Enter this notes when user reply on added notes-09/10/2019 16:42:23"
    Given I wait for "5" seconds
    Given I click on button "CLEAR FILTERS[2]" 
    
@@ -49,7 +53,7 @@ Feature: Reply to Notes/Discussions By tagged User
    #Reply to notes by clicking reply link available under more details
    Given I click on link "+ Reply"
    Given I wait for "5" seconds
-   When I populate field "Notes" with "Enter this notes when user reply on added notes-09/09/2019 20:13:47"
+   When I populate field "Notes" with "Enter this notes when user reply on added notes-09/10/2019 16:42:23"
    When I wait for "2" seconds
    When I verify button "CANCEL" is present
    Then I click on button "SUBMIT"

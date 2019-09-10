@@ -1,51 +1,84 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="135.015397">
-<testcase classname="Reply to Notes/Discussions By tagged User" name="Reply on added notes/discussion" time="135.015397">
-<failure message="com.appiancorp.ps.automatedtest.exception.TimeoutTestException: message:&lt;&lt;Timeout period reached: Box&gt;&gt;&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.exception.ExceptionBuilder.build(ExceptionBuilder.java:35)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoBoxToggle.waitFor(TempoBoxToggle.java:51)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.fixture.TempoFixture.toggleBoxVisibility(TempoFixture.java:1243)&#13;&#10;&#9;at com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.toggleBoxVisibility(CucumberTempoFixture.java:362)&#13;&#10;&#9;at ✽.I toggle box &quot;Discussion History&quot; visibility(src/test/java/testcases/temp_ReplyOnAddedNotesByTaggedUser_My DiscussionsunderTasksTab.feature:36)&#13;&#10;"><![CDATA[Given I setup with "CHROME" browser.........................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="333.758406">
+<testcase classname="Add Another Functional Team using Manage Teams Related Action- Need to give proper index" name="Using Manage Teams Related Action, Add other Functional Teams" time="333.758406">
+<system-out><![CDATA[Given I setup with "CHROME" browser.........................................passed
 When I set appian URL to "https://harbourvesttest.appiancloud.com/suite/portal/login.jsp".passed
 And I set appian version to "19.2"..........................................passed
 And I set appian locale to "en_US"..........................................passed
 Then I login with username "csaUser1".......................................passed
 Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service".passed
 Given I wait for "10" seconds...............................................passed
-Given I click on button "MY DISCUSSIONS"....................................passed
+Given I click on site page "CLIENT SERVICE REQUESTS"........................passed
+Given I populate field "Search" with "1909-8476"............................passed
 Given I wait for "2" seconds................................................passed
-Given I populate field "Request Id" with "8259".............................passed
-Given I wait for "2" seconds................................................passed
-Given I click on grid "[1]" column "[10]" row "[4]".........................passed
+Given I clear field "Status"................................................passed
 Given I wait for "5" seconds................................................passed
-When I populate field "Notes" with "Enter this notes when user reply on added notes-09/09/2019 20:13:47".passed
-When I wait for "2" seconds.................................................passed
+Given I click on grid "[1]" column "[3]" row "[1]"..........................passed
+Given I wait for "10" seconds...............................................passed
+Given I click on link "Related Actions".....................................passed
+Given I wait for "2" seconds................................................passed
+Given I click on record related action "Manage Teams".......................passed
+Given I wait for "2" seconds................................................passed
+Given I click on link "Add Functional Team".................................passed
+Given I wait for "2" seconds................................................passed
+Given I populate grid "[1]" column "[1]" row "[2]" with partially matching picker field suggestions for "Tax".passed
+Given I wait for "3" seconds................................................passed
+Given I populate grid "[1]" column "[4]" row "[2]" with " Enter this comments to check the comments field - 09/10/2019 16:42:23".passed
+Given I wait for "3" seconds................................................passed
+Given I verify grid "[1]" column "[5]" row "[2]" contains "Added"...........passed
+Given I wait for "3" seconds................................................passed
 When I verify button "CANCEL" is present....................................passed
-Then I click on button "SUBMIT".............................................passed
+When I wait for "3" seconds.................................................passed
+When I click on button "COMPLETE"...........................................passed
+When I click on button "YES"................................................passed
 Then I wait for "5" seconds.................................................passed
-Given I click on grid "[1]" column "[9]" row "[4]"..........................passed
-Given I wait for "5" seconds................................................passed
-Given I toggle box "Discussion History" visibility..........................failed
-Given I wait for "3" seconds................................................skipped
-Given I toggle box "Discussion History" visibility..........................skipped
-Given I wait for "2" seconds................................................skipped
-Given I populate field "Search Notes[2]" with "Enter this notes when user reply on added notes-09/09/2019 20:13:47".skipped
-Given I wait for "5" seconds................................................skipped
-Given I click on button "CLEAR FILTERS[2]"..................................skipped
-Given I populate field "Sort By" with "Older First".........................skipped
-Given I wait for "3" seconds................................................skipped
-Given I populate field "Sort By" with "Newest First"........................skipped
-Given I wait for "5" seconds................................................skipped
-Given I click on link "+ Reply".............................................skipped
-Given I wait for "5" seconds................................................skipped
-When I populate field "Notes" with "Enter this notes when user reply on added notes-09/09/2019 20:13:47".skipped
-When I wait for "2" seconds.................................................skipped
-When I verify button "CANCEL" is present....................................skipped
-Then I click on button "SUBMIT".............................................skipped
-Then I wait for "5" seconds.................................................skipped
-
-StackTrace:
-com.appiancorp.ps.automatedtest.exception.TimeoutTestException: message:<<Timeout period reached: Box>>
-	at com.appiancorp.ps.automatedtest.exception.ExceptionBuilder.build(ExceptionBuilder.java:35)
-	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoBoxToggle.waitFor(TempoBoxToggle.java:51)
-	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.toggleBoxVisibility(TempoFixture.java:1243)
-	at com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.toggleBoxVisibility(CucumberTempoFixture.java:362)
-	at ✽.I toggle box "Discussion History" visibility(src/test/java/testcases/temp_ReplyOnAddedNotesByTaggedUser_My DiscussionsunderTasksTab.feature:36)
-]]></failure>
+Then I click on link "Fulfillment Details"..................................passed
+Then I wait for "5" seconds.................................................passed
+Given I toggle box "Request Fulfillment Details" visibility.................passed
+Given I wait for "2" seconds................................................passed
+Given I toggle box "Request Fulfillment Details" visibility.................passed
+Given I wait for "2" seconds................................................passed
+Given I sort grid "[1]" by column "Functional Team".........................passed
+Given I wait for "3" seconds................................................passed
+Given I sort grid "[1]" by column "Recommended Person"......................passed
+Given I wait for "3" seconds................................................passed
+Given I sort grid "[1]" by column "Comments"................................passed
+Given I wait for "3" seconds................................................passed
+Given I sort grid "[1]" by column "Assigned By".............................passed
+Given I wait for "3" seconds................................................passed
+Given I sort grid "[1]" by column "Assigned On".............................passed
+Given I wait for "3" seconds................................................passed
+Given I sort grid "[1]" by column "Due Date"................................passed
+Given I wait for "3" seconds................................................passed
+Given I sort grid "[1]" by column "Request Owner"...........................passed
+Given I wait for "3" seconds................................................passed
+Given I sort grid "[1]" by column "Task Owner"..............................passed
+Given I wait for "3" seconds................................................passed
+Given I sort grid "[1]" by column "Status"..................................passed
+Given I wait for "3" seconds................................................passed
+Given I click on grid "[1]" column "[12]" row "[1]".........................passed
+Given I wait for "3" seconds................................................passed
+Given I toggle box "[2]" visibility.........................................passed
+Given I wait for "3" seconds................................................passed
+Given I toggle box "[2]" visibility.........................................passed
+Given I sort grid "[2]" by column "Task Name"...............................passed
+Given I wait for "3" seconds................................................passed
+Given I sort grid "[2]" by column "Initial Assignment"......................passed
+Given I wait for "3" seconds................................................passed
+Given I sort grid "[2]" by column "Assigned On".............................passed
+Given I wait for "3" seconds................................................passed
+Given I sort grid "[2]" by column "Currently Assigned To"...................passed
+Given I wait for "3" seconds................................................passed
+Given I sort grid "[2]" by column "Owner Assigned On".......................passed
+Given I wait for "3" seconds................................................passed
+Given I sort grid "[2]" by column "Completed By"............................passed
+Given I wait for "3" seconds................................................passed
+Given I sort grid "[2]" by column "Completed On"............................passed
+Given I wait for "3" seconds................................................passed
+Given I sort grid "[2]" by column "Status"..................................passed
+Given I wait for "3" seconds................................................passed
+Given I sort grid "[2]" by column "Comments"................................passed
+Given I wait for "3" seconds................................................passed
+Then I click on link "Close"................................................passed
+]]></system-out>
 </testcase>
 </testsuite>

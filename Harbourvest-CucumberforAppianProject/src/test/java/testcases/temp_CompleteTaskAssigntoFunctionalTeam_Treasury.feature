@@ -15,7 +15,7 @@ Feature: Submit the task assigned to Functional Team-Treasury
    
    #Add filter set based on Initiated Request
    Given I click on link "Add"
-   Given I populate field "Filter Set Name" with "Test the Filter- 09/09/2019 20:13:47"
+   Given I populate field "Filter Set Name" with "Test the Filter- 09/10/2019 16:42:23"
    Given I populate field "Type" with "Capital Calls"
    Given I wait for "5" seconds
    Given I click on link "Save"
@@ -56,7 +56,7 @@ Feature: Submit the task assigned to Functional Team-Treasury
    Given I toggle box "Requestor & Request Information" visibility
    Given I toggle box "Client Information" visibility
    Given I wait for "4" seconds
-   Given I populate field type "PARAGRAPH" named "[1]" with " Enter this comments to check the comments field - 09/09/2019 20:13:47"
+   Given I populate field type "PARAGRAPH" named "[1]" with " Enter this comments to check the comments field - 09/10/2019 16:42:23"
    Given I wait for "5" seconds
    Given I populate field type "FILE_UPLOAD" named "[1]" with "C:\Users\swetar.VURAM.000\Documents\C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC.pdf"
    When I wait for "7" seconds
@@ -76,7 +76,7 @@ Feature: Submit the task assigned to Functional Team-Treasury
    
    #Navigate to Records and Check for Fullfilment details dashboard
    Given I click on site page "CLIENT SERVICE REQUESTS"
-   Given I populate field "Search" with "8259"
+   Given I populate field "Search" with "1909-8476"
    Given I wait for "5" seconds
    #Given I click on grid "[1]" column "[2]" row "[1]"
    #Given I wait for "10" seconds
