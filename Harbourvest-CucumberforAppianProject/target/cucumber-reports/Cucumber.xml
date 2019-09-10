@@ -1,84 +1,232 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="333.758406">
-<testcase classname="Add Another Functional Team using Manage Teams Related Action- Need to give proper index" name="Using Manage Teams Related Action, Add other Functional Teams" time="333.758406">
-<system-out><![CDATA[Given I setup with "CHROME" browser.........................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="431.074773">
+<testcase classname="Send back the task to CSA Team User which assigned to Functional Team-Treasury" name="Accept the task assigned to Functional Team and then Send Back the task" time="226.859542">
+<failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'2')]/parent::div/following-sibling::div/descendant::table (tried for 10 second(s) with 500 MILLISECONDS interval)&#13;&#10;&#9;at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)&#13;&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoGrid.getXpath(TempoGrid.java:50)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoGrid.waitFor(TempoGrid.java:60)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.fixture.TempoFixture.sortGridByColumn(TempoFixture.java:1831)&#13;&#10;&#9;at com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.sortGridByColumn(CucumberTempoFixture.java:545)&#13;&#10;&#9;at ✽.I sort grid &quot;2&quot; by column &quot;Task Name&quot;(src/test/java/testcases/temp_SendBackTaskAssignedtoFunctionalTeam.feature:54)&#13;&#10;Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'2')]/parent::div/following-sibling::div/descendant::table&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: 'unknown', revision: 'unknown', time: 'unknown'&#10;System info: host: 'VURAM-2015-0088', ip: '192.168.6.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'&#10;Driver info: driver.version: unknown&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)&#13;&#10;&#9;at java.util.Optional.orElseThrow(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)&#13;&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoGrid.getXpath(TempoGrid.java:50)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoGrid.waitFor(TempoGrid.java:60)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.fixture.TempoFixture.sortGridByColumn(TempoFixture.java:1831)&#13;&#10;&#9;at com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.sortGridByColumn(CucumberTempoFixture.java:545)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Unknown Source)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:32)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)&#13;&#10;&#9;at cucumber.api.TestStep.executeStep(TestStep.java:102)&#13;&#10;&#9;at cucumber.api.TestStep.run(TestStep.java:83)&#13;&#10;&#9;at cucumber.api.TestCase.run(TestCase.java:58)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:80)&#13;&#10;&#9;at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;&#10;"><![CDATA[Given I setup with "CHROME" browser.........................................passed
+When I set appian URL to "https://harbourvesttest.appiancloud.com/suite/portal/login.jsp".passed
+And I set appian version to "19.2"..........................................passed
+And I set appian locale to "en_US"..........................................passed
+Then I login with username "treasuryUser1"..................................passed
+Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service".passed
+Given I wait for "2" seconds................................................passed
+Given I click on link "Add".................................................passed
+Given I wait for "2" seconds................................................passed
+Given I populate field "Filter Set Name" with "Test the Filter- 09/10/2019 19:25:34".passed
+Given I wait for "3" seconds................................................passed
+Given I populate field "Search" with "1909-8479"............................passed
+Given I wait for "3" seconds................................................passed
+Given I populate field "Type" with "Capital Calls"..........................passed
+Given I wait for "5" seconds................................................passed
+Given I click on link "Save"................................................passed
+Given I click on button "My Group Tasks"....................................passed
+Given I wait for "5" seconds................................................passed
+Given I sort grid "[1]" by column "Assigned On".............................passed
+Given I wait for "4" seconds................................................passed
+Given I sort grid "[1]" by column "Assigned On".............................passed
+Given I wait for "4" seconds................................................passed
+Given I click on grid "[1]" column "[3]" row "[1]"..........................passed
+Given I wait for "4" seconds................................................passed
+Given I click on button "ACCEPT"............................................passed
+Given I wait for "4" seconds................................................passed
+Given I populate field type "PARAGRAPH" named "[1]" with "Enter this Comments while sending back - 09/10/2019 19:25:34".passed
+Given I wait for "5" seconds................................................passed
+Given I populate field type "FILE_UPLOAD" named "[1]" with "C:\Users\swetar.VURAM.000\Documents\C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC.pdf".passed
+When I wait for "7" seconds.................................................passed
+Then I click on button "SEND BACK"..........................................passed
+Then I click on button "YES"................................................passed
+Then I wait for "5" seconds.................................................passed
+Given I click on site page "CLIENT SERVICE REQUESTS"........................passed
+Given I populate field "Search" with "1909-8479"............................passed
+Given I wait for "5" seconds................................................passed
+Given I click on grid "[1]" column "[3]" row "[1]"..........................passed
+Given I wait for "10" seconds...............................................passed
+Given I click on link "Fulfillment Details".................................passed
+When I sort grid "[1]" by column "Completed On".............................passed
+Then I verify grid "[1]" column "[11]" row "[1]" contains "Sent for Revision".passed
+Then I click on grid "[1]" column "[12]" row "[1]"..........................passed
+Then I toggle box "Fulfillment History of Treasury Team" visibility.........passed
+Then I wait for "3" seconds.................................................passed
+Then I toggle box "Fulfillment History of Treasury Team" visibility.........passed
+Then I sort grid "2" by column "Task Name"..................................failed
+Then I sort grid "2" by column "Initial Assignment".........................skipped
+Then I sort grid "2" by column "Assigned On"................................skipped
+Then I sort grid "2" by column "Currently Assigned To"......................skipped
+Then I sort grid "2" by column "Owner Assigned On"..........................skipped
+Then I sort grid "2" by column "Completed By"...............................skipped
+Then I sort grid "2" by column "Completed On"...............................skipped
+Then I sort grid "2" by column "Status".....................................skipped
+Then I sort grid "2" by column "Comments"...................................skipped
+Then I logout...............................................................skipped
+Then I tear down............................................................skipped
+Then I logout...............................................................skipped
+Then I tear down............................................................skipped
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'2')]/parent::div/following-sibling::div/descendant::table (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoGrid.getXpath(TempoGrid.java:50)
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoGrid.waitFor(TempoGrid.java:60)
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.sortGridByColumn(TempoFixture.java:1831)
+	at com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.sortGridByColumn(CucumberTempoFixture.java:545)
+	at ✽.I sort grid "2" by column "Task Name"(src/test/java/testcases/temp_SendBackTaskAssignedtoFunctionalTeam.feature:54)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'2')]/parent::div/following-sibling::div/descendant::table
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'VURAM-2015-0088', ip: '192.168.6.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoGrid.getXpath(TempoGrid.java:50)
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoGrid.waitFor(TempoGrid.java:60)
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.sortGridByColumn(TempoFixture.java:1831)
+	at com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.sortGridByColumn(CucumberTempoFixture.java:545)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:32)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:26)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+]]></failure>
+</testcase>
+<testcase classname="Acknowledge the task send back by Functional Team-Treasury" name="Acknowledge and Close the task sent back by Functional Team" time="204.215231">
+<failure message="java.lang.RuntimeException: Could not verify grid cell contains the expected value&#13;&#10;&#9;at com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.verifyGridColumnRowContains(CucumberTempoFixture.java:502)&#13;&#10;&#9;at ✽.I verify grid &quot;[1]&quot; column &quot;[5]&quot; row &quot;[1]&quot; contains &quot;Capital Calls&quot;(src/test/java/testcases/temp_zAcknowledge&amp;ClosetheSendBackTaskAssignedToFunctionalTeam.feature:55)&#13;&#10;"><![CDATA[Given I setup with "CHROME" browser.........................................passed
 When I set appian URL to "https://harbourvesttest.appiancloud.com/suite/portal/login.jsp".passed
 And I set appian version to "19.2"..........................................passed
 And I set appian locale to "en_US"..........................................passed
 Then I login with username "csaUser1".......................................passed
 Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service".passed
-Given I wait for "10" seconds...............................................passed
+Given I wait for "2" seconds................................................passed
+Given I click on link "Add".................................................passed
+Given I wait for "2" seconds................................................passed
+Given I populate field "Filter Set Name" with "Test the Filter- 09/10/2019 19:25:34".passed
+Given I wait for "3" seconds................................................passed
+Given I populate field "Search" with "1909-8479"............................passed
+Given I wait for "3" seconds................................................passed
+Given I populate field "Type" with "Capital Calls"..........................passed
+Given I wait for "5" seconds................................................passed
+Given I click on link "Save"................................................passed
+Given I wait for "5" seconds................................................passed
+Given I sort grid "[1]" by column "Assigned On".............................passed
+Given I wait for "4" seconds................................................passed
+Given I sort grid "[1]" by column "Assigned On".............................passed
+Given I wait for "4" seconds................................................passed
+Given I click on grid "[1]" column "[3]" row "[1]"..........................passed
+Given I wait for "4" seconds................................................passed
+Given I populate field type "PARAGRAPH" named "[1]" with "Enter this Comments to acknowledge the review comments - 09/10/2019 19:25:34".passed
+Given I wait for "5" seconds................................................passed
+Given I populate field type "FILE_UPLOAD" named "[1]" with "C:\Users\swetar.VURAM.000\Documents\C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC.pdf".passed
+Given I wait for "7" seconds................................................passed
+When I click on button "ACKNOWLEDGE & CLOSE"................................passed
+When I click on button "YES"................................................passed
+Then I wait for "5" seconds.................................................passed
 Given I click on site page "CLIENT SERVICE REQUESTS"........................passed
-Given I populate field "Search" with "1909-8476"............................passed
+Given I populate field "Search" with "1909-8479"............................passed
 Given I wait for "2" seconds................................................passed
 Given I clear field "Status"................................................passed
 Given I wait for "5" seconds................................................passed
-Given I click on grid "[1]" column "[3]" row "[1]"..........................passed
-Given I wait for "10" seconds...............................................passed
-Given I click on link "Related Actions".....................................passed
-Given I wait for "2" seconds................................................passed
-Given I click on record related action "Manage Teams".......................passed
-Given I wait for "2" seconds................................................passed
-Given I click on link "Add Functional Team".................................passed
-Given I wait for "2" seconds................................................passed
-Given I populate grid "[1]" column "[1]" row "[2]" with partially matching picker field suggestions for "Tax".passed
-Given I wait for "3" seconds................................................passed
-Given I populate grid "[1]" column "[4]" row "[2]" with " Enter this comments to check the comments field - 09/10/2019 16:42:23".passed
-Given I wait for "3" seconds................................................passed
-Given I verify grid "[1]" column "[5]" row "[2]" contains "Added"...........passed
-Given I wait for "3" seconds................................................passed
-When I verify button "CANCEL" is present....................................passed
-When I wait for "3" seconds.................................................passed
-When I click on button "COMPLETE"...........................................passed
-When I click on button "YES"................................................passed
-Then I wait for "5" seconds.................................................passed
-Then I click on link "Fulfillment Details"..................................passed
-Then I wait for "5" seconds.................................................passed
-Given I toggle box "Request Fulfillment Details" visibility.................passed
-Given I wait for "2" seconds................................................passed
-Given I toggle box "Request Fulfillment Details" visibility.................passed
-Given I wait for "2" seconds................................................passed
-Given I sort grid "[1]" by column "Functional Team".........................passed
-Given I wait for "3" seconds................................................passed
-Given I sort grid "[1]" by column "Recommended Person"......................passed
-Given I wait for "3" seconds................................................passed
-Given I sort grid "[1]" by column "Comments"................................passed
-Given I wait for "3" seconds................................................passed
-Given I sort grid "[1]" by column "Assigned By".............................passed
-Given I wait for "3" seconds................................................passed
-Given I sort grid "[1]" by column "Assigned On".............................passed
-Given I wait for "3" seconds................................................passed
-Given I sort grid "[1]" by column "Due Date"................................passed
-Given I wait for "3" seconds................................................passed
-Given I sort grid "[1]" by column "Request Owner"...........................passed
-Given I wait for "3" seconds................................................passed
-Given I sort grid "[1]" by column "Task Owner"..............................passed
-Given I wait for "3" seconds................................................passed
-Given I sort grid "[1]" by column "Status"..................................passed
-Given I wait for "3" seconds................................................passed
-Given I click on grid "[1]" column "[12]" row "[1]".........................passed
-Given I wait for "3" seconds................................................passed
-Given I toggle box "[2]" visibility.........................................passed
-Given I wait for "3" seconds................................................passed
-Given I toggle box "[2]" visibility.........................................passed
-Given I sort grid "[2]" by column "Task Name"...............................passed
-Given I wait for "3" seconds................................................passed
-Given I sort grid "[2]" by column "Initial Assignment"......................passed
-Given I wait for "3" seconds................................................passed
-Given I sort grid "[2]" by column "Assigned On".............................passed
-Given I wait for "3" seconds................................................passed
-Given I sort grid "[2]" by column "Currently Assigned To"...................passed
-Given I wait for "3" seconds................................................passed
-Given I sort grid "[2]" by column "Owner Assigned On".......................passed
-Given I wait for "3" seconds................................................passed
-Given I sort grid "[2]" by column "Completed By"............................passed
-Given I wait for "3" seconds................................................passed
-Given I sort grid "[2]" by column "Completed On"............................passed
-Given I wait for "3" seconds................................................passed
-Given I sort grid "[2]" by column "Status"..................................passed
-Given I wait for "3" seconds................................................passed
-Given I sort grid "[2]" by column "Comments"................................passed
-Given I wait for "3" seconds................................................passed
-Then I click on link "Close"................................................passed
-]]></system-out>
+Given I populate field "STATUS" with "Closed"...............................passed
+Given I populate field "Type" with "Capital Calls"..........................passed
+Given I wait for "5" seconds................................................passed
+Given I sort grid "[1]" by column "Completed On"............................passed
+Given I wait for "4" seconds................................................passed
+Given I verify grid "[1]" column "[5]" row "[1]" contains "Capital Calls"...failed
+Given I wait for "4" seconds................................................skipped
+Given I verify grid "[1]" column "[9]" row "[1]" contains "Closed"..........skipped
+Given I wait for "4" seconds................................................skipped
+Given I click on grid "[1]" column "[3]" row "[1]"..........................skipped
+Given I wait for "4" seconds................................................skipped
+When I click on link "Fulfillment Details"..................................skipped
+Given I toggle box "Request Fulfillment Details" visibility.................skipped
+Given I wait for "2" seconds................................................skipped
+Given I toggle box "Request Fulfillment Details" visibility.................skipped
+Given I wait for "5" seconds................................................skipped
+Given I verify grid "[1]" column "[11]" row "[1]" contains "Completed"......skipped
+Given I wait for "5" seconds................................................skipped
+Given I sort grid "[1]" by column "Functional Team".........................skipped
+Given I wait for "3" seconds................................................skipped
+Given I sort grid "[1]" by column "Recommended Person"......................skipped
+Given I wait for "3" seconds................................................skipped
+Given I sort grid "[1]" by column "Comments"................................skipped
+Given I wait for "3" seconds................................................skipped
+Given I sort grid "[1]" by column "Assigned By".............................skipped
+Given I wait for "3" seconds................................................skipped
+Given I sort grid "[1]" by column "Assigned On".............................skipped
+Given I wait for "3" seconds................................................skipped
+Given I sort grid "[1]" by column "Due Date"................................skipped
+Given I wait for "3" seconds................................................skipped
+Given I sort grid "[1]" by column "Request Owner"...........................skipped
+Given I wait for "3" seconds................................................skipped
+Given I sort grid "[1]" by column "Task Owner"..............................skipped
+Given I wait for "3" seconds................................................skipped
+Given I sort grid "[1]" by column "Status"..................................skipped
+Given I wait for "3" seconds................................................skipped
+Given I click on grid "[1]" column "[12]" row "[1]".........................skipped
+Given I wait for "3" seconds................................................skipped
+Given I toggle box "[2]" visibility.........................................skipped
+Given I wait for "3" seconds................................................skipped
+Given I toggle box "[2]" visibility.........................................skipped
+Given I sort grid "[2]" by column "Task Name"...............................skipped
+Given I wait for "3" seconds................................................skipped
+Given I sort grid "[2]" by column "Initial Assignment"......................skipped
+Given I wait for "3" seconds................................................skipped
+Given I sort grid "[2]" by column "Assigned On".............................skipped
+Given I wait for "3" seconds................................................skipped
+Given I sort grid "[2]" by column "Currently Assigned To"...................skipped
+Given I wait for "3" seconds................................................skipped
+Given I sort grid "[2]" by column "Owner Assigned On".......................skipped
+Given I wait for "3" seconds................................................skipped
+Given I sort grid "[2]" by column "Completed By"............................skipped
+Given I wait for "3" seconds................................................skipped
+Given I sort grid "[2]" by column "Completed On"............................skipped
+Given I wait for "3" seconds................................................skipped
+Given I sort grid "[2]" by column "Status"..................................skipped
+Given I wait for "3" seconds................................................skipped
+Given I sort grid "[2]" by column "Comments"................................skipped
+Given I wait for "3" seconds................................................skipped
+Then I click on link "Close"................................................skipped
+Then I logout...............................................................skipped
+Then I tear down............................................................skipped
+
+StackTrace:
+java.lang.RuntimeException: Could not verify grid cell contains the expected value
+	at com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.verifyGridColumnRowContains(CucumberTempoFixture.java:502)
+	at ✽.I verify grid "[1]" column "[5]" row "[1]" contains "Capital Calls"(src/test/java/testcases/temp_zAcknowledge&ClosetheSendBackTaskAssignedToFunctionalTeam.feature:55)
+]]></failure>
 </testcase>
 </testsuite>

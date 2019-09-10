@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 31249688200,
+              "duration": 25444855500,
               "status": "passed"
             },
             "line": 5,
@@ -29,7 +29,7 @@
           },
           {
             "result": {
-              "duration": 2461200,
+              "duration": 1860400,
               "status": "passed"
             },
             "line": 6,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 2149100,
+              "duration": 1796000,
               "status": "passed"
             },
             "line": 7,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 4244600,
+              "duration": 3115400,
               "status": "passed"
             },
             "line": 8,
@@ -83,15 +83,15 @@
           },
           {
             "result": {
-              "duration": 32002904500,
+              "duration": 23603125600,
               "status": "passed"
             },
             "line": 9,
-            "name": "I login with username \"csaUser1\"",
+            "name": "I login with username \"treasuryUser1\"",
             "match": {
               "arguments": [
                 {
-                  "val": "csaUser1",
+                  "val": "treasuryUser1",
                   "offset": 23
                 }
               ],
@@ -103,18 +103,18 @@
       },
       {
         "line": 11,
-        "name": "Using Manage Teams Related Action, Add other Functional Teams",
+        "name": "Accept the task assigned to Functional Team and then Send Back the task",
         "description": "",
-        "id": "add-another-functional-team-using-manage-teams-related-action--need-to-give-proper-index;using-manage-teams-related-action--add-other-functional-teams",
+        "id": "send-back-the-task-to-csa-team-user-which-assigned-to-functional-team-treasury;accept-the-task-assigned-to-functional-team-and-then-send-back-the-task",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 8799400000,
+              "duration": 4147489500,
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "I open \"https://harbourvesttest.appiancloud.com/suite/sites/client-service\"",
             "match": {
               "arguments": [
@@ -129,68 +129,10 @@
           },
           {
             "result": {
-              "duration": 10000884900,
+              "duration": 2002710000,
               "status": "passed"
             },
-            "line": 14,
-            "name": "I wait for \"10\" seconds",
-            "match": {
-              "arguments": [
-                {
-                  "val": "10",
-                  "offset": 12
-                }
-              ],
-              "location": "CucumberBaseFixture.waitForSeconds(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 8393274800,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "I click on site page \"CLIENT SERVICE REQUESTS\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "CLIENT SERVICE REQUESTS",
-                  "offset": 22
-                }
-              ],
-              "location": "CucumberSitesFixture.clickOnSitePage(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 6488567400,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I populate field \"Search\" with \"1909-8476\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Search",
-                  "offset": 18
-                },
-                {
-                  "val": "1909-8476",
-                  "offset": 32
-                }
-              ],
-              "location": "CucumberTempoFixture.populateFieldWith(String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2002369600,
-              "status": "passed"
-            },
-            "line": 17,
+            "line": 13,
             "name": "I wait for \"2\" seconds",
             "match": {
               "arguments": [
@@ -205,28 +147,148 @@
           },
           {
             "result": {
-              "duration": 9127430200,
+              "duration": 3260872500,
               "status": "passed"
             },
-            "line": 18,
-            "name": "I clear field \"Status\"",
+            "line": 14,
+            "name": "I click on link \"Add\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Status",
-                  "offset": 15
+                  "val": "Add",
+                  "offset": 17
                 }
               ],
-              "location": "CucumberTempoFixture.clearField(String)"
+              "location": "CucumberTempoFixture.clickOnLink(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 5001258600,
+              "duration": 2001448900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I wait for \"2\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4042247900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I populate field \"Filter Set Name\" with \"Test the Filter- 09/10/2019 19:25:34\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Filter Set Name",
+                  "offset": 18
+                },
+                {
+                  "val": "Test the Filter- 09/10/2019 19:25:34",
+                  "offset": 41
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3006164100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I wait for \"3\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3206244400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I populate field \"Search\" with \"1909-8479\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Search",
+                  "offset": 18
+                },
+                {
+                  "val": "1909-8479",
+                  "offset": 32
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3000412400,
               "status": "passed"
             },
             "line": 19,
+            "name": "I wait for \"3\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4298564100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I populate field \"Type\" with \"Capital Calls\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Type",
+                  "offset": 18
+                },
+                {
+                  "val": "Capital Calls",
+                  "offset": 30
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5002227600,
+              "status": "passed"
+            },
+            "line": 21,
             "name": "I wait for \"5\" seconds",
             "match": {
               "arguments": [
@@ -241,10 +303,144 @@
           },
           {
             "result": {
-              "duration": 8543707900,
+              "duration": 2494025300,
               "status": "passed"
             },
-            "line": 20,
+            "line": 22,
+            "name": "I click on link \"Save\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Save",
+                  "offset": 17
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnLink(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2515446600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on button \"My Group Tasks\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "My Group Tasks",
+                  "offset": 19
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnButton(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5001717800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I wait for \"5\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2790613100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I sort grid \"[1]\" by column \"Assigned On\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 13
+                },
+                {
+                  "val": "Assigned On",
+                  "offset": 29
+                }
+              ],
+              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4009116000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I wait for \"4\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3093832000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I sort grid \"[1]\" by column \"Assigned On\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 13
+                },
+                {
+                  "val": "Assigned On",
+                  "offset": 29
+                }
+              ],
+              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4010475500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I wait for \"4\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4843345200,
+              "status": "passed"
+            },
+            "line": 29,
             "name": "I click on grid \"[1]\" column \"[3]\" row \"[1]\"",
             "match": {
               "arguments": [
@@ -267,10 +463,290 @@
           },
           {
             "result": {
-              "duration": 10001503100,
+              "duration": 3999844000,
               "status": "passed"
             },
-            "line": 21,
+            "line": 30,
+            "name": "I wait for \"4\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3169625000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I click on button \"ACCEPT\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ACCEPT",
+                  "offset": 19
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnButton(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4001298800,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I wait for \"4\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5021966100,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I populate field type \"PARAGRAPH\" named \"[1]\" with \"Enter this Comments while sending back - 09/10/2019 19:25:34\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PARAGRAPH",
+                  "offset": 23
+                },
+                {
+                  "val": "[1]",
+                  "offset": 41
+                },
+                {
+                  "val": "Enter this Comments while sending back - 09/10/2019 19:25:34",
+                  "offset": 52
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5003759800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I wait for \"5\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6252377600,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I populate field type \"FILE_UPLOAD\" named \"[1]\" with \"C:\\Users\\swetar.VURAM.000\\Documents\\C_TESTESTEST_,.)(123\u0026%$!_TESTESTEST DOC.pdf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "FILE_UPLOAD",
+                  "offset": 23
+                },
+                {
+                  "val": "[1]",
+                  "offset": 43
+                },
+                {
+                  "val": "C:\\Users\\swetar.VURAM.000\\Documents\\C_TESTESTEST_,.)(123\u0026%$!_TESTESTEST DOC.pdf",
+                  "offset": 54
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7010908800,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I wait for \"7\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1570102500,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I click on button \"SEND BACK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SEND BACK",
+                  "offset": 19
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnButton(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4771446900,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I click on button \"YES\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "YES",
+                  "offset": 19
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnButton(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5004505600,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I wait for \"5\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9577301500,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I click on site page \"CLIENT SERVICE REQUESTS\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CLIENT SERVICE REQUESTS",
+                  "offset": 22
+                }
+              ],
+              "location": "CucumberSitesFixture.clickOnSitePage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5905757100,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I populate field \"Search\" with \"1909-8479\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Search",
+                  "offset": 18
+                },
+                {
+                  "val": "1909-8479",
+                  "offset": 32
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5000141100,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I wait for \"5\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8669670900,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I click on grid \"[1]\" column \"[3]\" row \"[1]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 17
+                },
+                {
+                  "val": "[3]",
+                  "offset": 30
+                },
+                {
+                  "val": "[1]",
+                  "offset": 40
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnGridColumnRow(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10015268200,
+              "status": "passed"
+            },
+            "line": 46,
             "name": "I wait for \"10\" seconds",
             "match": {
               "arguments": [
@@ -285,352 +761,10 @@
           },
           {
             "result": {
-              "duration": 5118910600,
+              "duration": 6269393000,
               "status": "passed"
             },
-            "line": 22,
-            "name": "I click on link \"Related Actions\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Related Actions",
-                  "offset": 17
-                }
-              ],
-              "location": "CucumberTempoFixture.clickOnLink(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2002028000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "I wait for \"2\" seconds",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 12
-                }
-              ],
-              "location": "CucumberBaseFixture.waitForSeconds(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5978945600,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "I click on record related action \"Manage Teams\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Manage Teams",
-                  "offset": 34
-                }
-              ],
-              "location": "CucumberTempoFixture.clickOnRecordRelatedAction(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2001733000,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "I wait for \"2\" seconds",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 12
-                }
-              ],
-              "location": "CucumberBaseFixture.waitForSeconds(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2890005900,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "I click on link \"Add Functional Team\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Add Functional Team",
-                  "offset": 17
-                }
-              ],
-              "location": "CucumberTempoFixture.clickOnLink(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2002871000,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "I wait for \"2\" seconds",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 12
-                }
-              ],
-              "location": "CucumberBaseFixture.waitForSeconds(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 6892860600,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "I populate grid \"[1]\" column \"[1]\" row \"[2]\" with partially matching picker field suggestions for \"Tax\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "[1]",
-                  "offset": 17
-                },
-                {
-                  "val": "[1]",
-                  "offset": 30
-                },
-                {
-                  "val": "[2]",
-                  "offset": 40
-                },
-                {
-                  "val": "Tax",
-                  "offset": 99
-                }
-              ],
-              "location": "CucumberTempoFixture.populateGridColumnRowWithPartiallyMatchingPickerFieldSuggestion(String,String,String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3001231000,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "I wait for \"3\" seconds",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 12
-                }
-              ],
-              "location": "CucumberBaseFixture.waitForSeconds(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5354175000,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "I populate grid \"[1]\" column \"[4]\" row \"[2]\" with \" Enter this comments to check the comments field - 09/10/2019 16:42:23\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "[1]",
-                  "offset": 17
-                },
-                {
-                  "val": "[4]",
-                  "offset": 30
-                },
-                {
-                  "val": "[2]",
-                  "offset": 40
-                },
-                {
-                  "val": " Enter this comments to check the comments field - 09/10/2019 16:42:23",
-                  "offset": 51
-                }
-              ],
-              "location": "CucumberTempoFixture.populateGridColumnRowWith(String,String,String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3000934500,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "I wait for \"3\" seconds",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 12
-                }
-              ],
-              "location": "CucumberBaseFixture.waitForSeconds(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1215146300,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "I verify grid \"[1]\" column \"[5]\" row \"[2]\" contains \"Added\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "[1]",
-                  "offset": 15
-                },
-                {
-                  "val": "[5]",
-                  "offset": 28
-                },
-                {
-                  "val": "[2]",
-                  "offset": 38
-                },
-                {
-                  "val": "Added",
-                  "offset": 53
-                }
-              ],
-              "location": "CucumberTempoFixture.verifyGridColumnRowContains(String,String,String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3000500000,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "I wait for \"3\" seconds",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 12
-                }
-              ],
-              "location": "CucumberBaseFixture.waitForSeconds(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 47828800,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "I verify button \"CANCEL\" is present",
-            "match": {
-              "arguments": [
-                {
-                  "val": "CANCEL",
-                  "offset": 17
-                }
-              ],
-              "location": "CucumberTempoFixture.verifyButtonIsPresent(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3001710500,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "I wait for \"3\" seconds",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 12
-                }
-              ],
-              "location": "CucumberBaseFixture.waitForSeconds(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1381828300,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "I click on button \"COMPLETE\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "COMPLETE",
-                  "offset": 19
-                }
-              ],
-              "location": "CucumberTempoFixture.clickOnButton(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5793502600,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "I click on button \"YES\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "YES",
-                  "offset": 19
-                }
-              ],
-              "location": "CucumberTempoFixture.clickOnButton(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5000659900,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "I wait for \"5\" seconds",
-            "match": {
-              "arguments": [
-                {
-                  "val": "5",
-                  "offset": 12
-                }
-              ],
-              "location": "CucumberBaseFixture.waitForSeconds(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 6724728600,
-              "status": "passed"
-            },
-            "line": 41,
+            "line": 47,
             "name": "I click on link \"Fulfillment Details\"",
             "match": {
               "arguments": [
@@ -641,14 +775,689 @@
               ],
               "location": "CucumberTempoFixture.clickOnLink(String)"
             },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4134596200,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I sort grid \"[1]\" by column \"Completed On\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 13
+                },
+                {
+                  "val": "Completed On",
+                  "offset": 29
+                }
+              ],
+              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1186831900,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I verify grid \"[1]\" column \"[11]\" row \"[1]\" contains \"Sent for Revision\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 15
+                },
+                {
+                  "val": "[11]",
+                  "offset": 28
+                },
+                {
+                  "val": "[1]",
+                  "offset": 39
+                },
+                {
+                  "val": "Sent for Revision",
+                  "offset": 54
+                }
+              ],
+              "location": "CucumberTempoFixture.verifyGridColumnRowContains(String,String,String,String)"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 5000989600,
+              "duration": 2625686100,
               "status": "passed"
             },
-            "line": 42,
+            "line": 50,
+            "name": "I click on grid \"[1]\" column \"[12]\" row \"[1]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 17
+                },
+                {
+                  "val": "[12]",
+                  "offset": 30
+                },
+                {
+                  "val": "[1]",
+                  "offset": 41
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnGridColumnRow(String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1171908600,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I toggle box \"Fulfillment History of Treasury Team\" visibility",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fulfillment History of Treasury Team",
+                  "offset": 14
+                }
+              ],
+              "location": "CucumberTempoFixture.toggleBoxVisibility(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3001534600,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I wait for \"3\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1092929500,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I toggle box \"Fulfillment History of Treasury Team\" visibility",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fulfillment History of Treasury Team",
+                  "offset": 14
+                }
+              ],
+              "location": "CucumberTempoFixture.toggleBoxVisibility(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(translate(text(),\u0027ABCDEFGHIJKLMNOPQRSTUVWXYZ\u0027,\u0027abcdefghijklmnopqrstuvwxyz\u0027),\u00272\u0027)]/parent::div/following-sibling::div/descendant::table (tried for 10 second(s) with 500 MILLISECONDS interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)\r\n\tat com.appiancorp.ps.automatedtest.tempo.interfaces.TempoGrid.getXpath(TempoGrid.java:50)\r\n\tat com.appiancorp.ps.automatedtest.tempo.interfaces.TempoGrid.waitFor(TempoGrid.java:60)\r\n\tat com.appiancorp.ps.automatedtest.fixture.TempoFixture.sortGridByColumn(TempoFixture.java:1831)\r\n\tat com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.sortGridByColumn(CucumberTempoFixture.java:545)\r\n\tat ✽.I sort grid \"2\" by column \"Task Name\"(src/test/java/testcases/temp_SendBackTaskAssignedtoFunctionalTeam.feature:54)\r\nCaused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //span[contains(translate(text(),\u0027ABCDEFGHIJKLMNOPQRSTUVWXYZ\u0027,\u0027abcdefghijklmnopqrstuvwxyz\u0027),\u00272\u0027)]/parent::div/following-sibling::div/descendant::table\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u0027unknown\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027VURAM-2015-0088\u0027, ip: \u0027192.168.6.169\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_144\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)\r\n\tat java.util.Optional.orElseThrow(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)\r\n\tat com.appiancorp.ps.automatedtest.tempo.interfaces.TempoGrid.getXpath(TempoGrid.java:50)\r\n\tat com.appiancorp.ps.automatedtest.tempo.interfaces.TempoGrid.waitFor(TempoGrid.java:60)\r\n\tat com.appiancorp.ps.automatedtest.fixture.TempoFixture.sortGridByColumn(TempoFixture.java:1831)\r\n\tat com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.sortGridByColumn(CucumberTempoFixture.java:545)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:32)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:26)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)\r\n",
+              "duration": 10268689900,
+              "status": "failed"
+            },
+            "line": 54,
+            "name": "I sort grid \"2\" by column \"Task Name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 13
+                },
+                {
+                  "val": "Task Name",
+                  "offset": 27
+                }
+              ],
+              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "I sort grid \"2\" by column \"Initial Assignment\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 13
+                },
+                {
+                  "val": "Initial Assignment",
+                  "offset": 27
+                }
+              ],
+              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "I sort grid \"2\" by column \"Assigned On\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 13
+                },
+                {
+                  "val": "Assigned On",
+                  "offset": 27
+                }
+              ],
+              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 57,
+            "name": "I sort grid \"2\" by column \"Currently Assigned To\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 13
+                },
+                {
+                  "val": "Currently Assigned To",
+                  "offset": 27
+                }
+              ],
+              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 58,
+            "name": "I sort grid \"2\" by column \"Owner Assigned On\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 13
+                },
+                {
+                  "val": "Owner Assigned On",
+                  "offset": 27
+                }
+              ],
+              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 59,
+            "name": "I sort grid \"2\" by column \"Completed By\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 13
+                },
+                {
+                  "val": "Completed By",
+                  "offset": 27
+                }
+              ],
+              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "I sort grid \"2\" by column \"Completed On\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 13
+                },
+                {
+                  "val": "Completed On",
+                  "offset": 27
+                }
+              ],
+              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "I sort grid \"2\" by column \"Status\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 13
+                },
+                {
+                  "val": "Status",
+                  "offset": 27
+                }
+              ],
+              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "I sort grid \"2\" by column \"Comments\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 13
+                },
+                {
+                  "val": "Comments",
+                  "offset": 27
+                }
+              ],
+              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 63,
+            "name": "I logout",
+            "match": {
+              "location": "CucumberTempoFixture.logout()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 64,
+            "name": "I tear down",
+            "match": {
+              "location": "CucumberBaseFixture.tearDown()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "I logout",
+            "match": {
+              "location": "CucumberTempoFixture.logout()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 66,
+            "name": "I tear down",
+            "match": {
+              "location": "CucumberBaseFixture.tearDown()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SendBackFunctionalTeamTask"
+          }
+        ]
+      }
+    ],
+    "name": "Send back the task to CSA Team User which assigned to Functional Team-Treasury",
+    "description": "",
+    "id": "send-back-the-task-to-csa-team-user-which-assigned-to-functional-team-treasury",
+    "keyword": "Feature",
+    "uri": "src/test/java/testcases/temp_SendBackTaskAssignedtoFunctionalTeam.feature",
+    "tags": [
+      {
+        "name": "@SendBackFunctionalTeamTask",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Login to Appian environment",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13135177000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I setup with \"CHROME\" browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CHROME",
+                  "offset": 14
+                }
+              ],
+              "location": "CucumberBaseFixture.setupWithBrowser(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2063500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I set appian URL to \"https://harbourvesttest.appiancloud.com/suite/portal/login.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://harbourvesttest.appiancloud.com/suite/portal/login.jsp",
+                  "offset": 21
+                }
+              ],
+              "location": "CucumberBaseFixture.setAppianUrlTo(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2063900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I set appian version to \"19.2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "19.2",
+                  "offset": 25
+                }
+              ],
+              "location": "CucumberBaseFixture.setAppianVersionTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1766000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I set appian locale to \"en_US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "en_US",
+                  "offset": 24
+                }
+              ],
+              "location": "CucumberBaseFixture.setAppianLocaleTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19597154600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I login with username \"csaUser1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "csaUser1",
+                  "offset": 23
+                }
+              ],
+              "location": "CucumberBaseFixture.loginWithUsername(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Acknowledge and Close the task sent back by Functional Team",
+        "description": "",
+        "id": "acknowledge-the-task-send-back-by-functional-team-treasury;acknowledge-and-close-the-task-sent-back-by-functional-team",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5736780300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I open \"https://harbourvesttest.appiancloud.com/suite/sites/client-service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://harbourvesttest.appiancloud.com/suite/sites/client-service",
+                  "offset": 8
+                }
+              ],
+              "location": "CucumberBaseFixture.open(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2002087000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I wait for \"2\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3976140300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on link \"Add\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Add",
+                  "offset": 17
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnLink(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2015958400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I wait for \"2\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4499154700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I populate field \"Filter Set Name\" with \"Test the Filter- 09/10/2019 19:25:34\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Filter Set Name",
+                  "offset": 18
+                },
+                {
+                  "val": "Test the Filter- 09/10/2019 19:25:34",
+                  "offset": 41
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3010293700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I wait for \"3\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4008970500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I populate field \"Search\" with \"1909-8479\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Search",
+                  "offset": 18
+                },
+                {
+                  "val": "1909-8479",
+                  "offset": 32
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3013283500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I wait for \"3\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4671015300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I populate field \"Type\" with \"Capital Calls\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Type",
+                  "offset": 18
+                },
+                {
+                  "val": "Capital Calls",
+                  "offset": 30
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5005582500,
+              "status": "passed"
+            },
+            "line": 23,
             "name": "I wait for \"5\" seconds",
             "match": {
               "arguments": [
@@ -659,37 +1468,37 @@
               ],
               "location": "CucumberBaseFixture.waitForSeconds(String)"
             },
-            "keyword": "Then "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1407493400,
+              "duration": 3236336100,
               "status": "passed"
             },
-            "line": 46,
-            "name": "I toggle box \"Request Fulfillment Details\" visibility",
+            "line": 24,
+            "name": "I click on link \"Save\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Request Fulfillment Details",
-                  "offset": 14
+                  "val": "Save",
+                  "offset": 17
                 }
               ],
-              "location": "CucumberTempoFixture.toggleBoxVisibility(String)"
+              "location": "CucumberTempoFixture.clickOnLink(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2001829200,
+              "duration": 5006368500,
               "status": "passed"
             },
-            "line": 47,
-            "name": "I wait for \"2\" seconds",
+            "line": 27,
+            "name": "I wait for \"5\" seconds",
             "match": {
               "arguments": [
                 {
-                  "val": "2",
+                  "val": "5",
                   "offset": 12
                 }
               ],
@@ -699,206 +1508,10 @@
           },
           {
             "result": {
-              "duration": 983776100,
+              "duration": 2871392000,
               "status": "passed"
             },
-            "line": 48,
-            "name": "I toggle box \"Request Fulfillment Details\" visibility",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Request Fulfillment Details",
-                  "offset": 14
-                }
-              ],
-              "location": "CucumberTempoFixture.toggleBoxVisibility(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2000908200,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "I wait for \"2\" seconds",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 12
-                }
-              ],
-              "location": "CucumberBaseFixture.waitForSeconds(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3300251000,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "I sort grid \"[1]\" by column \"Functional Team\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "[1]",
-                  "offset": 13
-                },
-                {
-                  "val": "Functional Team",
-                  "offset": 29
-                }
-              ],
-              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3002498200,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "I wait for \"3\" seconds",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 12
-                }
-              ],
-              "location": "CucumberBaseFixture.waitForSeconds(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3345604500,
-              "status": "passed"
-            },
-            "line": 52,
-            "name": "I sort grid \"[1]\" by column \"Recommended Person\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "[1]",
-                  "offset": 13
-                },
-                {
-                  "val": "Recommended Person",
-                  "offset": 29
-                }
-              ],
-              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3000691000,
-              "status": "passed"
-            },
-            "line": 53,
-            "name": "I wait for \"3\" seconds",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 12
-                }
-              ],
-              "location": "CucumberBaseFixture.waitForSeconds(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2995186800,
-              "status": "passed"
-            },
-            "line": 54,
-            "name": "I sort grid \"[1]\" by column \"Comments\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "[1]",
-                  "offset": 13
-                },
-                {
-                  "val": "Comments",
-                  "offset": 29
-                }
-              ],
-              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3000888300,
-              "status": "passed"
-            },
-            "line": 55,
-            "name": "I wait for \"3\" seconds",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 12
-                }
-              ],
-              "location": "CucumberBaseFixture.waitForSeconds(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3044362500,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "I sort grid \"[1]\" by column \"Assigned By\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "[1]",
-                  "offset": 13
-                },
-                {
-                  "val": "Assigned By",
-                  "offset": 29
-                }
-              ],
-              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3000149200,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "I wait for \"3\" seconds",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 12
-                }
-              ],
-              "location": "CucumberBaseFixture.waitForSeconds(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2707816200,
-              "status": "passed"
-            },
-            "line": 58,
+            "line": 28,
             "name": "I sort grid \"[1]\" by column \"Assigned On\"",
             "match": {
               "arguments": [
@@ -917,10 +1530,737 @@
           },
           {
             "result": {
-              "duration": 3000382000,
+              "duration": 4000704900,
               "status": "passed"
             },
+            "line": 29,
+            "name": "I wait for \"4\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3206385500,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I sort grid \"[1]\" by column \"Assigned On\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 13
+                },
+                {
+                  "val": "Assigned On",
+                  "offset": 29
+                }
+              ],
+              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3998750400,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I wait for \"4\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6062058600,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I click on grid \"[1]\" column \"[3]\" row \"[1]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 17
+                },
+                {
+                  "val": "[3]",
+                  "offset": 30
+                },
+                {
+                  "val": "[1]",
+                  "offset": 40
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnGridColumnRow(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4010004300,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I wait for \"4\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6486701800,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I populate field type \"PARAGRAPH\" named \"[1]\" with \"Enter this Comments to acknowledge the review comments - 09/10/2019 19:25:34\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PARAGRAPH",
+                  "offset": 23
+                },
+                {
+                  "val": "[1]",
+                  "offset": 41
+                },
+                {
+                  "val": "Enter this Comments to acknowledge the review comments - 09/10/2019 19:25:34",
+                  "offset": 52
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5006296500,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I wait for \"5\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7417083300,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I populate field type \"FILE_UPLOAD\" named \"[1]\" with \"C:\\Users\\swetar.VURAM.000\\Documents\\C_TESTESTEST_,.)(123\u0026%$!_TESTESTEST DOC.pdf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "FILE_UPLOAD",
+                  "offset": 23
+                },
+                {
+                  "val": "[1]",
+                  "offset": 43
+                },
+                {
+                  "val": "C:\\Users\\swetar.VURAM.000\\Documents\\C_TESTESTEST_,.)(123\u0026%$!_TESTESTEST DOC.pdf",
+                  "offset": 54
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7004107900,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I wait for \"7\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1589122600,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I click on button \"ACKNOWLEDGE \u0026 CLOSE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ACKNOWLEDGE \u0026 CLOSE",
+                  "offset": 19
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnButton(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6884546400,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I click on button \"YES\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "YES",
+                  "offset": 19
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnButton(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4999411500,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I wait for \"5\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8301157800,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I click on site page \"CLIENT SERVICE REQUESTS\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CLIENT SERVICE REQUESTS",
+                  "offset": 22
+                }
+              ],
+              "location": "CucumberSitesFixture.clickOnSitePage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5420070800,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I populate field \"Search\" with \"1909-8479\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Search",
+                  "offset": 18
+                },
+                {
+                  "val": "1909-8479",
+                  "offset": 32
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2002500300,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I wait for \"2\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10116310400,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I clear field \"Status\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Status",
+                  "offset": 15
+                }
+              ],
+              "location": "CucumberTempoFixture.clearField(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5005552000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I wait for \"5\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7134949000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I populate field \"STATUS\" with \"Closed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "STATUS",
+                  "offset": 18
+                },
+                {
+                  "val": "Closed",
+                  "offset": 32
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8220684100,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I populate field \"Type\" with \"Capital Calls\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Type",
+                  "offset": 18
+                },
+                {
+                  "val": "Capital Calls",
+                  "offset": 30
+                }
+              ],
+              "location": "CucumberTempoFixture.populateFieldWith(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5005731100,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I wait for \"5\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4957648400,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I sort grid \"[1]\" by column \"Completed On\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 13
+                },
+                {
+                  "val": "Completed On",
+                  "offset": 29
+                }
+              ],
+              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4001638800,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I wait for \"4\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.RuntimeException: Could not verify grid cell contains the expected value\r\n\tat com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.verifyGridColumnRowContains(CucumberTempoFixture.java:502)\r\n\tat ✽.I verify grid \"[1]\" column \"[5]\" row \"[1]\" contains \"Capital Calls\"(src/test/java/testcases/temp_zAcknowledge\u0026ClosetheSendBackTaskAssignedToFunctionalTeam.feature:55)\r\n",
+              "duration": 1079732100,
+              "status": "failed"
+            },
+            "line": 55,
+            "name": "I verify grid \"[1]\" column \"[5]\" row \"[1]\" contains \"Capital Calls\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 15
+                },
+                {
+                  "val": "[5]",
+                  "offset": 28
+                },
+                {
+                  "val": "[1]",
+                  "offset": 38
+                },
+                {
+                  "val": "Capital Calls",
+                  "offset": 53
+                }
+              ],
+              "location": "CucumberTempoFixture.verifyGridColumnRowContains(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "I wait for \"4\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 57,
+            "name": "I verify grid \"[1]\" column \"[9]\" row \"[1]\" contains \"Closed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 15
+                },
+                {
+                  "val": "[9]",
+                  "offset": 28
+                },
+                {
+                  "val": "[1]",
+                  "offset": 38
+                },
+                {
+                  "val": "Closed",
+                  "offset": 53
+                }
+              ],
+              "location": "CucumberTempoFixture.verifyGridColumnRowContains(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 58,
+            "name": "I wait for \"4\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
             "line": 59,
+            "name": "I click on grid \"[1]\" column \"[3]\" row \"[1]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 17
+                },
+                {
+                  "val": "[3]",
+                  "offset": 30
+                },
+                {
+                  "val": "[1]",
+                  "offset": 40
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnGridColumnRow(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "I wait for \"4\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "I click on link \"Fulfillment Details\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fulfillment Details",
+                  "offset": 17
+                }
+              ],
+              "location": "CucumberTempoFixture.clickOnLink(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 64,
+            "name": "I toggle box \"Request Fulfillment Details\" visibility",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Request Fulfillment Details",
+                  "offset": 14
+                }
+              ],
+              "location": "CucumberTempoFixture.toggleBoxVisibility(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "I wait for \"2\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 66,
+            "name": "I toggle box \"Request Fulfillment Details\" visibility",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Request Fulfillment Details",
+                  "offset": 14
+                }
+              ],
+              "location": "CucumberTempoFixture.toggleBoxVisibility(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 67,
+            "name": "I wait for \"5\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 68,
+            "name": "I verify grid \"[1]\" column \"[11]\" row \"[1]\" contains \"Completed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 15
+                },
+                {
+                  "val": "[11]",
+                  "offset": 28
+                },
+                {
+                  "val": "[1]",
+                  "offset": 39
+                },
+                {
+                  "val": "Completed",
+                  "offset": 54
+                }
+              ],
+              "location": "CucumberTempoFixture.verifyGridColumnRowContains(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 69,
+            "name": "I wait for \"5\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 70,
+            "name": "I sort grid \"[1]\" by column \"Functional Team\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 13
+                },
+                {
+                  "val": "Functional Team",
+                  "offset": 29
+                }
+              ],
+              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 71,
             "name": "I wait for \"3\" seconds",
             "match": {
               "arguments": [
@@ -935,10 +2275,161 @@
           },
           {
             "result": {
-              "duration": 3697500700,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 60,
+            "line": 72,
+            "name": "I sort grid \"[1]\" by column \"Recommended Person\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 13
+                },
+                {
+                  "val": "Recommended Person",
+                  "offset": 29
+                }
+              ],
+              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 73,
+            "name": "I wait for \"3\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 74,
+            "name": "I sort grid \"[1]\" by column \"Comments\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 13
+                },
+                {
+                  "val": "Comments",
+                  "offset": 29
+                }
+              ],
+              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 75,
+            "name": "I wait for \"3\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 76,
+            "name": "I sort grid \"[1]\" by column \"Assigned By\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 13
+                },
+                {
+                  "val": "Assigned By",
+                  "offset": 29
+                }
+              ],
+              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 77,
+            "name": "I wait for \"3\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 78,
+            "name": "I sort grid \"[1]\" by column \"Assigned On\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "[1]",
+                  "offset": 13
+                },
+                {
+                  "val": "Assigned On",
+                  "offset": 29
+                }
+              ],
+              "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "I wait for \"3\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                }
+              ],
+              "location": "CucumberBaseFixture.waitForSeconds(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 80,
             "name": "I sort grid \"[1]\" by column \"Due Date\"",
             "match": {
               "arguments": [
@@ -957,10 +2448,9 @@
           },
           {
             "result": {
-              "duration": 3001593800,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 61,
+            "line": 81,
             "name": "I wait for \"3\" seconds",
             "match": {
               "arguments": [
@@ -975,10 +2465,9 @@
           },
           {
             "result": {
-              "duration": 3637860200,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 62,
+            "line": 82,
             "name": "I sort grid \"[1]\" by column \"Request Owner\"",
             "match": {
               "arguments": [
@@ -997,10 +2486,9 @@
           },
           {
             "result": {
-              "duration": 3001462100,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 63,
+            "line": 83,
             "name": "I wait for \"3\" seconds",
             "match": {
               "arguments": [
@@ -1015,10 +2503,9 @@
           },
           {
             "result": {
-              "duration": 3781148400,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 64,
+            "line": 84,
             "name": "I sort grid \"[1]\" by column \"Task Owner\"",
             "match": {
               "arguments": [
@@ -1037,10 +2524,9 @@
           },
           {
             "result": {
-              "duration": 3015447700,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 65,
+            "line": 85,
             "name": "I wait for \"3\" seconds",
             "match": {
               "arguments": [
@@ -1055,10 +2541,9 @@
           },
           {
             "result": {
-              "duration": 5035363100,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 66,
+            "line": 86,
             "name": "I sort grid \"[1]\" by column \"Status\"",
             "match": {
               "arguments": [
@@ -1077,10 +2562,9 @@
           },
           {
             "result": {
-              "duration": 3001927300,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 67,
+            "line": 87,
             "name": "I wait for \"3\" seconds",
             "match": {
               "arguments": [
@@ -1095,10 +2579,9 @@
           },
           {
             "result": {
-              "duration": 3401688600,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 70,
+            "line": 90,
             "name": "I click on grid \"[1]\" column \"[12]\" row \"[1]\"",
             "match": {
               "arguments": [
@@ -1121,10 +2604,9 @@
           },
           {
             "result": {
-              "duration": 3004415400,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 71,
+            "line": 91,
             "name": "I wait for \"3\" seconds",
             "match": {
               "arguments": [
@@ -1139,10 +2621,9 @@
           },
           {
             "result": {
-              "duration": 1315985100,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 72,
+            "line": 92,
             "name": "I toggle box \"[2]\" visibility",
             "match": {
               "arguments": [
@@ -1157,10 +2638,9 @@
           },
           {
             "result": {
-              "duration": 3001831100,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 73,
+            "line": 93,
             "name": "I wait for \"3\" seconds",
             "match": {
               "arguments": [
@@ -1175,10 +2655,9 @@
           },
           {
             "result": {
-              "duration": 1040376100,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 74,
+            "line": 94,
             "name": "I toggle box \"[2]\" visibility",
             "match": {
               "arguments": [
@@ -1193,10 +2672,9 @@
           },
           {
             "result": {
-              "duration": 2565695400,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 75,
+            "line": 95,
             "name": "I sort grid \"[2]\" by column \"Task Name\"",
             "match": {
               "arguments": [
@@ -1215,10 +2693,9 @@
           },
           {
             "result": {
-              "duration": 3001105600,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 76,
+            "line": 96,
             "name": "I wait for \"3\" seconds",
             "match": {
               "arguments": [
@@ -1233,10 +2710,9 @@
           },
           {
             "result": {
-              "duration": 2947380000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 77,
+            "line": 97,
             "name": "I sort grid \"[2]\" by column \"Initial Assignment\"",
             "match": {
               "arguments": [
@@ -1255,10 +2731,9 @@
           },
           {
             "result": {
-              "duration": 3001789700,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 78,
+            "line": 98,
             "name": "I wait for \"3\" seconds",
             "match": {
               "arguments": [
@@ -1273,10 +2748,9 @@
           },
           {
             "result": {
-              "duration": 2949638500,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 79,
+            "line": 99,
             "name": "I sort grid \"[2]\" by column \"Assigned On\"",
             "match": {
               "arguments": [
@@ -1295,10 +2769,9 @@
           },
           {
             "result": {
-              "duration": 3000959000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 80,
+            "line": 100,
             "name": "I wait for \"3\" seconds",
             "match": {
               "arguments": [
@@ -1313,10 +2786,9 @@
           },
           {
             "result": {
-              "duration": 2517120100,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 81,
+            "line": 101,
             "name": "I sort grid \"[2]\" by column \"Currently Assigned To\"",
             "match": {
               "arguments": [
@@ -1335,10 +2807,9 @@
           },
           {
             "result": {
-              "duration": 3001682700,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 82,
+            "line": 102,
             "name": "I wait for \"3\" seconds",
             "match": {
               "arguments": [
@@ -1353,10 +2824,9 @@
           },
           {
             "result": {
-              "duration": 2415036600,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 83,
+            "line": 103,
             "name": "I sort grid \"[2]\" by column \"Owner Assigned On\"",
             "match": {
               "arguments": [
@@ -1375,10 +2845,9 @@
           },
           {
             "result": {
-              "duration": 3001916000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 84,
+            "line": 104,
             "name": "I wait for \"3\" seconds",
             "match": {
               "arguments": [
@@ -1393,10 +2862,9 @@
           },
           {
             "result": {
-              "duration": 2404242900,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 85,
+            "line": 105,
             "name": "I sort grid \"[2]\" by column \"Completed By\"",
             "match": {
               "arguments": [
@@ -1415,10 +2883,9 @@
           },
           {
             "result": {
-              "duration": 3000314200,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 86,
+            "line": 106,
             "name": "I wait for \"3\" seconds",
             "match": {
               "arguments": [
@@ -1433,10 +2900,9 @@
           },
           {
             "result": {
-              "duration": 2418865700,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 87,
+            "line": 107,
             "name": "I sort grid \"[2]\" by column \"Completed On\"",
             "match": {
               "arguments": [
@@ -1455,10 +2921,9 @@
           },
           {
             "result": {
-              "duration": 3001069200,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 88,
+            "line": 108,
             "name": "I wait for \"3\" seconds",
             "match": {
               "arguments": [
@@ -1473,10 +2938,9 @@
           },
           {
             "result": {
-              "duration": 3335413100,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 89,
+            "line": 109,
             "name": "I sort grid \"[2]\" by column \"Status\"",
             "match": {
               "arguments": [
@@ -1495,10 +2959,9 @@
           },
           {
             "result": {
-              "duration": 3000985000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 90,
+            "line": 110,
             "name": "I wait for \"3\" seconds",
             "match": {
               "arguments": [
@@ -1513,10 +2976,9 @@
           },
           {
             "result": {
-              "duration": 4917405600,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 91,
+            "line": 111,
             "name": "I sort grid \"[2]\" by column \"Comments\"",
             "match": {
               "arguments": [
@@ -1535,10 +2997,9 @@
           },
           {
             "result": {
-              "duration": 3001908000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 92,
+            "line": 112,
             "name": "I wait for \"3\" seconds",
             "match": {
               "arguments": [
@@ -1553,10 +3014,9 @@
           },
           {
             "result": {
-              "duration": 2123897800,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 93,
+            "line": 113,
             "name": "I click on link \"Close\"",
             "match": {
               "arguments": [
@@ -1568,23 +3028,45 @@
               "location": "CucumberTempoFixture.clickOnLink(String)"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 114,
+            "name": "I logout",
+            "match": {
+              "location": "CucumberTempoFixture.logout()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 115,
+            "name": "I tear down",
+            "match": {
+              "location": "CucumberBaseFixture.tearDown()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@ManageTeams-AddNewTeams"
+            "name": "@AcknowledgeAndCloseonSendBackFunctionalTeamTask"
           }
         ]
       }
     ],
-    "name": "Add Another Functional Team using Manage Teams Related Action- Need to give proper index",
+    "name": "Acknowledge the task send back by Functional Team-Treasury",
     "description": "",
-    "id": "add-another-functional-team-using-manage-teams-related-action--need-to-give-proper-index",
+    "id": "acknowledge-the-task-send-back-by-functional-team-treasury",
     "keyword": "Feature",
-    "uri": "src/test/java/testcases/temp_ManageTeamRelatedAction-NeedtoAdd_AdditionalTeams.feature",
+    "uri": "src/test/java/testcases/temp_zAcknowledge\u0026ClosetheSendBackTaskAssignedToFunctionalTeam.feature",
     "tags": [
       {
-        "name": "@ManageTeams-AddNewTeams",
+        "name": "@AcknowledgeAndCloseonSendBackFunctionalTeamTask",
         "type": "Tag",
         "location": {
           "line": 1,

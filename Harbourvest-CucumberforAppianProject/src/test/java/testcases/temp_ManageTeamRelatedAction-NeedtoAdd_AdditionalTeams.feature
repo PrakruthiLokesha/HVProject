@@ -13,7 +13,7 @@ Feature: Add Another Functional Team using Manage Teams Related Action- Need to 
    Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service"
     Given I wait for "10" seconds
     Given I click on site page "CLIENT SERVICE REQUESTS"
-    Given I populate field "Search" with "1909-8476"
+    Given I populate field "Search" with "1909-8479"
     Given I wait for "2" seconds
      Given I clear field "Status"
     Given I wait for "5" seconds
@@ -29,7 +29,7 @@ Feature: Add Another Functional Team using Manage Teams Related Action- Need to 
     #Below will select Tax Team
     Given I populate grid "[1]" column "[1]" row "[2]" with partially matching picker field suggestions for "Tax"
     Given I wait for "3" seconds
-    Given I populate grid "[1]" column "[4]" row "[2]" with " Enter this comments to check the comments field - 09/10/2019 16:42:23"
+    Given I populate grid "[1]" column "[4]" row "[2]" with " Enter this comments to check the comments field - 09/10/2019 19:25:34"
     Given I wait for "3" seconds
     Given I verify grid "[1]" column "[5]" row "[2]" contains "Added"
     Given I wait for "3" seconds

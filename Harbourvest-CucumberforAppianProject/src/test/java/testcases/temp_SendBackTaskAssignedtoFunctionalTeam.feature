@@ -8,12 +8,15 @@ Feature: Send back the task to CSA Team User which assigned to Functional Team-T
     And I set appian locale to "en_US"
     Then I login with username "treasuryUser1"
   
-   Scenario: Accept he task assigned to Functional Team and then Send Back the task
-  
+   Scenario: Accept the task assigned to Functional Team and then Send Back the task
    Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service"
    Given I wait for "2" seconds
    Given I click on link "Add"
-   Given I populate field  "Filter Set Name" with "Test the Filter- 09/10/2019 16:42:23"
+   Given I wait for "2" seconds
+   Given I populate field "Filter Set Name" with "Test the Filter- 09/10/2019 19:25:34"
+   Given I wait for "3" seconds
+   Given I populate field "Search" with "1909-8479"
+   Given I wait for "3" seconds
    Given I populate field "Type" with "Capital Calls"
    Given I wait for "5" seconds
    Given I click on link "Save"
@@ -27,7 +30,7 @@ Feature: Send back the task to CSA Team User which assigned to Functional Team-T
    Given I wait for "4" seconds
    Given I click on button "ACCEPT"
    Given I wait for "4" seconds
-   Given I populate field type "PARAGRAPH" named "[1]" with "Enter this Comments while sending back - 09/10/2019 16:42:23"
+   Given I populate field type "PARAGRAPH" named "[1]" with "Enter this Comments while sending back - 09/10/2019 19:25:34"
    Given I wait for "5" seconds
    Given I populate field type "FILE_UPLOAD" named "[1]" with "C:\Users\swetar.VURAM.000\Documents\C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC.pdf"
    When I wait for "7" seconds
@@ -37,11 +40,9 @@ Feature: Send back the task to CSA Team User which assigned to Functional Team-T
    
     #Navigate to Records and Check for Fullfilment details dashboard
    Given I click on site page "CLIENT SERVICE REQUESTS"
-   Given I populate field "Search" with "1909-8476"
+   Given I populate field "Search" with "1909-8479"
    Given I wait for "5" seconds
-   #Given I click on grid "[1]" column "[2]" row "[1]"
-   #Given I wait for "10" seconds
-   Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service/page/client-service-requests/record/lUBfsMZM-I0--5FqVTNDp5aJ9ZmNSvOCpmbXr_hU_9A1mMudqUiMYDVB-0VO8f_RzndI8vUblG_ScN7k7ZquYVKZrFM1BVn0DZt2wmA4-EvhxwwYxt_/view/summary"
+   Given I click on grid "[1]" column "[3]" row "[1]"
    Given I wait for "10" seconds
    Given I click on link "Fulfillment Details"
    When I sort grid "[1]" by column "Completed On"

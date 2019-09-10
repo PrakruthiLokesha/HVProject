@@ -25,6 +25,8 @@ Feature: Delete the existing added teams and Add New Teams
     Given I wait for "2" seconds
   
       #Below will delete the already added Team and add new one
+    Given I clear grid "[1]" column "[4]" row "[1]"
+    Given I wait for "2" seconds
     Given I click on grid "[1]" column "[6]" row "[1]"
     Given I wait for "3" seconds
     Given I click on link "Add Functional Team"
