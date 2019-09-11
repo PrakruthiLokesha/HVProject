@@ -39,42 +39,46 @@ Feature: Send back the task to CSA Team User which assigned to Functional Team-T
    Then I wait for "5" seconds
    
     #Navigate to Records and Check for Fullfilment details dashboard
-   Given I click on site page "CLIENT SERVICE REQUESTS"
-   Given I populate field "Search" with "$$$RequestID$$$"
-   Given I wait for "5" seconds
-   Given I click on grid "[1]" column "[3]" row "[1]"
-   Given I wait for "10" seconds
-   Given I click on link "Fulfillment Details"
-   When I sort grid "[1]" by column "Completed On"
-   Then I verify grid "[1]" column "[11]" row "[1]" contains "Sent for Revision"
-   Then I click on grid "[1]" column "[12]" row "[1]"
-   Then I toggle box "[2]" visibility
+   #Given I click on site page "CLIENT SERVICE REQUESTS"
+   #Given I populate field "Search" with "$$$RequestID$$$"
+   #Given I wait for "5" seconds
+   #Given I click on grid "[1]" column "[3]" row "[1]"
+   #Given I wait for "10" seconds
+   #Given I click on link "Fulfillment Details"
+   #Given I wait for "3" seconds
+   #When I sort grid "[1]" by column "Completed On"
+   #Then I wait for "10" seconds
+   #Then I verify grid "[1]" column "[11]" row "[1]" contains "Sent for Revision"
+   #Then I wait for "10" seconds
+   #Then I click on grid "[1]" column "[12]" row "[1]"
+   #Then I toggle box "[2]" visibility
+   #Then I wait for "3" seconds
+   #Then I toggle box "[2]" visibility
+   #Then I wait for "3" seconds
+   #Then I verify grid "[2]" column "[8]" row "[2]" contains "Completed"
+   #Then I wait for "2" seconds
+   #Then I click on grid "[2]" column "[9]" row "[2]"
+   #Then I wait for "3" seconds
+   #Then I verify grid "[2]" column "[9]" row "[2]" contains "$$$SendBack_Comments$$$"
+   #Then I wait for "3" seconds
+   #Then I sort grid "[2]" by column "Task Name"
+   #Then I wait for "3" seconds
+   #Then I sort grid "[2]" by column "Initial Assignment"
+   #Then I wait for "3" seconds
+   #Then I sort grid "[2]" by column "Assigned On"
+   #Then I wait for "3" seconds
+   #Then I sort grid "[2]" by column "Currently Assigned To"
+   #Then I wait for "3" seconds
+   #Then I sort grid "[2]" by column "Owner Assigned On"
+   #Then I wait for "3" seconds
+   #Then I sort grid "[2]" by column "Completed By"
+   #Then I wait for "3" seconds
+   #Then I sort grid "[2]" by column "Completed On"
+   #Then I wait for "3" seconds
+   #Then I sort grid "[2]" by column "Status"
+   #Then I wait for "3" seconds
+   #Then I sort grid "[2]" by column "Comments"
    Then I wait for "3" seconds
-   Then I toggle box "[2]" visibility
-   Then I wait for "3" seconds
-   Then I verify grid "[2]" column "[8]" row "[2]" contains "Completed"
-   Then I wait for "3" seconds
-   Then I sort grid "2" by column "Task Name"
-   Then I wait for "3" seconds
-   Then I sort grid "2" by column "Initial Assignment"
-   Then I wait for "3" seconds
-   Then I sort grid "2" by column "Assigned On"
-   Then I wait for "3" seconds
-   Then I sort grid "2" by column "Currently Assigned To"
-   Then I wait for "3" seconds
-   Then I sort grid "2" by column "Owner Assigned On"
-   Then I wait for "3" seconds
-   Then I sort grid "2" by column "Completed By"
-   Then I wait for "3" seconds
-   Then I sort grid "2" by column "Completed On"
-   Then I wait for "3" seconds
-   Then I sort grid "2" by column "Status"
-   Then I wait for "3" seconds
-   Then I sort grid "2" by column "Comments"
-   Then I wait for "3" seconds
-   Then I verify grid
-   Then I logout
-   Then I tear down
    Then I logout
    Then I tear down
             

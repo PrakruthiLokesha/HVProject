@@ -15,9 +15,9 @@ Feature: Acknowledge the task send back by Functional Team-Treasury
    Given I wait for "2" seconds
    Given I click on link "Add"
    Given I wait for "2" seconds
-   Given I populate field "Filter Set Name" with "Test the Filter- 09/10/2019 19:25:34"
+   Given I populate field "Filter Set Name" with "Test the Filter- 09/11/2019 19:58:43"
    Given I wait for "3" seconds
-   Given I populate field "Search" with "1909-8479"
+   Given I populate field "Search" with "1909-8490"
    Given I wait for "3" seconds
    Given I populate field "Type" with "Capital Calls"
    Given I wait for "5" seconds
@@ -33,7 +33,7 @@ Feature: Acknowledge the task send back by Functional Team-Treasury
    Given I wait for "4" seconds
    
    #Acknowledge and Close the task without resopnding back to client with Acknowledgement comments
-   Given I populate field type "PARAGRAPH" named "[1]" with "Enter this Comments to acknowledge the review comments - 09/10/2019 19:25:34"
+   Given I populate field type "PARAGRAPH" named "[1]" with "Enter this Comments to acknowledge the review comments - 09/11/2019 19:58:43"
    Given I wait for "5" seconds
    Given I populate field type "FILE_UPLOAD" named "[1]" with "C:\Users\swetar.VURAM.000\Documents\C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC.pdf"
    Given I wait for "7" seconds
@@ -43,7 +43,7 @@ Feature: Acknowledge the task send back by Functional Team-Treasury
    
    #Verify the Status of Request in Client Service Records
    Given I click on site page "CLIENT SERVICE REQUESTS"
-   Given I populate field "Search" with "1909-8479"
+   Given I populate field "Search" with "1909-8490"
    Given I wait for "2" seconds
    Given I clear field "Status"
    Given I wait for "5" seconds
@@ -92,6 +92,9 @@ Feature: Acknowledge the task send back by Functional Team-Treasury
     Given I toggle box "[2]" visibility
     Given I wait for "3" seconds
     Given I toggle box "[2]" visibility
+    Given I wait for "3" seconds
+    Given I verify grid "[2]" column "[8]" row "[1]" contains "Completed"
+    Given I wait for "3" seconds
     Given I sort grid "[2]" by column "Task Name"
     Given I wait for "3" seconds
     Given I sort grid "[2]" by column "Initial Assignment"

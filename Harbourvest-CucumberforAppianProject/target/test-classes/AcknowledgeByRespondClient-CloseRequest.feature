@@ -1,5 +1,5 @@
-@AcknowledgeByRespondingClienton-Select_PendingClientResponse
-Feature: Acknowledge the task send back by Functional Team-Treasury and respond to client by selecting option as Pending Client Respose
+@AcknowledgeByRespondtoClient-Select_CloseRequest
+Feature: Acknowledge the task send back by Functional Team-Treasury and respond to client by selecting option as Close Request
 
   Background: Login to Appian environment
    Given I setup with "CHROME" browser
@@ -62,7 +62,7 @@ Feature: Acknowledge the task send back by Functional Team-Treasury and respond 
    When I populate grid "[1]" column "[1]" row "[1]" with "Rename the Attachment Name"
      
    #Update Status based on two options which is not mandatory . Select Option as Pending Client Respose
-   Given I click on radio option "[2]"
+   Given I click on radio option "[1]"
    Given I wait for "5" seconds
    Then I click on button "SEND"
    Then I click on button "YES"
@@ -70,12 +70,14 @@ Feature: Acknowledge the task send back by Functional Team-Treasury and respond 
    #Verify the Status of Request in Client Service Records
    Given I click on site page "CLIENT SERVICE REQUESTS"
    #Given I populate field "Search" with "$$$RequestID$$$"
-   Given I wait for "2" seconds
+   #Given I wait for "2" seconds
+   Given I clear field "Status"
+   Given I wait for "5" seconds
    Given I populate field "Type" with "$$$RequestType$$$"
    Given I wait for "5" seconds
    Given I verify grid "[1]" column "[6]" row "[1]" contains "$$$RequestType$$$"
    Given I wait for "4" seconds
-   Given I verify grid "[1]" column "[10]" row "[1]" contains "Pending Client Response"
+   Given I verify grid "[1]" column "[10]" row "[1]" contains "Closed"
    When I wait for "4" seconds
    
    #Navigate to Summary dashbaord of Client Service Request

@@ -15,7 +15,7 @@ Feature: Submit the task assigned to Functional Team-Treasury
    
    #Set the filter to accept the task
    Given I click on link "Add"
-   Given I populate field "Filter Set Name" with "Test the Filter- 09/10/2019 19:25:34"
+   Given I populate field "Filter Set Name" with "Test the Filter- 09/11/2019 19:58:43"
    Given I populate field "Type" with "Capital Calls"
    Given I wait for "5" seconds
    Given I click on link "Save"
@@ -37,7 +37,7 @@ Feature: Submit the task assigned to Functional Team-Treasury
    Given I wait for "4" seconds
    
    #Enter the Reassign Comments and reassign to group
-   Given I populate field type "PARAGRAPH" named "[1]" with "Enter this Comments to reassign the task - 09/10/2019 19:25:34"
+   Given I populate field type "PARAGRAPH" named "[1]" with "Enter this Comments to reassign the task - 09/11/2019 19:58:43"
    Given I wait for "5" seconds
    When I click on button "RE-ASSIGN TO GROUP"
    When I click on button "YES"
