@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 20248404400,
+              "duration": 26107169000,
               "status": "passed"
             },
             "line": 22,
@@ -29,7 +29,7 @@
           },
           {
             "result": {
-              "duration": 991400,
+              "duration": 974600,
               "status": "passed"
             },
             "line": 23,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 812100,
+              "duration": 973100,
               "status": "passed"
             },
             "line": 24,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 2060100,
+              "duration": 1634900,
               "status": "passed"
             },
             "line": 25,
@@ -83,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 18904590400,
+              "duration": 16968866800,
               "status": "passed"
             },
             "line": 26,
@@ -98,11 +98,29 @@
               "location": "CucumberBaseFixture.loginWithUsername(String)"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 825800,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I set screenshot path to \"C:\\\\Users\\\\prakruthil\\\\git\\\\HVProject\\\\Harbourvest-Project\\\\Screenshots/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "C:\\\\Users\\\\prakruthil\\\\git\\\\HVProject\\\\Harbourvest-Project\\\\Screenshots/",
+                  "offset": 26
+                }
+              ],
+              "location": "CucumberBaseFixture.setScreenshotPathTo(String)"
+            },
+            "keyword": "Given "
           }
         ]
       },
       {
-        "line": 29,
+        "line": 30,
         "name": "Fill out Automated Testing Data to update the status of the request with close status",
         "description": "",
         "id": "update-status-related-action-submission-with-status-cancel;fill-out-automated-testing-data-to-update-the-status-of-the-request-with-close-status",
@@ -111,10 +129,10 @@
         "steps": [
           {
             "result": {
-              "duration": 5002614000,
+              "duration": 5002606100,
               "status": "passed"
             },
-            "line": 32,
+            "line": 33,
             "name": "I wait for \"5\" seconds",
             "match": {
               "arguments": [
@@ -129,10 +147,10 @@
           },
           {
             "result": {
-              "duration": 3068330300,
+              "duration": 2970254300,
               "status": "passed"
             },
-            "line": 33,
+            "line": 34,
             "name": "I open \"https://harbourvesttest.appiancloud.com/suite/sites/client-service\"",
             "match": {
               "arguments": [
@@ -147,10 +165,10 @@
           },
           {
             "result": {
-              "duration": 5000501100,
+              "duration": 5001244300,
               "status": "passed"
             },
-            "line": 34,
+            "line": 35,
             "name": "I wait for \"5\" seconds",
             "match": {
               "arguments": [
@@ -165,10 +183,10 @@
           },
           {
             "result": {
-              "duration": 8285793700,
+              "duration": 7492527100,
               "status": "passed"
             },
-            "line": 37,
+            "line": 38,
             "name": "I click on site page \"CLIENT SERVICE REQUEST\"",
             "match": {
               "arguments": [
@@ -183,10 +201,10 @@
           },
           {
             "result": {
-              "duration": 5000573000,
+              "duration": 5000467500,
               "status": "passed"
             },
-            "line": 38,
+            "line": 39,
             "name": "I wait for \"5\" seconds",
             "match": {
               "arguments": [
@@ -201,10 +219,10 @@
           },
           {
             "result": {
-              "duration": 7113492800,
+              "duration": 6851677600,
               "status": "passed"
             },
-            "line": 41,
+            "line": 42,
             "name": "I click on grid \"[1]\" column \"[3]\" row \"[2]\"",
             "match": {
               "arguments": [
@@ -227,10 +245,10 @@
           },
           {
             "result": {
-              "duration": 5000705100,
+              "duration": 5001061800,
               "status": "passed"
             },
-            "line": 43,
+            "line": 44,
             "name": "I wait for \"5\" seconds",
             "match": {
               "arguments": [
@@ -245,10 +263,10 @@
           },
           {
             "result": {
-              "duration": 5210360500,
+              "duration": 6651870500,
               "status": "passed"
             },
-            "line": 46,
+            "line": 47,
             "name": "I click on record related action \"Update Status\"",
             "match": {
               "arguments": [
@@ -263,10 +281,10 @@
           },
           {
             "result": {
-              "duration": 5000411300,
+              "duration": 4999951000,
               "status": "passed"
             },
-            "line": 47,
+            "line": 48,
             "name": "I wait for \"5\" seconds",
             "match": {
               "arguments": [
@@ -281,10 +299,10 @@
           },
           {
             "result": {
-              "duration": 2881459300,
+              "duration": 2852155400,
               "status": "passed"
             },
-            "line": 48,
+            "line": 49,
             "name": "I click on radio option \"Close\"",
             "match": {
               "arguments": [
@@ -299,10 +317,10 @@
           },
           {
             "result": {
-              "duration": 5001242400,
+              "duration": 5000416300,
               "status": "passed"
             },
-            "line": 49,
+            "line": 50,
             "name": "I wait for \"5\" seconds",
             "match": {
               "arguments": [
@@ -317,10 +335,10 @@
           },
           {
             "result": {
-              "duration": 5427323300,
+              "duration": 2819747000,
               "status": "passed"
             },
-            "line": 50,
+            "line": 51,
             "name": "I populate field \"Comments\" with \"Updating Status\"",
             "match": {
               "arguments": [
@@ -339,10 +357,10 @@
           },
           {
             "result": {
-              "duration": 2847683000,
+              "duration": 2852910500,
               "status": "passed"
             },
-            "line": 53,
+            "line": 54,
             "name": "I click on checkbox option \"[1]\"",
             "match": {
               "arguments": [
@@ -357,10 +375,10 @@
           },
           {
             "result": {
-              "duration": 5000948100,
+              "duration": 5000766000,
               "status": "passed"
             },
-            "line": 54,
+            "line": 55,
             "name": "I wait for \"5\" seconds",
             "match": {
               "arguments": [
@@ -375,10 +393,10 @@
           },
           {
             "result": {
-              "duration": 4670930400,
+              "duration": 3895588900,
               "status": "passed"
             },
-            "line": 55,
+            "line": 56,
             "name": "I populate field \"Issue Description\" with \"Issue with Client Data\"",
             "match": {
               "arguments": [
@@ -397,10 +415,10 @@
           },
           {
             "result": {
-              "duration": 5012954900,
+              "duration": 5000543100,
               "status": "passed"
             },
-            "line": 56,
+            "line": 57,
             "name": "I wait for \"5\" seconds",
             "match": {
               "arguments": [
@@ -415,10 +433,10 @@
           },
           {
             "result": {
-              "duration": 58000300,
+              "duration": 36528700,
               "status": "passed"
             },
-            "line": 59,
+            "line": 60,
             "name": "I verify button \"CANCEL\" is present",
             "match": {
               "arguments": [
@@ -433,10 +451,10 @@
           },
           {
             "result": {
-              "duration": 1037736100,
+              "duration": 1172629700,
               "status": "passed"
             },
-            "line": 60,
+            "line": 61,
             "name": "I click on button \"CLOSE\"",
             "match": {
               "arguments": [
@@ -451,10 +469,10 @@
           },
           {
             "result": {
-              "duration": 4999915000,
+              "duration": 4999932000,
               "status": "passed"
             },
-            "line": 61,
+            "line": 62,
             "name": "I wait for \"5\" seconds",
             "match": {
               "arguments": [
@@ -469,11 +487,10 @@
           },
           {
             "result": {
-              "error_message": "com.appiancorp.ps.automatedtest.exception.WaitForWorkingTestException: message:\u003c\u003cWorking... remained for longer than timeout period, investigate performance and test timeout parameter.\u003e\u003e\r\n\tat com.appiancorp.ps.automatedtest.exception.ExceptionBuilder.build(ExceptionBuilder.java:63)\r\n\tat com.appiancorp.ps.automatedtest.tempo.interfaces.TempoButton.click(TempoButton.java:89)\r\n\tat com.appiancorp.ps.automatedtest.fixture.TempoFixture.clickOnButton(TempoFixture.java:1894)\r\n\tat com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.clickOnButton(CucumberTempoFixture.java:567)\r\n\tat ✽.I click on button \"YES\"(src/test/java/testcases/temp_UpdateStatuswithCloseStatus.feature:62)\r\n",
-              "duration": 10863260400,
-              "status": "failed"
+              "duration": 7136921100,
+              "status": "passed"
             },
-            "line": 62,
+            "line": 63,
             "name": "I click on button \"YES\"",
             "match": {
               "arguments": [
@@ -488,9 +505,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10001385800,
+              "status": "passed"
             },
-            "line": 63,
+            "line": 64,
             "name": "I wait for \"10\" seconds",
             "match": {
               "arguments": [
@@ -505,9 +523,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1482807700,
+              "status": "passed"
             },
-            "line": 67,
+            "line": 68,
             "name": "I verify record related action \"Update Status\" is not present",
             "match": {
               "arguments": [
@@ -522,9 +541,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 5000656300,
+              "status": "passed"
             },
-            "line": 68,
+            "line": 69,
             "name": "I wait for \"5\" seconds",
             "match": {
               "arguments": [
@@ -539,9 +559,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 116775200,
+              "status": "passed"
             },
-            "line": 69,
+            "line": 70,
             "name": "I verify record related action \"ADD RECURRENCE\" is present",
             "match": {
               "arguments": [
@@ -556,9 +577,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 5000055700,
+              "status": "passed"
             },
-            "line": 70,
+            "line": 71,
             "name": "I wait for \"5\" seconds",
             "match": {
               "arguments": [
@@ -573,18 +595,28 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 28724300,
+              "status": "passed"
             },
-            "line": 71,
-            "name": "I verify record related action \"REOPEN REQUEST is present",
-            "match": {},
+            "line": 72,
+            "name": "I verify record related action \"REOPEN REQUEST\" is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "REOPEN REQUEST",
+                  "offset": 32
+                }
+              ],
+              "location": "CucumberTempoFixture.verifyRecordRelatedActionIsPresent(String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10000816600,
+              "status": "passed"
             },
-            "line": 72,
+            "line": 73,
             "name": "I wait for \"10\" seconds",
             "match": {
               "arguments": [
@@ -599,9 +631,28 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 885932500,
+              "status": "passed"
             },
-            "line": 75,
+            "line": 74,
+            "name": "I take screenshot \"Close Status\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Close Status",
+                  "offset": 19
+                }
+              ],
+              "location": "CucumberBaseFixture.takeScreenshot(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12442214800,
+              "status": "passed"
+            },
+            "line": 77,
             "name": "I logout",
             "match": {
               "location": "CucumberTempoFixture.logout()"
@@ -610,9 +661,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3862307200,
+              "status": "passed"
             },
-            "line": 76,
+            "line": 78,
             "name": "I tear down",
             "match": {
               "location": "CucumberBaseFixture.tearDown()"

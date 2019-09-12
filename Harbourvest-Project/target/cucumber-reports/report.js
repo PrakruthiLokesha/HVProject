@@ -64,6 +64,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "I set screenshot path to \"C:\\\\Users\\\\prakruthil\\\\git\\\\HVProject\\\\Harbourvest-Project\\\\Screenshots/\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.setScreenshotPathTo(String)"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "Fill out Automated Testing Data to update the status of the request with close status",
   "description": "",
@@ -275,8 +285,7 @@ formatter.match({
   "location": "CucumberTempoFixture.clickOnButton(String)"
 });
 formatter.result({
-  "error_message": "com.appiancorp.ps.automatedtest.exception.WaitForWorkingTestException: message:\u003c\u003cWorking... remained for longer than timeout period, investigate performance and test timeout parameter.\u003e\u003e\r\n\tat com.appiancorp.ps.automatedtest.exception.ExceptionBuilder.build(ExceptionBuilder.java:63)\r\n\tat com.appiancorp.ps.automatedtest.tempo.interfaces.TempoButton.click(TempoButton.java:89)\r\n\tat com.appiancorp.ps.automatedtest.fixture.TempoFixture.clickOnButton(TempoFixture.java:1894)\r\n\tat com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.clickOnButton(CucumberTempoFixture.java:567)\r\n\tat ✽.I click on button \"YES\"(src/test/java/testcases/temp_UpdateStatuswithCloseStatus.feature:62)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "I wait for \"10\" seconds",
@@ -286,7 +295,7 @@ formatter.match({
   "location": "CucumberBaseFixture.waitForSeconds(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "I verify record related action \"Update Status\" is not present",
@@ -296,7 +305,7 @@ formatter.match({
   "location": "CucumberTempoFixture.verifyRecordRelatedActionIsNotPresent(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "I wait for \"5\" seconds",
@@ -306,7 +315,7 @@ formatter.match({
   "location": "CucumberBaseFixture.waitForSeconds(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "I verify record related action \"ADD RECURRENCE\" is present",
@@ -316,7 +325,7 @@ formatter.match({
   "location": "CucumberTempoFixture.verifyRecordRelatedActionIsPresent(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "I wait for \"5\" seconds",
@@ -326,15 +335,17 @@ formatter.match({
   "location": "CucumberBaseFixture.waitForSeconds(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "I verify record related action \"REOPEN REQUEST is present",
+  "name": "I verify record related action \"REOPEN REQUEST\" is present",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "CucumberTempoFixture.verifyRecordRelatedActionIsPresent(String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "I wait for \"10\" seconds",
@@ -344,7 +355,17 @@ formatter.match({
   "location": "CucumberBaseFixture.waitForSeconds(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.step({
+  "name": "I take screenshot \"Close Status\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.takeScreenshot(String)"
+});
+formatter.result({
+  "status": "passed"
 });
 formatter.step({
   "name": "I logout",
@@ -354,7 +375,7 @@ formatter.match({
   "location": "CucumberTempoFixture.logout()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "I tear down",
@@ -364,6 +385,6 @@ formatter.match({
   "location": "CucumberBaseFixture.tearDown()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 });
