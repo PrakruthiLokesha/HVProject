@@ -24,7 +24,8 @@ Feature: Update status related action submission with status cancel
     And I set appian version to "$$$AppVer$$$"
     And I set appian locale to "$$$en_US$$$"
     Given I login with username "$$$CSAUSER$$$"
- 
+    Given I set screenshot path to "$$$Link/UnlinkValidationScreenshot$$$"
+    
    @Test
   Scenario: Fill out Automated Testing Data to update the status of the request with close status
     
@@ -68,8 +69,9 @@ Feature: Update status related action submission with status cancel
     Given I wait for "5" seconds
     Given I verify record related action "$$$ADDRECURRENCE$$$" is present
     Given I wait for "5" seconds
-    Given I verify record related action "$$$REOPENREQUEST$$$ is present
+    Given I verify record related action "$$$REOPENREQUEST$$$" is present
     Given I wait for "10" seconds
+    Given I take screenshot "Close Status"
     
     #Logout and then close the browser
     Given I logout

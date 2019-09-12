@@ -36,7 +36,7 @@ Feature: Security and visibility of related actions using functional team member
     Given I click on site page "CLIENT SERVICE REQUEST"
     Given I wait for "5" seconds
     
-    #Select the record to link the request
+    #Select the record to navigate inside it
     Given I click on grid "[1]" column "[3]" row "[2]"
     Given I wait for "5" seconds
     
