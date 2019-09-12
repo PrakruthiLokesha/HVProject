@@ -23,7 +23,7 @@ Feature: Security and visibility of related actions using functional team member
     When I set appian URL to "$$$HVUrl$$$"
     And I set appian version to "$$$AppVer$$$"
     And I set appian locale to "$$$en_US$$$"
-    Given I login with username "$$$portmanUser1$$$"
+    Given I login with username "$$$treasuryUser1$$$"
  
     Scenario: Security and visibility of related actions
     
@@ -47,19 +47,16 @@ Feature: Security and visibility of related actions using functional team member
     Given I wait for "5" seconds
     Given I verify record related action "$$$Respond$$$" is not present
     Given I wait for "5" seconds
-    Given I verify record related action "RELATED_ACTION_NAME" is present
+    Given I verify record related action "$$$ADDRECURRENCE$$$" is not present
     Given I wait for "5" seconds
-    Given I verify record related action "RELATED_ACTION_NAME" is present
+    Given I verify record related action "$$$REOPENREQUEST$$$" is not present
+    Given I wait for "5" seconds
+    Given I verify record related action "$$$AddNotes$$$" is present
+    Given I wait for "5" seconds
+    Given I verify record related action "$$$AttachDocuments$$$" is present
     Given I wait for "5" seconds
     
     #Logout and then close the browser
     Given I logout
-    Given I tear down
-    
-    
-    
-    
-    
-    
-    
+    Given I tear down 
     

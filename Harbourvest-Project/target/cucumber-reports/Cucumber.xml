@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="145.86663">
-<testcase classname="Security and visibility of related actions using functional team member" name="Security and visibility of related actions" time="130.1714">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="140.732577">
+<testcase classname="Security and visibility of related actions using functional team member" name="Security and visibility of related actions" time="125.446191">
 <system-out><![CDATA[Given I setup with "CHROME" browser.........................................passed
 When I set appian URL to "https://harbourvesttest.appiancloud.com/suite/portal/login.jsp".passed
 And I set appian version to "18.4"..........................................passed
@@ -30,7 +30,7 @@ Given I logout..............................................................pass
 Given I tear down...........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Security and visibility of related actions using functional team member" name="Security and visibility of related actions" time="15.69523">
+<testcase classname="Security and visibility of related actions using functional team member" name="Security and visibility of related actions" time="15.286386">
 <failure message="com.appiancorp.ps.automatedtest.exception.GenericTestException: message:&lt;&lt;An error has occurred: Login page - portmanUser1&gt;&gt;&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.exception.ExceptionBuilder.build(ExceptionBuilder.java:71)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.tempo.TempoLogin.login(TempoLogin.java:140)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.fixture.BaseFixture.loginIntoWithUsernameAndPassword(BaseFixture.java:397)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.fixture.BaseFixture.loginIntoWithUsername(BaseFixture.java:427)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.fixture.BaseFixture.loginWithUsername(BaseFixture.java:438)&#13;&#10;&#9;at com.appiancorp.ps.cucumber.fixtures.CucumberBaseFixture.loginWithUsername(CucumberBaseFixture.java:65)&#13;&#10;&#9;at ✽.I login with username &quot;portmanUser1&quot;(src/test/java/testcases/temp_UnlinkRequest.feature:26)&#13;&#10;"><![CDATA[Given I setup with "CHROME" browser.........................................passed
 When I set appian URL to "https://harbourvesttest.appiancloud.com/suite/portal/login.jsp".passed
 And I set appian version to "18.4"..........................................passed
