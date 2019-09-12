@@ -1,4 +1,4 @@
-@CompleteFunctionalTeamTask
+@CompleteFunctionalTeamTask_SaveButton
 Feature: Submit the task assigned to Functional Team-Treasury 
 
   Background: Login to Appian environment
@@ -35,32 +35,28 @@ Feature: Submit the task assigned to Functional Team-Treasury
    #Accept the task and Navigate between the tabs available in task and click on links available under Emails
    Given I click on button "ACCEPT"
    Given I wait for "4" seconds
-   Given I click on button "Emails"
-   Given I wait for "4" seconds
-   Given I click on link "All Emails"
-   Given I wait for "4" seconds
-   Given I click on link "Incoming Emails"
-   Given I wait for "4" seconds
-   Given I click on link "Outgoing Emails"
-   Given I wait for "4" seconds
-   Given I click on link "Draft Emails"
-   Given I wait for "4" seconds
-   Given I click on button "REQUEST DETAILS"
-   Given I wait for "4" seconds
-   Given I click on button "AUDIT HISTORY"
-   Given I wait for "4" seconds
-   Given I click on button "DOCUMENTS"
-   Given I wait for "4" seconds 
-   Given I click on button "PROVIDE COMMENTS"
-   Given I wait for "4" seconds
    
    #Check for the details provided by CSA user while initiating request and provide the comments to complete the task
    Given I toggle box "Requestor & Request Information" visibility
    Given I toggle box "Client Information" visibility
    Given I wait for "4" seconds
-   When I populate field type "PARAGRAPH" named "[1]" with "Enter this comments to check the comments field - 09/12/2019 21:44:29"
-   When I wait for "5" seconds
-   When I populate field type "FILE_UPLOAD" named "[1]" with "C:\Users\swetar.VURAM.000\Documents\C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC2.pdf"
+   Given I populate field type "PARAGRAPH" named "[1]" with "Enter this comments to check the comments field - 09/12/2019 21:44:29"
+   Given I wait for "5" seconds
+   Given I populate field type "FILE_UPLOAD" named "[1]" with "C:\Users\swetar.VURAM.000\Documents\C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC2.pdf"
+   When I wait for "7" seconds
+   
+   #Check for the Save button Functionality
+   Then I click on button "SAVE"
+   Then I wait for "5" seconds
+   Then I populate field "Select Filter Set(s)" with "Test the Filter- 09/12/2019 21:44:29"
+   Then I wait for "5" seconds
+   Given I sort grid "[1]" by column "Assigned On" 
+   Given I wait for "4" seconds
+   Given I sort grid "[1]" by column "Assigned On" 
+   Given I wait for "4" seconds
+   Given I click on grid "[1]" column "[3]" row "[1]"
+   Given I wait for "4" seconds
+   When I verify text "Enter this comments to check the comments field - 09/12/2019 21:44:29" is present
    Then I wait for "5" seconds
    Then I click on button "COMPLETE"
    Then I click on button "YES"
@@ -69,6 +65,10 @@ Feature: Submit the task assigned to Functional Team-Treasury
    #Navigate to Records and Check for Fullfilment details dashboard
    Given I click on site page "CLIENT SERVICE REQUESTS"
    Given I wait for "5" seconds
+   Given I clear field "Status"
+   Given I wait for "5" seconds
+   Given I populate field "Status" with "Pending Request Owner Response"
+   Given I wait for "5" seconds 
    Given I populate field "Type" with "Capital Calls"
    Given I wait for "5" seconds
    Given I sort grid "[1]" by column "[3]"

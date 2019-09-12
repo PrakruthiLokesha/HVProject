@@ -13,7 +13,12 @@ Feature: Add Notes to Client Service Request using Related Action-Add Notes
    Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service"
     Given I wait for "10" seconds
     Given I click on site page "CLIENT SERVICE REQUESTS"
-    Given I populate field "Search" with "1909"
+    Given I populate field "Search" with "1909-8503"
+    Given I wait for "2" seconds
+    Given I populate field "Type" with "Capital Calls"
+    Given I sort grid "[1]" by column "[3]" 
+    Given I wait for "4" seconds
+    Given I sort grid "[1]" by column "[3]" 
     Given I wait for "2" seconds
     Given I click on grid "[1]" column "[3]" row "[1]"
     Given I wait for "10" seconds
@@ -27,7 +32,7 @@ Feature: Add Notes to Client Service Request using Related Action-Add Notes
     When I populate picker field "Tag People" with partially matching suggestions for
       | csa  |
       | test |
-    When I populate field "Notes" with "Enter this notes when initiated add notes related action - 09/12/2019 12:43:48"
+    When I populate field "Notes" with "Enter this notes when initiated add notes related action - 09/12/2019 21:44:29"
     When I wait for "5" seconds
     Then I verify button "CANCEL" is present
     Then I click on button "SUBMIT"
@@ -37,7 +42,7 @@ Feature: Add Notes to Client Service Request using Related Action-Add Notes
     Then I wait for "5" seconds
     
    #Set the filters to search notes and sort the grid
-   Given I populate field "Search Notes[1]" with "Enter this notes when initiated add notes related action - 09/12/2019 12:43:48"
+   Given I populate field "Search Notes[1]" with "Enter this notes when initiated add notes related action - 09/12/2019 21:44:29"
    Given I wait for "5" seconds
    Given I sort grid "[1]" by column "Notes/Discussions"
    Given I wait for "2" seconds
@@ -53,7 +58,7 @@ Feature: Add Notes to Client Service Request using Related Action-Add Notes
     #Reply to the notes added
   Given I click on grid "[1]" column "[8]" row "[1]"
   Given I wait for "5" seconds
-  When I populate field "Notes" with "Enter this notes when user reply on added notes - 09/12/2019 12:43:48"
+  When I populate field "Notes" with "Enter this notes when user reply on added notes - 09/12/2019 21:44:29"
   When I wait for "2" seconds
   When I verify button "CANCEL" is present
   Then I click on button "SUBMIT"
@@ -66,7 +71,7 @@ Feature: Add Notes to Client Service Request using Related Action-Add Notes
    Given I wait for "2" seconds
    Given I toggle box "Discussion History" visibility
    Given I wait for "2" seconds
-   Given I populate field "Search Notes[2]" with "Enter this notes when user reply on added notes - 09/12/2019 12:43:48"
+   Given I populate field "Search Notes[2]" with "Enter this notes when user reply on added notes - 09/12/2019 21:44:29"
    Given I wait for "5" seconds
    Given I click on button "CLEAR FILTERS[2]" 
    
@@ -76,7 +81,7 @@ Feature: Add Notes to Client Service Request using Related Action-Add Notes
    Given I wait for "5" seconds
    Given I click on link "+ Reply"
    Given I wait for "5" seconds
-   When I populate field "Notes" with "Enter this notes when user reply on added notes - 09/12/2019 12:43:48"
+   When I populate field "Notes" with "Enter this notes when user reply on added notes - 09/12/2019 21:44:29"
    When I wait for "2" seconds
    When I verify button "CANCEL" is present
    Then I click on button "SUBMIT"

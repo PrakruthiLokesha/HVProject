@@ -15,8 +15,10 @@ Feature: Acknowledge the task send back by Functional Team-Treasury
    Given I wait for "2" seconds
    Given I click on link "Add"
    Given I populate field "Filter Set Name" with "$$$FilterName$$$"
-   Given I populate field "Search" with "8251"
-   Given I populate field "Type" with "Client Reporting"
+   #Given I populate field "Search" with "8251"
+   Given I populate field "Type" with "$$$RequestType$$$"
+   Given I wait for "5" seconds
+   Given I click on link "Today[2]"
    Given I wait for "5" seconds
    Given I click on link "Save"
    
@@ -33,7 +35,7 @@ Feature: Acknowledge the task send back by Functional Team-Treasury
    Given I click on link "Manage Teams"
    Given I wait for "5" seconds
    Given I click on link "Add Functional Team"
-   Given I populate grid "[1]" column "[1]" row "[2]" with partially matching picker field suggestions for "Tre"
+   Given I populate grid "[1]" column "[1]" row "[2]" with partially matching picker field suggestions for "Tax"
    Given I wait for "3" seconds
    Given I populate grid "[1]" column "[4]" row "[2]" with "$$$Comments$$$"
    Given I wait for "3" seconds

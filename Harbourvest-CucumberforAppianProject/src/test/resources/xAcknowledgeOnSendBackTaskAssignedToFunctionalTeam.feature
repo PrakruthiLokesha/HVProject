@@ -42,9 +42,17 @@ Feature: Acknowledge the task send back by Functional Team-Treasury
    
    #Verify the Status of Request in Client Service Records
    Given I click on site page "CLIENT SERVICE REQUESTS"
-   Given I populate field "Search" with "$$$RequestID$$$"
-   Given I wait for "2" seconds
+   #Given I populate field "Search" with "$$$RequestID$$$"
+   #Given I wait for "2" seconds
+   Given I clear field "Status"
+   Given I wait for "5" seconds
+   Given I populate field "Status" with "Pending Request Owner Response"
+   Given I wait for "5" seconds
    Given I populate field "Type" with "$$$RequestType$$$"
+   Given I wait for "5" seconds
+   Given I sort grid "[1]" by column "Request Id"
+   Given I wait for "5" seconds
+   Given I sort grid "[1]" by column "Request Id"
    Given I wait for "5" seconds
    Given I verify grid "[1]" column "[6]" row "[1]" contains "$$$RequestType$$$"
    Given I wait for "4" seconds

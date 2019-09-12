@@ -18,6 +18,8 @@ Feature: Submit the task assigned to Functional Team-Treasury
    Given I populate field "Filter Set Name" with "$$$FilterName$$$"
    Given I populate field "Type" with "$$$RequestType$$$"
    Given I wait for "5" seconds
+   Given I click on link "Today[2]"
+   Given I wait for "5" seconds
    Given I click on link "Save"
    Given I wait for "5" seconds
    Given I click on link "Set Default"

@@ -13,9 +13,15 @@ Feature: Delete the existing added teams and Add New Teams
    Given I open "$$$URL_ClientService$$$"
     Given I wait for "10" seconds
     Given I click on site page "CLIENT SERVICE REQUESTS"
-    Given I populate field "Search" with "$$$RequestID$$$"
-    Given I wait for "2" seconds
+    #Given I populate field "Search" with "$$$RequestID$$$"
+    #Given I wait for "2" seconds
      Given I clear field "Status"
+    Given I wait for "5" seconds
+    Given I populate field "Type" with "$$$RequestType$$$"
+    Given I wait for "5" seconds
+    Given I sort grid "[1]" by column "Request Id"
+    Given I wait for "5" seconds
+    Given I sort grid "[1]" by column "Request Id"
     Given I wait for "5" seconds
     Given I click on grid "[1]" column "[3]" row "[1]"
     Given I wait for "10" seconds

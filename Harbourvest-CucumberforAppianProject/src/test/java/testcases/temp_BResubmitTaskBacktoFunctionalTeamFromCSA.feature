@@ -14,10 +14,12 @@ Feature: Re-submit/Send Back the task to Functional Team
    Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service"
    Given I wait for "2" seconds
    Given I click on link "Add"
-   Given I populate field "Filter Set Name" with "Test the Filter- 09/12/2019 12:43:48"
-   Given I wait for "3" seconds
-   Given I populate field "Search" with "1909-8490"
-   Given I wait for "3" seconds
+   Given I populate field "Filter Set Name" with "Test the Filter- 09/12/2019 21:44:30"
+   #Given I wait for "3" seconds
+   #Given I populate field "Search" with "1909-8503"
+    Given I wait for "5" seconds
+   Given I click on link "Today[2]"
+   Given I wait for "5" seconds
    Given I populate field "Type" with "Capital Calls"
    Given I wait for "5" seconds
    Given I click on link "Save"
@@ -32,7 +34,7 @@ Feature: Re-submit/Send Back the task to Functional Team
    Given I wait for "4" seconds
    
    #Acknowledge the task without resopnding back to client
-   Given I populate field type "PARAGRAPH" named "[1]" with "Enter this Comments while sending back - 09/12/2019 12:43:48"
+   Given I populate field type "PARAGRAPH" named "[1]" with "Enter this Comments while sending back - 09/12/2019 21:44:30"
    Given I wait for "5" seconds
    Given I populate field type "FILE_UPLOAD" named "[1]" with "C:\Users\swetar.VURAM.000\Documents\C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC2.pdf"
    When I wait for "3" seconds
@@ -43,9 +45,17 @@ Feature: Re-submit/Send Back the task to Functional Team
   #Navigate to Records and Check for Fullfilment details dashboard
    Given I click on site page "CLIENT SERVICE REQUESTS"
    Given I wait for "5" seconds
-   Given I populate field "Search" with "1909-8490"
+   Given I populate field "Search" with "1909-8503"
    Given I wait for "5" seconds
+   Given I clear field "Status"
+   Given I wait for "5" seconds
+   Given I populate field "Status" with "Pending Functional Team Response"
+   Given I wait for "5" seconds 
    Given I populate field "Type" with "Capital Calls"
+   Given I wait for "5" seconds
+   Given I sort grid "[1]" by column "[3]"
+   Given I wait for "5" seconds
+   Given I sort grid "[1]" by column "[3]"
    Given I wait for "5" seconds
    Given I verify grid "[1]" column "[6]" row "[1]" contains "Capital Calls"
    Given I wait for "4" seconds

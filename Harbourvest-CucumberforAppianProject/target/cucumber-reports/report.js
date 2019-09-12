@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/testcases/temp_RespondRelatedAction.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/testcases/temp_SendBackTaskAssignedtoFunctionalTeam.feature");
 formatter.feature({
-  "name": "Attach Documents to Client Service Request using Related Action-Attach Documents",
+  "name": "Send back the task to CSA Team User which assigned to Functional Team-Treasury",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@RespondtoEmail"
+      "name": "@SendBackFunctionalTeamTask"
     }
   ]
 });
@@ -55,7 +55,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I login with username \"csaUser1\"",
+  "name": "I login with username \"treasuryUser1\"",
   "keyword": "Then "
 });
 formatter.match({
@@ -65,12 +65,12 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Using Add Notes Related Action, Attach Documents to Client Service Request",
+  "name": "Accept the task assigned to Functional Team and then Send Back the task",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@RespondtoEmail"
+      "name": "@SendBackFunctionalTeamTask"
     }
   ]
 });
@@ -85,8 +85,268 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I wait for \"10\" seconds",
+  "name": "I wait for \"2\" seconds",
   "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on link \"Add\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.clickOnLink(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"2\" seconds",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I populate field \"Filter Set Name\" with \"Test the Filter- 09/12/2019 21:44:30\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.populateFieldWith(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"3\" seconds",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I populate field \"Type\" with \"Capital Calls\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.populateFieldWith(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"5\" seconds",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on link \"Today[2]\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.clickOnLink(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"3\" seconds",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on link \"Save\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.clickOnLink(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on button \"My Group Tasks\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.clickOnButton(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"5\" seconds",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I sort grid \"[1]\" by column \"Assigned On\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"4\" seconds",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I sort grid \"[1]\" by column \"Assigned On\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"4\" seconds",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on grid \"[1]\" column \"[3]\" row \"[1]\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.clickOnGridColumnRow(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"4\" seconds",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on button \"ACCEPT\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.clickOnButton(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"4\" seconds",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I populate field type \"PARAGRAPH\" named \"[1]\" with \"Enter this Comments while sending back - 09/12/2019 21:44:30\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.populateFieldWith(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"5\" seconds",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I populate field type \"FILE_UPLOAD\" named \"[1]\" with \"C:\\Users\\swetar.VURAM.000\\Documents\\C_TESTESTEST_,.)(123\u0026%$!_TESTESTEST DOC2.pdf\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.populateFieldWith(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"7\" seconds",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on button \"SEND BACK\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.clickOnButton(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on button \"YES\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.clickOnButton(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"5\" seconds",
+  "keyword": "Then "
 });
 formatter.match({
   "location": "CucumberBaseFixture.waitForSeconds(String)"
@@ -105,7 +365,27 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I populate field \"Search\" with \"1909-8490\"",
+  "name": "I clear field \"Status\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.clearField(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"5\" seconds",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I populate field \"Type\" with \"Capital Calls\"",
   "keyword": "Given "
 });
 formatter.match({
@@ -115,7 +395,47 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I wait for \"2\" seconds",
+  "name": "I wait for \"5\" seconds",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I sort grid \"[1]\" by column \"Request Id\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"4\" seconds",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I sort grid \"[1]\" by column \"Request Id\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"4\" seconds",
   "keyword": "Given "
 });
 formatter.match({
@@ -145,7 +465,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on link \"Related Actions\"",
+  "name": "I click on link \"Fulfillment Details\"",
   "keyword": "Given "
 });
 formatter.match({
@@ -155,7 +475,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I wait for \"2\" seconds",
+  "name": "I wait for \"3\" seconds",
   "keyword": "Given "
 });
 formatter.match({
@@ -165,38 +485,18 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on record related action \"Respond\"",
-  "keyword": "Given "
+  "name": "I sort grid \"[1]\" by column \"Completed On\"",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "CucumberTempoFixture.clickOnRecordRelatedAction(String)"
+  "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I wait for \"5\" seconds",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberBaseFixture.waitForSeconds(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on checkbox option \"High\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberTempoFixture.clickOnCheckboxOption(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I wait for \"5\" seconds",
-  "keyword": "Given "
+  "name": "I wait for \"10\" seconds",
+  "keyword": "Then "
 });
 formatter.match({
   "location": "CucumberBaseFixture.waitForSeconds(String)"
@@ -205,8 +505,38 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I toggle box \"Email[2]\" visibility",
-  "keyword": "Given "
+  "name": "I verify grid \"[1]\" column \"[11]\" row \"[1]\" contains \"Sent for Revision\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.verifyGridColumnRowContains(String,String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"10\" seconds",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on grid \"[1]\" column \"[12]\" row \"[1]\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.clickOnGridColumnRow(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I toggle box \"[2]\" visibility",
+  "keyword": "Then "
 });
 formatter.match({
   "location": "CucumberTempoFixture.toggleBoxVisibility(String)"
@@ -215,8 +545,8 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I wait for \"5\" seconds",
-  "keyword": "Given "
+  "name": "I wait for \"3\" seconds",
+  "keyword": "Then "
 });
 formatter.match({
   "location": "CucumberBaseFixture.waitForSeconds(String)"
@@ -225,364 +555,283 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I populate field type \"TEXT\" named \"[1]\" with \"swetar@vuram.com\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberTempoFixture.populateFieldWith(String,String,String)"
-});
-formatter.result({
-  "error_message": "com.appiancorp.ps.automatedtest.exception.GenericTestException: message:\u003c\u003cAn error has occurred: Populate Field - [1] - swetar@vuram.com\u003e\u003e\r\n\tat com.appiancorp.ps.automatedtest.exception.ExceptionBuilder.build(ExceptionBuilder.java:78)\r\n\tat com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populate(TempoFieldFactory.java:89)\r\n\tat com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populateMultiple(TempoFieldFactory.java:61)\r\n\tat com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populateMultiple(TempoFieldFactory.java:39)\r\n\tat com.appiancorp.ps.automatedtest.fixture.TempoFixture.populateFieldWith(TempoFixture.java:1155)\r\n\tat com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.populateFieldWith(CucumberTempoFixture.java:347)\r\n\tat ✽.I populate field type \"TEXT\" named \"[1]\" with \"swetar@vuram.com\"(src/test/java/testcases/temp_RespondRelatedAction.feature:28)\r\n",
-  "status": "failed"
-});
-formatter.step({
-  "name": "I wait for \"5\" seconds",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberBaseFixture.waitForSeconds(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I populate field type \"TEXT\" named \"[2]\" with \"prakruthil@vuram.com\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberTempoFixture.populateFieldWith(String,String,String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I wait for \"5\" seconds",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberBaseFixture.waitForSeconds(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I populate field type \"TEXT\" named \"[3]\" with \"Enter this comments to check the email subject - 09/12/2019 12:43:48\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberTempoFixture.populateFieldWith(String,String,String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I wait for \"5\" seconds",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberBaseFixture.waitForSeconds(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I populate field type \"PARAGRAPH\" named \"[1]\" with \"Enter this comments to check the email body - 09/12/2019 12:43:48\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberTempoFixture.populateFieldWith(String,String,String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I wait for \"5\" seconds",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberBaseFixture.waitForSeconds(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I populate field type \"FILE_UPLOAD\" named \"Add Attachments\" with \"C:\\Users\\swetar.VURAM.000\\Documents\\C_TESTESTEST_,.)(123\u0026%$!_TESTESTEST DOC2.pdf\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CucumberTempoFixture.populateFieldWith(String,String,String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I wait for \"5\" seconds",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CucumberBaseFixture.waitForSeconds(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I populate grid \"[1]\" column \"[1]\" row \"[1]\" with \"Document Uploaded\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CucumberTempoFixture.populateGridColumnRowWith(String,String,String,String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I click on radio option \"[2]\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberTempoFixture.clickOnRadioOption(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I wait for \"5\" seconds",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberBaseFixture.waitForSeconds(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I click on button \"SEND\"",
+  "name": "I toggle box \"[2]\" visibility",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "CucumberTempoFixture.clickOnButton(String)"
+  "location": "CucumberTempoFixture.toggleBoxVisibility(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "I click on button \"YES\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CucumberTempoFixture.clickOnButton(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I wait for \"10\" seconds",
+  "name": "I wait for \"3\" seconds",
   "keyword": "Then "
 });
 formatter.match({
   "location": "CucumberBaseFixture.waitForSeconds(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "I click on link \"Documents\"",
+  "name": "I verify grid \"[2]\" column \"[8]\" row \"[2]\" contains \"Completed\"",
   "keyword": "Then "
-});
-formatter.match({
-  "location": "CucumberTempoFixture.clickOnLink(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I wait for \"10\" seconds",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CucumberBaseFixture.waitForSeconds(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I populate field \"[2]\" with \"Outgoing Email Attachments\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CucumberTempoFixture.populateFieldWith(String,String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I wait for \"5\" seconds",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CucumberBaseFixture.waitForSeconds(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I verify grid \"[1]\" column \"[1]\" row \"[1]\" contains \"Document Uploaded\"",
-  "keyword": "Given "
 });
 formatter.match({
   "location": "CucumberTempoFixture.verifyGridColumnRowContains(String,String,String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "I wait for \"5\" seconds",
-  "keyword": "Given "
+  "name": "I wait for \"2\" seconds",
+  "keyword": "Then "
 });
 formatter.match({
   "location": "CucumberBaseFixture.waitForSeconds(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "I verify grid \"[1]\" column \"[2]\" row \"[1]\" contains \"Outgoing Email Attachments\"",
-  "keyword": "Given "
+  "name": "I click on grid \"[2]\" column \"[9]\" row \"[2]\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.clickOnGridColumnRow(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"3\" seconds",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I verify grid \"[2]\" column \"[9]\" row \"[2]\" contains \"Enter this Comments while sending back - 09/12/2019 21:44:30\"",
+  "keyword": "Then "
 });
 formatter.match({
   "location": "CucumberTempoFixture.verifyGridColumnRowContains(String,String,String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "I wait for \"2\" seconds",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberBaseFixture.waitForSeconds(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I sort grid \"[1]\" by column \"Documents\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I wait for \"2\" seconds",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberBaseFixture.waitForSeconds(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I sort grid \"[1]\" by column \"Category\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I wait for \"5\" seconds",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberBaseFixture.waitForSeconds(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I sort grid \"[1]\" by column \"Uploaded By\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I wait for \"5\" seconds",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberBaseFixture.waitForSeconds(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I sort grid \"[1]\" by column \"Uploaded On\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I wait for \"5\" seconds",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CucumberBaseFixture.waitForSeconds(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I populate field \"[2]\" with \"Incoming Email Attachments\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CucumberTempoFixture.populateFieldWith(String,String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "I wait for \"5\" seconds",
+  "name": "I wait for \"3\" seconds",
   "keyword": "Then "
 });
 formatter.match({
   "location": "CucumberBaseFixture.waitForSeconds(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "I click on button \"CLEAR\"",
+  "name": "I sort grid \"[2]\" by column \"Task Name\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "CucumberTempoFixture.clickOnButton(String)"
+  "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "I wait for \"5\" seconds",
+  "name": "I wait for \"3\" seconds",
   "keyword": "Then "
 });
 formatter.match({
   "location": "CucumberBaseFixture.waitForSeconds(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.step({
+  "name": "I sort grid \"[2]\" by column \"Initial Assignment\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"3\" seconds",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I sort grid \"[2]\" by column \"Assigned On\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"3\" seconds",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I sort grid \"[2]\" by column \"Currently Assigned To\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"3\" seconds",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I sort grid \"[2]\" by column \"Owner Assigned On\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"3\" seconds",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I sort grid \"[2]\" by column \"Completed By\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"3\" seconds",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I sort grid \"[2]\" by column \"Completed On\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"3\" seconds",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I sort grid \"[2]\" by column \"Status\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"3\" seconds",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I sort grid \"[2]\" by column \"Comments\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.sortGridByColumn(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for \"3\" seconds",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.waitForSeconds(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I logout",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberTempoFixture.logout()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I tear down",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CucumberBaseFixture.tearDown()"
+});
+formatter.result({
+  "status": "passed"
 });
 });

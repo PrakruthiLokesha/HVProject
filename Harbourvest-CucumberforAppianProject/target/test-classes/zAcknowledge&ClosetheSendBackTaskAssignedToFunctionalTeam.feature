@@ -52,6 +52,8 @@ Feature: Acknowledge the task send back by Functional Team-Treasury
    Given I wait for "5" seconds
    Given I sort grid "[1]" by column "Completed On" 
    Given I wait for "4" seconds
+   Given I sort grid "[1]" by column "Completed On" 
+   Given I wait for "4" seconds
    Given I verify grid "[1]" column "[5]" row "[1]" contains "$$$RequestType$$$"
    Given I wait for "4" seconds
    Given I verify grid "[1]" column "[9]" row "[1]" contains "Closed"

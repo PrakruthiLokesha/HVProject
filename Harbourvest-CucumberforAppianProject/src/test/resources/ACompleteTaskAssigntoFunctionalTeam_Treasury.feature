@@ -18,6 +18,8 @@ Feature: Submit the task assigned to Functional Team-Treasury
    Given I populate field "Filter Set Name" with "$$$FilterName$$$"
    Given I populate field "Type" with "$$$RequestType$$$"
    Given I wait for "5" seconds
+   Given I click on link "Today[2]"
+   Given I wait for "5" seconds
    Given I click on link "Save"
    
    #Navigate to Tasks and click on Functional Team Task
@@ -56,20 +58,10 @@ Feature: Submit the task assigned to Functional Team-Treasury
    Given I toggle box "Requestor & Request Information" visibility
    Given I toggle box "Client Information" visibility
    Given I wait for "4" seconds
-   Given I populate field type "PARAGRAPH" named "[1]" with "$$$Comments$$$"
-   Given I wait for "5" seconds
-   Given I populate field type "FILE_UPLOAD" named "[1]" with "$$$DOCUploadpath$$$"
-   When I wait for "7" seconds
-   
-   #Check for the Save button Functionality
-   Then I click on button "SAVE"
+   When I populate field type "PARAGRAPH" named "[1]" with "$$$Comments$$$"
+   When I wait for "5" seconds
+   When I populate field type "FILE_UPLOAD" named "[1]" with "$$$DOCUploadpath$$$"
    Then I wait for "5" seconds
-   Given I sort grid "[1]" by column "Assigned On" 
-   Given I wait for "4" seconds
-   Given I sort grid "[1]" by column "Assigned On" 
-   Given I wait for "4" seconds
-   Given I click on grid "[1]" column "[3]" row "[1]"
-   Given I wait for "4" seconds
    Then I click on button "COMPLETE"
    Then I click on button "YES"
    Then I wait for "5" seconds
@@ -77,9 +69,11 @@ Feature: Submit the task assigned to Functional Team-Treasury
    #Navigate to Records and Check for Fullfilment details dashboard
    Given I click on site page "CLIENT SERVICE REQUESTS"
    Given I wait for "5" seconds
-   Given I populate field "Search" with "$$$RequestID$$$"
-   Given I wait for "5" seconds
    Given I populate field "Type" with "$$$RequestType$$$"
+   Given I wait for "5" seconds
+   Given I sort grid "[1]" by column "Request Id"
+   Given I wait for "5" seconds
+   Given I sort grid "[1]" by column "Request Id"
    Given I wait for "5" seconds
    Given I verify grid "[1]" column "[6]" row "[1]" contains "$$$RequestType$$$"
    Given I wait for "4" seconds

@@ -21,6 +21,8 @@ Feature: Acknowledge the task send back by Functional Team-Treasury and respond 
    #Given I wait for "3" seconds
    Given I populate field "Type" with "$$$RequestType$$$"
    Given I wait for "5" seconds
+   Given I click on link "Today[2]"
+   Given I wait for "5" seconds
    Given I click on link "Save"
    
    #Click on the Send back task i.e Review Comments from Functional Team 
@@ -73,8 +75,14 @@ Feature: Acknowledge the task send back by Functional Team-Treasury and respond 
    #Given I wait for "2" seconds
    Given I clear field "Status"
    Given I wait for "5" seconds
+   Given I populate field "Status" with "Closed"
+   Given I wait for "5" seconds
    Given I populate field "Type" with "$$$RequestType$$$"
    Given I wait for "5" seconds
+   Given I sort grid "[1]" by column "Completed On" 
+   Given I wait for "4" seconds
+   Given I sort grid "[1]" by column "Completed On" 
+   Given I wait for "4" seconds
    Given I verify grid "[1]" column "[6]" row "[1]" contains "$$$RequestType$$$"
    Given I wait for "4" seconds
    Given I verify grid "[1]" column "[10]" row "[1]" contains "Closed"
