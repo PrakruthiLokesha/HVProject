@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="533.576911">
-<testcase classname="Link and Unlink Request" name="Link request" time="346.142647">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="145.86663">
+<testcase classname="Security and visibility of related actions using functional team member" name="Security and visibility of related actions" time="130.1714">
 <system-out><![CDATA[Given I setup with "CHROME" browser.........................................passed
 When I set appian URL to "https://harbourvesttest.appiancloud.com/suite/portal/login.jsp".passed
 And I set appian version to "18.4"..........................................passed
 And I set appian locale to "en_US"..........................................passed
-Given I login with username "csaUser1"......................................passed
+Given I login with username "treasuryUser1".................................passed
 Given I wait for "5" seconds................................................passed
 Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service".passed
 Given I wait for "5" seconds................................................passed
@@ -12,94 +12,59 @@ Given I click on site page "CLIENT SERVICE REQUEST".........................pass
 Given I wait for "5" seconds................................................passed
 Given I click on grid "[1]" column "[3]" row "[2]"..........................passed
 Given I wait for "5" seconds................................................passed
-Given I click on record related action "LINK/UNLINK REQUESTS"...............passed
-Given I wait for "10" seconds...............................................passed
-Given I click on grid "[1]" navigation "next"...............................passed
-Given I click on grid "[1]" navigation "last"...............................passed
-Given I click on grid "[1]" navigation "previous"...........................passed
-Given I click on grid "[1]" navigation "first"..............................passed
+Given I verify record related action "LINK/UNLINK REQUESTS" is not present..passed
 Given I wait for "5" seconds................................................passed
-Given I sort grid "[1]" by column "Priority"................................passed
-Given I sort grid "[1]" by column "Priority"................................passed
-Given I sort grid "[1]" by column "Request Id"..............................passed
-Given I sort grid "[1]" by column "Request Id"..............................passed
-Given I sort grid "[1]" by column "Request Type"............................passed
-Given I sort grid "[1]" by column "Request Type"............................passed
-Given I sort grid "[1]" by column "Received Date"...........................passed
-Given I sort grid "[1]" by column "Received Date"...........................passed
-Given I sort grid "[1]" by column "Due Date"................................passed
-Given I sort grid "[1]" by column "Due Date"................................passed
-Given I sort grid "[1]" by column "Status"..................................passed
-Given I sort grid "[1]" by column "Status"..................................passed
-Given I sort grid "[1]" by column "Request Owner"...........................passed
-Given I sort grid "[1]" by column "Request Owner"...........................passed
+Given I verify record related action "Update Status" is not present.........passed
 Given I wait for "5" seconds................................................passed
-Given I click on grid "[1]" column "[10]" row "[1]".........................passed
+Given I verify record related action "Respond" is not present...............passed
 Given I wait for "5" seconds................................................passed
-Given I click on grid "[1]" column "[10]" row "[1]".........................passed
-Given I wait for "10" seconds...............................................passed
-Given I click on grid "[2]" column "[10]" row "[2]".........................passed
-Given I wait for "10" seconds...............................................passed
-Given I click on grid "[2]" column "[10]" row "[1]".........................passed
+Given I verify record related action "ADD RECURRENCE" is not present........passed
 Given I wait for "5" seconds................................................passed
-Given I populate field "Request ID" with "1904-1600"........................passed
-Given I wait for "2" seconds................................................passed
-Given I populate field "Request Type" with "Cash Flow"......................passed
-Given I wait for "2" seconds................................................passed
-Given I populate field "Request Owner" with "CSA user1".....................passed
+Given I verify record related action "REOPEN REQUEST" is not present........passed
 Given I wait for "5" seconds................................................passed
-Given I click on grid "[1]" column "[10]" row "[1]".........................passed
-Given I wait for "10" seconds...............................................passed
-Given I click on button "CLEAR FILTERS".....................................passed
-Given I wait for "10" seconds...............................................passed
-Given I click on grid "[1]" column "[10]" row "[1]".........................passed
+Given I verify record related action "Add Notes" is present.................passed
 Given I wait for "5" seconds................................................passed
-Given I verify button "CANCEL" is present...................................passed
-Given I click on button "COMPLETE"..........................................passed
+Given I verify record related action "Attach Documents" is present..........passed
 Given I wait for "5" seconds................................................passed
-Given I click on button "YES"...............................................passed
-Given I wait for "10" seconds...............................................passed
 Given I logout..............................................................passed
 Given I tear down...........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Link and Unlink Request" name="Relink request" time="187.434264">
-<system-out><![CDATA[Given I setup with "CHROME" browser.........................................passed
+<testcase classname="Security and visibility of related actions using functional team member" name="Security and visibility of related actions" time="15.69523">
+<failure message="com.appiancorp.ps.automatedtest.exception.GenericTestException: message:&lt;&lt;An error has occurred: Login page - portmanUser1&gt;&gt;&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.exception.ExceptionBuilder.build(ExceptionBuilder.java:71)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.tempo.TempoLogin.login(TempoLogin.java:140)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.fixture.BaseFixture.loginIntoWithUsernameAndPassword(BaseFixture.java:397)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.fixture.BaseFixture.loginIntoWithUsername(BaseFixture.java:427)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.fixture.BaseFixture.loginWithUsername(BaseFixture.java:438)&#13;&#10;&#9;at com.appiancorp.ps.cucumber.fixtures.CucumberBaseFixture.loginWithUsername(CucumberBaseFixture.java:65)&#13;&#10;&#9;at ✽.I login with username &quot;portmanUser1&quot;(src/test/java/testcases/temp_UnlinkRequest.feature:26)&#13;&#10;"><![CDATA[Given I setup with "CHROME" browser.........................................passed
 When I set appian URL to "https://harbourvesttest.appiancloud.com/suite/portal/login.jsp".passed
 And I set appian version to "18.4"..........................................passed
 And I set appian locale to "en_US"..........................................passed
-Given I login with username "csaUser1"......................................passed
-Given I set screenshot path to "C:\Users\prakruthil\git\HVProject\Harbourvest-Project\Screenshots/".passed
-Given I set take error screenshots to "true"................................passed
-Given I wait for "5" seconds................................................passed
-Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service".passed
-Given I wait for "5" seconds................................................passed
-Given I click on site page "CLIENT SERVICE REQUEST".........................passed
-Given I wait for "5" seconds................................................passed
-Given I click on grid "[1]" column "[3]" row "[2]"..........................passed
-Given I wait for "5" seconds................................................passed
-Given I click on record related action "LINK/UNLINK REQUESTS"...............passed
-Given I wait for "10" seconds...............................................passed
-Given I click on grid "[1]" column "[4]" row "[1]"..........................passed
-Given I wait for "5" seconds................................................passed
-Given I click on grid "[1]" column "[4]" row "[1]"..........................passed
-Given I wait for "10" seconds...............................................passed
-Given I click on grid "[2]" column "[4]" row "[2]"..........................passed
-Given I wait for "5" seconds................................................passed
-Given I click on grid "[2]" column "[4]" row "[1]"..........................passed
-Given I wait for "10" seconds...............................................passed
-Given I click on button "COMPLETE"..........................................passed
-Given I wait for "10" seconds...............................................passed
-Given I click on grid "[1]" column "[4]" row "[1]"..........................passed
-Given I wait for "5" seconds................................................passed
-Given I click on grid "[1]" column "[4]" row "[1]"..........................passed
-Given I verify button "CANCEL" is present...................................passed
-Given I click on button "COMPLETE"..........................................passed
-Given I wait for "5" seconds................................................passed
-Given I click on button "YES"...............................................passed
-Given I wait for "10" seconds...............................................passed
-Given I logout..............................................................passed
-Given I tear down...........................................................passed
-]]></system-out>
+Given I login with username "portmanUser1"..................................failed
+Given I wait for "5" seconds................................................skipped
+Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service".skipped
+Given I wait for "5" seconds................................................skipped
+Given I click on site page "CLIENT SERVICE REQUEST".........................skipped
+Given I wait for "5" seconds................................................skipped
+Given I click on grid "[1]" column "[3]" row "[2]"..........................skipped
+Given I wait for "5" seconds................................................skipped
+Given I verify record related action "LINK/UNLINK REQUESTS" is not present..skipped
+Given I wait for "5" seconds................................................skipped
+Given I verify record related action "Update Status" is not present.........skipped
+Given I wait for "5" seconds................................................skipped
+Given I verify record related action "Respond" is not present...............skipped
+Given I wait for "5" seconds................................................skipped
+Given I verify record related action "RELATED_ACTION_NAME" is present.......skipped
+Given I wait for "5" seconds................................................skipped
+Given I verify record related action "RELATED_ACTION_NAME" is present.......skipped
+Given I wait for "5" seconds................................................skipped
+Given I logout..............................................................skipped
+Given I tear down...........................................................skipped
+
+StackTrace:
+com.appiancorp.ps.automatedtest.exception.GenericTestException: message:<<An error has occurred: Login page - portmanUser1>>
+	at com.appiancorp.ps.automatedtest.exception.ExceptionBuilder.build(ExceptionBuilder.java:71)
+	at com.appiancorp.ps.automatedtest.tempo.TempoLogin.login(TempoLogin.java:140)
+	at com.appiancorp.ps.automatedtest.fixture.BaseFixture.loginIntoWithUsernameAndPassword(BaseFixture.java:397)
+	at com.appiancorp.ps.automatedtest.fixture.BaseFixture.loginIntoWithUsername(BaseFixture.java:427)
+	at com.appiancorp.ps.automatedtest.fixture.BaseFixture.loginWithUsername(BaseFixture.java:438)
+	at com.appiancorp.ps.cucumber.fixtures.CucumberBaseFixture.loginWithUsername(CucumberBaseFixture.java:65)
+	at ✽.I login with username "portmanUser1"(src/test/java/testcases/temp_UnlinkRequest.feature:26)
+]]></failure>
 </testcase>
 </testsuite>

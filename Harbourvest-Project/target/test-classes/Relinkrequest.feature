@@ -24,7 +24,7 @@ Feature: Link and Unlink Request
     And I set appian version to "$$$AppVer$$$"
     And I set appian locale to "$$$en_US$$$"
     Given I login with username "$$$CSAUSER$$$"
-    Given I set screenshot path to "C:\Users\prakruthil\git\HVProject\Harbourvest-Project\Screenshots/"
+    Given I set screenshot path to "$$$Link/UnlinkValidationScreenshot$$$"
     Given I set take error screenshots to "true"
     
     Scenario: Relink request
