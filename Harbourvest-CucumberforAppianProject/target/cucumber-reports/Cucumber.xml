@@ -1,100 +1,71 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="250.583951">
-<testcase classname="Complete the task send back to Functional Team-Treasury" name="Accept he task assigned to Functional Team and then Submit the task" time="250.583951">
-<failure message="com.appiancorp.ps.automatedtest.exception.GenericTestException: message:&lt;&lt;An error has occurred: Site Page - CLIENT SERVICE REQUESTS&gt;&gt;&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.exception.ExceptionBuilder.build(ExceptionBuilder.java:78)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.site.SitePage.waitFor(SitePage.java:68)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.fixture.SitesFixture.clickOnSitePage(SitesFixture.java:49)&#13;&#10;&#9;at com.appiancorp.ps.cucumber.fixtures.CucumberSitesFixture.clickOnSitePage(CucumberSitesFixture.java:20)&#13;&#10;&#9;at ✽.I click on site page &quot;CLIENT SERVICE REQUESTS&quot;(src/test/java/testcases/temp_CompleteFunctionalTeamTaskSendBackByCSAUser.feature:65)&#13;&#10;"><![CDATA[Given I setup with "CHROME" browser.........................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="134.355629">
+<testcase classname="Attach Documents to Client Service Request using Related Action-Attach Documents" name="Using Add Notes Related Action, Attach Documents to Client Service Request" time="134.355629">
+<failure message="com.appiancorp.ps.automatedtest.exception.GenericTestException: message:&lt;&lt;An error has occurred: Populate Field - [1] - swetar@vuram.com&gt;&gt;&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.exception.ExceptionBuilder.build(ExceptionBuilder.java:78)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populate(TempoFieldFactory.java:89)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populateMultiple(TempoFieldFactory.java:61)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populateMultiple(TempoFieldFactory.java:39)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.fixture.TempoFixture.populateFieldWith(TempoFixture.java:1155)&#13;&#10;&#9;at com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.populateFieldWith(CucumberTempoFixture.java:347)&#13;&#10;&#9;at ✽.I populate field type &quot;TEXT&quot; named &quot;[1]&quot; with &quot;swetar@vuram.com&quot;(src/test/java/testcases/temp_RespondRelatedAction.feature:28)&#13;&#10;"><![CDATA[Given I setup with "CHROME" browser.........................................passed
 When I set appian URL to "https://harbourvesttest.appiancloud.com/suite/portal/login.jsp".passed
 And I set appian version to "19.2"..........................................passed
 And I set appian locale to "en_US"..........................................passed
-Then I login with username "treasuryUser1"..................................passed
+Then I login with username "csaUser1".......................................passed
 Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service".passed
-Given I wait for "5" seconds................................................passed
-Given I populate field "Select Filter Set(s)" with "Test the Filter- 09/11/2019 15:38:46".passed
-Given I wait for "5" seconds................................................passed
-Given I wait for "5" seconds................................................passed
-Given I sort grid "[1]" by column "Assigned On".............................passed
-Given I wait for "4" seconds................................................passed
-Given I sort grid "[1]" by column "Assigned On".............................passed
-Given I wait for "4" seconds................................................passed
+Given I wait for "10" seconds...............................................passed
+Given I click on site page "CLIENT SERVICE REQUESTS"........................passed
+Given I populate field "Search" with "1909-8490"............................passed
+Given I wait for "2" seconds................................................passed
 Given I click on grid "[1]" column "[3]" row "[1]"..........................passed
-Given I wait for "4" seconds................................................passed
-Given I click on button "Emails"............................................passed
-Given I wait for "4" seconds................................................passed
-Given I click on link "All Emails"..........................................passed
-Given I wait for "4" seconds................................................passed
-Given I click on link "Incoming Emails".....................................passed
-Given I wait for "4" seconds................................................passed
-Given I click on link "Outgoing Emails".....................................passed
-Given I wait for "4" seconds................................................passed
-Given I click on link "Draft Emails"........................................passed
-Given I wait for "4" seconds................................................passed
-Given I click on button "REQUEST DETAILS"...................................passed
-Given I wait for "4" seconds................................................passed
-Given I click on button "AUDIT HISTORY".....................................passed
-Given I wait for "4" seconds................................................passed
-Given I click on button "DOCUMENTS".........................................passed
-Given I wait for "4" seconds................................................passed
-Given I click on button "PROVIDE COMMENTS"..................................passed
-Given I wait for "4" seconds................................................passed
-Given I toggle box "Requestor & Request Information" visibility.............passed
-Given I toggle box "Client Information" visibility..........................passed
-Given I wait for "4" seconds................................................passed
-Given I populate field type "PARAGRAPH" named "[1]" with " Enter this comments to check the comments field - 09/11/2019 15:38:46".passed
+Given I wait for "10" seconds...............................................passed
+Given I click on link "Related Actions".....................................passed
+Given I wait for "2" seconds................................................passed
+Given I click on record related action "Respond"............................passed
 Given I wait for "5" seconds................................................passed
-Given I populate field type "FILE_UPLOAD" named "[1]" with "C:\Users\swetar.VURAM.000\Documents\C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC.pdf".passed
-When I wait for "7" seconds.................................................passed
-When I toggle box "Fulfillment History of Treasury Team" visibility.........passed
-Then I wait for "4" seconds.................................................passed
-Then I click on button "COMPLETE"...........................................passed
-Then I wait for "5" seconds.................................................passed
-Then I logout...............................................................passed
-Then I tear down............................................................passed
-Given I click on site page "CLIENT SERVICE REQUESTS"........................failed
+Given I click on checkbox option "High".....................................passed
+Given I wait for "5" seconds................................................passed
+Given I toggle box "Email[2]" visibility....................................passed
+Given I wait for "5" seconds................................................passed
+Given I populate field type "TEXT" named "[1]" with "swetar@vuram.com"......failed
 Given I wait for "5" seconds................................................skipped
-Given I populate field "Search" with "1909-8490"............................skipped
+Given I populate field type "TEXT" named "[2]" with "prakruthil@vuram.com"..skipped
 Given I wait for "5" seconds................................................skipped
-Given I populate field "Type" with "Capital Calls"..........................skipped
+Given I populate field type "TEXT" named "[3]" with "Enter this comments to check the email subject - 09/12/2019 12:43:48".skipped
 Given I wait for "5" seconds................................................skipped
-Given I verify grid "[1]" column "[6]" row "[1]" contains "Capital Calls"...skipped
-Given I wait for "4" seconds................................................skipped
-Given I verify grid "[1]" column "[10]" row "[1]" contains "Pending Request Owner Response".skipped
+Given I populate field type "PARAGRAPH" named "[1]" with "Enter this comments to check the email body - 09/12/2019 12:43:48".skipped
 Given I wait for "5" seconds................................................skipped
-Given I click on grid "[1]" column "[3]" row "[1]"..........................skipped
-Given I wait for "10" seconds...............................................skipped
-Given I click on link "Fulfillment Details".................................skipped
-Given I wait for "10" seconds...............................................skipped
-Given I toggle box "Request Fulfillment Details" visibility.................skipped
+When I populate field type "FILE_UPLOAD" named "Add Attachments" with "C:\Users\swetar.VURAM.000\Documents\C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC2.pdf".skipped
+When I wait for "5" seconds.................................................skipped
+When I populate grid "[1]" column "[1]" row "[1]" with "Document Uploaded"..skipped
+Given I click on radio option "[2]".........................................skipped
+Given I wait for "5" seconds................................................skipped
+Then I click on button "SEND"...............................................skipped
+Then I click on button "YES"................................................skipped
+Then I wait for "10" seconds................................................skipped
+Then I click on link "Documents"............................................skipped
+Then I wait for "10" seconds................................................skipped
+Then I populate field "[2]" with "Outgoing Email Attachments"...............skipped
+Then I wait for "5" seconds.................................................skipped
+Given I verify grid "[1]" column "[1]" row "[1]" contains "Document Uploaded".skipped
+Given I wait for "5" seconds................................................skipped
+Given I verify grid "[1]" column "[2]" row "[1]" contains "Outgoing Email Attachments".skipped
 Given I wait for "2" seconds................................................skipped
-Given I toggle box "Request Fulfillment Details" visibility.................skipped
+Given I sort grid "[1]" by column "Documents"...............................skipped
+Given I wait for "2" seconds................................................skipped
+Given I sort grid "[1]" by column "Category"................................skipped
 Given I wait for "5" seconds................................................skipped
-Given I verify grid "[1]" column "[11]" row "[1]" contains "Pending Acknowledgment".skipped
+Given I sort grid "[1]" by column "Uploaded By".............................skipped
 Given I wait for "5" seconds................................................skipped
-Given I sort grid "[1]" by column "Functional Team".........................skipped
-Given I wait for "3" seconds................................................skipped
-Given I sort grid "[1]" by column "Recommended Person"......................skipped
-Given I wait for "3" seconds................................................skipped
-Given I sort grid "[1]" by column "Comments"................................skipped
-Given I wait for "3" seconds................................................skipped
-Given I sort grid "[1]" by column "Assigned By".............................skipped
-Given I wait for "3" seconds................................................skipped
-Given I sort grid "[1]" by column "Assigned On".............................skipped
-Given I wait for "3" seconds................................................skipped
-Given I sort grid "[1]" by column "Due Date"................................skipped
-Given I wait for "3" seconds................................................skipped
-Given I sort grid "[1]" by column "Request Owner"...........................skipped
-Given I wait for "3" seconds................................................skipped
-Given I sort grid "[1]" by column "Task Owner"..............................skipped
-Given I wait for "3" seconds................................................skipped
-Given I sort grid "[1]" by column "Status"..................................skipped
-Given I wait for "3" seconds................................................skipped
-Then I logout...............................................................skipped
-Then I tear down............................................................skipped
+Given I sort grid "[1]" by column "Uploaded On".............................skipped
+Given I wait for "5" seconds................................................skipped
+Then I populate field "[2]" with "Incoming Email Attachments"...............skipped
+Then I wait for "5" seconds.................................................skipped
+Then I click on button "CLEAR"..............................................skipped
+Then I wait for "5" seconds.................................................skipped
 
 StackTrace:
-com.appiancorp.ps.automatedtest.exception.GenericTestException: message:<<An error has occurred: Site Page - CLIENT SERVICE REQUESTS>>
+com.appiancorp.ps.automatedtest.exception.GenericTestException: message:<<An error has occurred: Populate Field - [1] - swetar@vuram.com>>
 	at com.appiancorp.ps.automatedtest.exception.ExceptionBuilder.build(ExceptionBuilder.java:78)
-	at com.appiancorp.ps.automatedtest.site.SitePage.waitFor(SitePage.java:68)
-	at com.appiancorp.ps.automatedtest.fixture.SitesFixture.clickOnSitePage(SitesFixture.java:49)
-	at com.appiancorp.ps.cucumber.fixtures.CucumberSitesFixture.clickOnSitePage(CucumberSitesFixture.java:20)
-	at ✽.I click on site page "CLIENT SERVICE REQUESTS"(src/test/java/testcases/temp_CompleteFunctionalTeamTaskSendBackByCSAUser.feature:65)
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populate(TempoFieldFactory.java:89)
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populateMultiple(TempoFieldFactory.java:61)
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populateMultiple(TempoFieldFactory.java:39)
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.populateFieldWith(TempoFixture.java:1155)
+	at com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.populateFieldWith(CucumberTempoFixture.java:347)
+	at ✽.I populate field type "TEXT" named "[1]" with "swetar@vuram.com"(src/test/java/testcases/temp_RespondRelatedAction.feature:28)
 ]]></failure>
 </testcase>
 </testsuite>

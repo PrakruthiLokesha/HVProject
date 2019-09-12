@@ -14,7 +14,7 @@ Feature: Re-submit/Send Back the task to Functional Team
    Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service"
    Given I wait for "2" seconds
    Given I click on link "Add"
-   Given I populate field "Filter Set Name" with "Test the Filter- 09/11/2019 19:58:43"
+   Given I populate field "Filter Set Name" with "Test the Filter- 09/12/2019 12:43:48"
    Given I wait for "3" seconds
    Given I populate field "Search" with "1909-8490"
    Given I wait for "3" seconds
@@ -32,9 +32,9 @@ Feature: Re-submit/Send Back the task to Functional Team
    Given I wait for "4" seconds
    
    #Acknowledge the task without resopnding back to client
-   Given I populate field type "PARAGRAPH" named "[1]" with "Enter this Comments while sending back - 09/11/2019 19:58:43"
+   Given I populate field type "PARAGRAPH" named "[1]" with "Enter this Comments while sending back - 09/12/2019 12:43:48"
    Given I wait for "5" seconds
-   Given I populate field type "FILE_UPLOAD" named "[1]" with "C:\Users\swetar.VURAM.000\Documents\C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC.pdf"
+   Given I populate field type "FILE_UPLOAD" named "[1]" with "C:\Users\swetar.VURAM.000\Documents\C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC2.pdf"
    When I wait for "3" seconds
    When I click on button "SEND TO TREASURY TEAM"
    When I click on button "YES"

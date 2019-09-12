@@ -8,7 +8,7 @@ Feature: Add Notes to Client Service Request using Related Action-Add Notes
     And I set appian locale to "$$$AppLoc$$$"
     Then I login with username "$$$treasuryUser$$$"
   
-   Scenario: Using Add Notes Related Action, 
+   Scenario: Using Add Notes Related Action, Add Notes
   
    Given I open "$$$URL_ClientService$$$"
     Given I wait for "10" seconds
