@@ -1,5 +1,5 @@
 @LinkRequest
-Feature: Update status related action submission with status cancel
+Feature: Link and Unlink Request
 
   Configuring your site with the sample application:
   1. Import the applicable version of Automated Testing - XX.X.zip application, provided in the Shared Components page, into your Appian environment
@@ -25,7 +25,7 @@ Feature: Update status related action submission with status cancel
     And I set appian locale to "$$$en_US$$$"
     Given I login with username "$$$CSAUSER$$$"
  
-  Scenario: Fill out Automated Testing Data to update the status of the request with cancel status
+  Scenario: Link request
     
     #Open client service site  
     Given I wait for "5" seconds
@@ -40,49 +40,59 @@ Feature: Update status related action submission with status cancel
     Given I click on grid "[1]" column "[3]" row "[2]"
     Given I wait for "5" seconds
     
-    #Navigate to link request related action, verify the pagination and sorting of Request details grid
+    #Navigate to link request related action, verify the pagination of Request details grid
     Given I click on record related action "$$$LINK/UNLINKREQUESTS$$$"
     Given I wait for "10" seconds
-    Given I click on grid "[1]" column "[1]" row "[1]"
-    Given I click on grid "[1]" column "[1]" row "[1]"
-    Given I click on grid "[1]" column "[2]" row "[1]"
-    Given I click on grid "[1]" column "[2]" row "[1]"
-    Given I click on grid "[1]" column "[3]" row "[1]"
-    Given I click on grid "[1]" column "[3]" row "[1]"
-    Given I click on grid "[1]" column "[4]" row "[1]"
-    Given I click on grid "[1]" column "[4]" row "[1]"
-    Given I click on grid "[1]" column "[5]" row "[1]"
-    Given I click on grid "[1]" column "[5]" row "[1]"
-    Given I click on grid "[1]" column "[6]" row "[1]"
-    Given I click on grid "[1]" column "[6]" row "[1]"
-    Given I click on grid "[1]" column "[7]" row "[1]"
-    Given I click on grid "[1]" column "[7]" row "[1]"
-    Given I wait for "5" seconds
     Given I click on grid "[1]" navigation "next"
     Given I click on grid "[1]" navigation "last"
     Given I click on grid "[1]" navigation "previous"
     Given I click on grid "[1]" navigation "first"
     Given I wait for "5" seconds
     
+    #Click on sorting of the requests details grid
+    Given I sort grid "[1]" by column "Priority"
+    Given I sort grid "[1]" by column "Priority"
+    Given I sort grid "[1]" by column "Request Id"
+    Given I sort grid "[1]" by column "Request Id"
+    Given I sort grid "[1]" by column "Request Type"
+    Given I sort grid "[1]" by column "Request Type"
+    Given I sort grid "[1]" by column "Received Date"
+    Given I sort grid "[1]" by column "Received Date"
+    Given I sort grid "[1]" by column "Due Date"
+    Given I sort grid "[1]" by column "Due Date"
+    Given I sort grid "[1]" by column "Status"
+    Given I sort grid "[1]" by column "Status"
+    Given I sort grid "[1]" by column "Request Owner"
+    Given I sort grid "[1]" by column "Request Owner"
+    Given I wait for "5" seconds
+    
     #Click on link request, check sorting in newly linked requests and remove the row from the grid
-    Given I click on grid "[1]" column "[10]" row "[2]"
+    Given I click on grid "[1]" column "[10]" row "[1]"
     Given I wait for "5" seconds
-    Given I click on grid "[2]" column "[1]" row "[1]"
-    Given I click on grid "[2]" column "[1]" row "[1]"
-    Given I click on grid "[2]" column "[2]" row "[1]"
-    Given I click on grid "[2]" column "[2]" row "[1]"
-    Given I click on grid "[2]" column "[3]" row "[1]"
-    Given I click on grid "[2]" column "[3]" row "[1]"
-    Given I click on grid "[2]" column "[4]" row "[1]"
-    Given I click on grid "[2]" column "[4]" row "[1]"
-    Given I click on grid "[2]" column "[5]" row "[1]"
-    Given I click on grid "[2]" column "[5]" row "[1]"
-    Given I click on grid "[2]" column "[6]" row "[1]"
-    Given I click on grid "[2]" column "[6]" row "[1]"
-    Given I click on grid "[2]" column "[7]" row "[1]"
-    Given I click on grid "[2]" column "[7]" row "[1]"
-    Given I wait for "5" seconds
+    Given I click on grid "[1]" column "[10]" row "[1]"
+    Given I wait for "10" seconds
+    
+    #Click on sorting of newly linked requests grid
+    #Given I sort grid "[2]" by column "Priority"
+    #Given I sort grid "[2]" by column "Priority"
+    #Given I sort grid "[2]" by column "Request Id"
+    #Given I sort grid "[2]" by column "Request Id"
+    #Given I sort grid "[2]" by column "Request Type"
+    #Given I sort grid "[2]" by column "Request Type"
+    #Given I sort grid "[2]" by column "Received Date"
+    #Given I sort grid "[2]" by column "Received Date"
+    #Given I sort grid "[2]" by column "Due Date"
+    #Given I sort grid "[2]" by column "Due Date"
+    #Given I sort grid "[2]" by column "Status"
+    #Given I sort grid "[2]" by column "Status"
+    #Given I sort grid "[2]" by column "Request Owner"
+    #Given I sort grid "[2]" by column "Request Owner"
+    #Given I wait for "5" seconds
+    
+    #Remove the row from the newly linked requests grid
     Given I click on grid "[2]" column "[10]" row "[2]"
+    Given I wait for "10" seconds
+    Given I click on grid "[2]" column "[10]" row "[1]"
     Given I wait for "5" seconds
     
     #Search for required request id, request type and request owner
@@ -90,11 +100,15 @@ Feature: Update status related action submission with status cancel
     Given I wait for "2" seconds
     Given I populate field "Request Type" with "$$$RequestType$$$"
     Given I wait for "2" seconds
-    Given I populate field "Request Owner" with "$$$CSAUSER$$$"
+    Given I populate field "Request Owner" with "$$$RequestOwner$$$"
     Given I wait for "5" seconds
     
     #Click on link request
-    Given I click on grid "[1]" column "[10]" row "[2]"
+    Given I click on grid "[1]" column "[10]" row "[1]"
+    Given I wait for "10" seconds
+    Given I click on button "$$$CLEARFILTERS$$$"
+    Given I wait for "10" seconds
+    Given I click on grid "[1]" column "[10]" row "[1]"
     Given I wait for "5" seconds
     
     #Verfiy that cancel buttion is present and then click on complete button to submit
@@ -107,3 +121,7 @@ Feature: Update status related action submission with status cancel
     #Logout and then close the browser
     Given I logout
     Given I tear down
+    
+    
+    
+    
