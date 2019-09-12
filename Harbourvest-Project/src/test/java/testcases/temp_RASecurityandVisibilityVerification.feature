@@ -58,13 +58,6 @@ Feature: Security and visibility of related actions using functional team member
     
     #Logout and then close the browser
     Given I logout
-    Given I tear down
-    
-    
-    
-    
-    
-    
-    
+    Given I tear down 
     
 

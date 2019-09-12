@@ -62,6 +62,15 @@ Feature: Update status related action submission with status cancel
     Given I click on button "YES"
     Given I wait for "10" seconds
     
+    
+    #Verify Update status related action is not available and others are available
+    Given I verify record related action "Update Status" is not present
+    Given I wait for "5" seconds
+    Given I verify record related action "ADD RECURRENCE" is present
+    Given I wait for "5" seconds
+    Given I verify record related action "REOPEN REQUEST is present
+    Given I wait for "10" seconds
+    
     #Logout and then close the browser
     Given I logout
     Given I tear down
