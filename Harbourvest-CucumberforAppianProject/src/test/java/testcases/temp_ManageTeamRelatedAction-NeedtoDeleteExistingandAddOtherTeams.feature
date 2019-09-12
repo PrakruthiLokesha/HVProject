@@ -13,11 +13,16 @@ Feature: Delete the existing added teams and Add New Teams
    Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service"
     Given I wait for "10" seconds
     Given I click on site page "CLIENT SERVICE REQUESTS"
-    Given I populate field "Search" with "1909-8503"
-    Given I wait for "2" seconds
+    #Given I populate field "Search" with "1909-8503"
+    #Given I wait for "2" seconds
      Given I clear field "Status"
     Given I wait for "5" seconds
-    
+    Given I populate field "Type" with "Capital Calls"
+    Given I wait for "5" seconds
+    Given I sort grid "[1]" by column "Request Id"
+    Given I wait for "5" seconds
+    Given I sort grid "[1]" by column "Request Id"
+    Given I wait for "5" seconds
     Given I click on grid "[1]" column "[3]" row "[1]"
     Given I wait for "10" seconds
     Given I click on link "Related Actions"
@@ -36,7 +41,7 @@ Feature: Delete the existing added teams and Add New Teams
     #Below will select new Treasury Team
     Given I populate grid "[1]" column "[1]" row "[1]" with partially matching picker field suggestions for "Tre"
     Given I wait for "3" seconds
-    Given I populate grid "[1]" column "[4]" row "[1]" with "Enter this comments to check the comments field - 09/12/2019 21:44:30"
+    Given I populate grid "[1]" column "[4]" row "[1]" with "Enter this comments to check the comments field - 09/12/2019 22:01:22"
     Given I wait for "3" seconds
     Given I verify grid "[1]" column "[5]" row "[1]" contains "Added"
     Given I wait for "3" seconds

@@ -32,7 +32,7 @@ Feature: Reply to Notes/Discussions By tagged User
     #Reply to the notes added
   Given I click on grid "[1]" column "[8]" row "[1]"
   Given I wait for "5" seconds
-  When I populate field "Notes" with "Enter this notes when user reply on added notes - 09/12/2019 21:44:30"
+  When I populate field "Notes" with "Enter this notes when user reply on added notes - 09/12/2019 22:01:22"
   When I wait for "2" seconds
   When I verify button "CANCEL" is present
   Then I click on button "SUBMIT"
@@ -45,7 +45,7 @@ Feature: Reply to Notes/Discussions By tagged User
    Given I wait for "2" seconds
    Given I toggle box "Discussion History" visibility
    Given I wait for "2" seconds
-   Given I populate field "Search Notes[2]" with "Enter this notes when user reply on added notes - 09/12/2019 21:44:30"
+   Given I populate field "Search Notes[2]" with "Enter this notes when user reply on added notes - 09/12/2019 22:01:22"
    Given I wait for "5" seconds
    Given I click on button "CLEAR FILTERS[2]" 
    
@@ -55,7 +55,7 @@ Feature: Reply to Notes/Discussions By tagged User
    Given I wait for "5" seconds
    Given I click on link "+ Reply"
    Given I wait for "5" seconds
-   When I populate field "Notes" with "Enter this notes when user reply on added notes - 09/12/2019 21:44:30"
+   When I populate field "Notes" with "Enter this notes when user reply on added notes - 09/12/2019 22:01:22"
    When I wait for "2" seconds
    When I verify button "CANCEL" is present
    Then I click on button "SUBMIT"

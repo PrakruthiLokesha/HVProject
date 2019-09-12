@@ -13,8 +13,14 @@ Feature: Attach Documents to Client Service Request using Related Action-Attach 
     Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service"
     Given I wait for "10" seconds
     Given I click on site page "CLIENT SERVICE REQUESTS"
-    Given I populate field "Search" with "1909-8490"
-    Given I wait for "2" seconds
+    Given I populate field "Search" with "1909-8503"
+    Given I wait for "5" seconds 
+	   Given I populate field "Type" with "Capital Calls"
+	   Given I wait for "5" seconds
+	   Given I sort grid "[1]" by column "Request Id"
+	   Given I wait for "5" seconds
+	   Given I sort grid "[1]" by column "Request Id"
+	   Given I wait for "5" seconds
     Given I click on grid "[1]" column "[3]" row "[1]"
     Given I wait for "10" seconds
     Given I click on link "Related Actions"
