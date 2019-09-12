@@ -35,9 +35,9 @@ Feature: Attach Documents to Client Service Request using Related Action-Attach 
    Given I wait for "5" seconds
    Given I populate field type "TEXT" named "[2]" with "prakruthil@vuram.com"
    Given I wait for "5" seconds
-   Given I populate field type "TEXT" named "[3]" with "Enter this comments to check the email subject - 09/12/2019 22:01:22"
+   Given I populate field type "TEXT" named "[3]" with "Enter this comments to check the email subject - 09/12/2019 22:04:23"
    Given I wait for "5" seconds
-   Given I populate field type "PARAGRAPH" named "[1]" with "Enter this comments to check the email body - 09/12/2019 22:01:22"
+   Given I populate field type "PARAGRAPH" named "[1]" with "Enter this comments to check the email body - 09/12/2019 22:04:23"
    Given I wait for "5" seconds 
    #Given I populate picker field "[1]" with partially matching suggestions for "csa"
    When I populate field type "FILE_UPLOAD" named "Add Attachments" with "C:\Users\swetar.VURAM.000\Documents\C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC2.pdf"
@@ -77,9 +77,9 @@ Feature: Attach Documents to Client Service Request using Related Action-Attach 
    #Navigate to Emails Dashbaord to see the Email Subject
    When I click on link "Emails"
    When I wait for "5" seconds
-   Then I verify text "Enter this comments to check the email subject - 09/12/2019 22:01:22" is present
+   Then I verify text "Enter this comments to check the email subject - 09/12/2019 22:04:23" is present
    Then I wait for "5" seconds
-   Then I click on link "Enter this comments to check the email subject - 09/12/2019 22:01:22"
+   Then I click on link "Enter this comments to check the email subject - 09/12/2019 22:04:23"
 	 Then I wait for "5" seconds
 	 Then I logout
 	 Then I tear down
