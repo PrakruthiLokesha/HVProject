@@ -24,7 +24,7 @@ Feature: Link and Unlink Request
     And I set appian version to "18.4"
     And I set appian locale to "en_US"
     Given I login with username "csaUser1"
-    Given I set screenshot path to "C:\Users\prakruthil\git\HVProject\Harbourvest-Project\Screenshots\LINKandUNLINK/"
+    Given I set screenshot path to "C:\Users\prakruthil\git\HVProject\Harbourvest-Project\Screenshots/"
     Given I set take error screenshots to "true"
     
     Scenario: Relink request
@@ -54,8 +54,8 @@ Feature: Link and Unlink Request
     Given I click on grid "[2]" column "[4]" row "[2]"
     Given I wait for "5" seconds
     Given I click on grid "[2]" column "[4]" row "[1]"
-    Given I wait for "5" seconds
-    Given I take screenshot "Please link/unlink atleast one request to complete - $$$dateTime$$$"
+    Given I wait for "10" seconds
+    Given I click on button "COMPLETE"
     
     #Navigate to link/unlink request related action, then unlink the linked request
     Given I wait for "10" seconds

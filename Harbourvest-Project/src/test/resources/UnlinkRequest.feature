@@ -1,5 +1,5 @@
-@UnLinkRequest
-Feature: Link and Unlink Request
+@SecurityandVisibilityCheckforRelatedActions
+Feature: Security and visibility of related actions using functional team member
 
   Configuring your site with the sample application:
   1. Import the applicable version of Automated Testing - XX.X.zip application, provided in the Shared Components page, into your Appian environment
@@ -23,9 +23,9 @@ Feature: Link and Unlink Request
     When I set appian URL to "$$$HVUrl$$$"
     And I set appian version to "$$$AppVer$$$"
     And I set appian locale to "$$$en_US$$$"
-    Given I login with username "$$$CSAUSER$$$"
+    Given I login with username "$$$portmanUser1$$$"
  
-    Scenario: Unlink request
+    Scenario: Security and visibility of related actions
     
     #Open client service site  
     Given I wait for "5" seconds
@@ -40,19 +40,17 @@ Feature: Link and Unlink Request
     Given I click on grid "[1]" column "[3]" row "[2]"
     Given I wait for "5" seconds
     
-    #Navigate to link/unlink request related action, then unlink the linked request
-    Given I click on record related action "$$$LINK/UNLINKREQUESTS$$$"
-    Given I wait for "10" seconds
-    Given I click on grid "[1]" column "[4]" row "[1]"
+    #Navigate to record nad validate which all the related action are available
+    Given I verify record related action "$$$LINK/UNLINKREQUESTS$$$" is not present
     Given I wait for "5" seconds
-    Given I click on grid "[1]" column "[4]" row "[1]"
-    
-    #Verfiy that cancel buttion is present and then click on complete button to submit
-    Given I verify button "$$$CANCELBUTTON$$$" is present
-    Given I click on button "$$$COMPLETE$$$"
+    Given I verify record related action "$$$UpdateStatus$$$" is not present
     Given I wait for "5" seconds
-    Given I click on button "$$$confButtonYes$$$"
-    Given I wait for "10" seconds
+    Given I verify record related action "$$$Respond$$$" is not present
+    Given I wait for "5" seconds
+    Given I verify record related action "RELATED_ACTION_NAME" is present
+    Given I wait for "5" seconds
+    Given I verify record related action "RELATED_ACTION_NAME" is present
+    Given I wait for "5" seconds
     
     #Logout and then close the browser
     Given I logout

@@ -602,8 +602,7 @@ formatter.match({
   "location": "CucumberTempoFixture.clickOnButton(String)"
 });
 formatter.result({
-  "error_message": "com.appiancorp.ps.automatedtest.exception.WaitForWorkingTestException: message:\u003c\u003cWorking... remained for longer than timeout period, investigate performance and test timeout parameter.\u003e\u003e\r\n\tat com.appiancorp.ps.automatedtest.exception.ExceptionBuilder.build(ExceptionBuilder.java:63)\r\n\tat com.appiancorp.ps.automatedtest.tempo.interfaces.TempoButton.click(TempoButton.java:89)\r\n\tat com.appiancorp.ps.automatedtest.fixture.TempoFixture.clickOnButton(TempoFixture.java:1894)\r\n\tat com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.clickOnButton(CucumberTempoFixture.java:567)\r\n\tat ✽.I click on button \"YES\"(src/test/java/testcases/temp_LinkRequest.feature:118)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "I wait for \"10\" seconds",
@@ -613,7 +612,7 @@ formatter.match({
   "location": "CucumberBaseFixture.waitForSeconds(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "I logout",
@@ -623,7 +622,7 @@ formatter.match({
   "location": "CucumberTempoFixture.logout()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "I tear down",
@@ -633,7 +632,7 @@ formatter.match({
   "location": "CucumberBaseFixture.tearDown()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.uri("src/test/java/testcases/temp_Relinkrequest.feature");
 formatter.feature({
@@ -702,7 +701,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I set screenshot path to \"C:\\Users\\prakruthil\\git\\HVProject\\Harbourvest-Project\\Screenshots\\LINKandUNLINK/\"",
+  "name": "I set screenshot path to \"C:\\Users\\prakruthil\\git\\HVProject\\Harbourvest-Project\\Screenshots/\"",
   "keyword": "Given "
 });
 formatter.match({
@@ -892,7 +891,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I wait for \"5\" seconds",
+  "name": "I wait for \"10\" seconds",
   "keyword": "Given "
 });
 formatter.match({
@@ -902,11 +901,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I take screenshot \"Please link/unlink atleast one request to complete - $$$dateTime$$$\"",
+  "name": "I click on button \"COMPLETE\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "CucumberBaseFixture.takeScreenshot(String)"
+  "location": "CucumberTempoFixture.clickOnButton(String)"
 });
 formatter.result({
   "status": "passed"

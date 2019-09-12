@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="504.186524">
-<testcase classname="Link and Unlink Request" name="Link request" time="319.111112">
-<failure message="com.appiancorp.ps.automatedtest.exception.WaitForWorkingTestException: message:&lt;&lt;Working... remained for longer than timeout period, investigate performance and test timeout parameter.&gt;&gt;&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.exception.ExceptionBuilder.build(ExceptionBuilder.java:63)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoButton.click(TempoButton.java:89)&#13;&#10;&#9;at com.appiancorp.ps.automatedtest.fixture.TempoFixture.clickOnButton(TempoFixture.java:1894)&#13;&#10;&#9;at com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.clickOnButton(CucumberTempoFixture.java:567)&#13;&#10;&#9;at ✽.I click on button &quot;YES&quot;(src/test/java/testcases/temp_LinkRequest.feature:118)&#13;&#10;"><![CDATA[Given I setup with "CHROME" browser.........................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="533.576911">
+<testcase classname="Link and Unlink Request" name="Link request" time="346.142647">
+<system-out><![CDATA[Given I setup with "CHROME" browser.........................................passed
 When I set appian URL to "https://harbourvesttest.appiancloud.com/suite/portal/login.jsp".passed
 And I set appian version to "18.4"..........................................passed
 And I set appian locale to "en_US"..........................................passed
@@ -57,27 +57,19 @@ Given I wait for "5" seconds................................................pass
 Given I verify button "CANCEL" is present...................................passed
 Given I click on button "COMPLETE"..........................................passed
 Given I wait for "5" seconds................................................passed
-Given I click on button "YES"...............................................failed
-Given I wait for "10" seconds...............................................skipped
-Given I logout..............................................................skipped
-Given I tear down...........................................................skipped
-
-StackTrace:
-com.appiancorp.ps.automatedtest.exception.WaitForWorkingTestException: message:<<Working... remained for longer than timeout period, investigate performance and test timeout parameter.>>
-	at com.appiancorp.ps.automatedtest.exception.ExceptionBuilder.build(ExceptionBuilder.java:63)
-	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoButton.click(TempoButton.java:89)
-	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.clickOnButton(TempoFixture.java:1894)
-	at com.appiancorp.ps.cucumber.fixtures.CucumberTempoFixture.clickOnButton(CucumberTempoFixture.java:567)
-	at ✽.I click on button "YES"(src/test/java/testcases/temp_LinkRequest.feature:118)
-]]></failure>
+Given I click on button "YES"...............................................passed
+Given I wait for "10" seconds...............................................passed
+Given I logout..............................................................passed
+Given I tear down...........................................................passed
+]]></system-out>
 </testcase>
-<testcase classname="Link and Unlink Request" name="Relink request" time="185.075412">
+<testcase classname="Link and Unlink Request" name="Relink request" time="187.434264">
 <system-out><![CDATA[Given I setup with "CHROME" browser.........................................passed
 When I set appian URL to "https://harbourvesttest.appiancloud.com/suite/portal/login.jsp".passed
 And I set appian version to "18.4"..........................................passed
 And I set appian locale to "en_US"..........................................passed
 Given I login with username "csaUser1"......................................passed
-Given I set screenshot path to "C:\Users\prakruthil\git\HVProject\Harbourvest-Project\Screenshots\LINKandUNLINK/".passed
+Given I set screenshot path to "C:\Users\prakruthil\git\HVProject\Harbourvest-Project\Screenshots/".passed
 Given I set take error screenshots to "true"................................passed
 Given I wait for "5" seconds................................................passed
 Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service".passed
@@ -95,8 +87,8 @@ Given I wait for "10" seconds...............................................pass
 Given I click on grid "[2]" column "[4]" row "[2]"..........................passed
 Given I wait for "5" seconds................................................passed
 Given I click on grid "[2]" column "[4]" row "[1]"..........................passed
-Given I wait for "5" seconds................................................passed
-Given I take screenshot "Please link/unlink atleast one request to complete - $$$dateTime$$$".passed
+Given I wait for "10" seconds...............................................passed
+Given I click on button "COMPLETE"..........................................passed
 Given I wait for "10" seconds...............................................passed
 Given I click on grid "[1]" column "[4]" row "[1]"..........................passed
 Given I wait for "5" seconds................................................passed
