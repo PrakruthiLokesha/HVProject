@@ -35,8 +35,12 @@ Feature: Acknowledge the task send back by Functional Team-Treasury
    Given I click on link "Add Functional Team"
    Given I populate grid "[1]" column "[1]" row "[2]" with partially matching picker field suggestions for "Tre"
    Given I wait for "3" seconds
-   Given I populate grid "[1]" column "[4]" row "[2]" with "Tax Team Comments"
+   Given I populate grid "[1]" column "[4]" row "[2]" with "$$$Comments$$$"
+   Given I wait for "3" seconds
    Given I verify grid "[1]" column "[5]" row "[2]" contains "Added"
+   Given I wait for "3" seconds
+   When I verify button "CANCEL" is present
+   When I wait for "3" seconds
    When I click on button "Complete"
    When I click on button "YES"
    Then I wait for "5" seconds

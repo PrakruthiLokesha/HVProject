@@ -53,7 +53,7 @@ public class Step1 {
 	}
 	  public static void main(String[] args) throws Exception 
 	  {
-		String filePath="C:\\Users\\swetar.VURAM.000\\eclipse-workspace\\Cucumber Scripts\\CucumberForAppian-Harbourvest\\src\\test\\";
+		String filePath="C:\\Users\\swetar.VURAM.000\\git\\HVProject\\Harbourvest-CucumberforAppianProject\\src\\test\\";
 //		String file_name="resources\\ARWMAutomationRequesterforRPAProcess.feature";
         File folder = new File(filePath+"resources");
 		String[] files = folder.list();
@@ -67,9 +67,9 @@ public class Step1 {
 	  
 	  public static void generateUpdateFeatureFile(String file_name,String new_name) throws Exception
 	  {
-			String filePath="C:\\Users\\swetar.VURAM.000\\eclipse-workspace\\Cucumber Scripts\\CucumberForAppian-Harbourvest\\src\\test\\";
-			String VAR_FILE="C:\\Users\\swetar.VURAM.000\\eclipse-workspace\\Cucumber Scripts\\CucumberForAppian-Harbourvest\\src\\main\\resources\\configs\\variable.properties";
-			String VAR1_FILE="C:\\Users\\swetar.VURAM.000\\eclipse-workspace\\Cucumber Scripts\\CucumberForAppian-Harbourvest\\src\\main\\resources\\configs\\variable1.properties";
+			String filePath="C:\\Users\\swetar.VURAM.000\\git\\HVProject\\Harbourvest-CucumberforAppianProject\\src\\test\\";
+			String VAR_FILE="C:\\Users\\swetar.VURAM.000\\git\\HVProject\\Harbourvest-CucumberforAppianProject\\src\\main\\resources\\configs\\variable.properties";
+			String VAR1_FILE="C:\\Users\\swetar.VURAM.000\\git\\HVProject\\Harbourvest-CucumberforAppianProject\\src\\main\\resources\\configs\\variable1.properties";
 			BufferedReader br = new BufferedReader(new FileReader(filePath+file_name));
 			try {
 			    StringBuilder sb = new StringBuilder();
@@ -84,7 +84,7 @@ public class Step1 {
 			    
 			    feature_file_data= Step1.replaceVaribaleFromFile(VAR_FILE, feature_file_data);		    
 			    feature_file_data= Step1.replaceVaribaleFromFile(VAR1_FILE, feature_file_data);		   
-			    String DIR_PATH="C:\\Users\\swetar.VURAM.000\\eclipse-workspace\\Cucumber Scripts\\CucumberForAppian-Harbourvest\\src\\test\\java\\testcases\\";
+			    String DIR_PATH="C:\\Users\\swetar.VURAM.000\\git\\HVProject\\Harbourvest-CucumberforAppianProject\\src\\test\\java\\testcases\\";
 				File yourFile = new File(DIR_PATH+new_name);
 				yourFile.createNewFile();
 				PrintWriter writer = new PrintWriter(DIR_PATH+new_name, "UTF-8");
