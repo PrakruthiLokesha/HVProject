@@ -29,6 +29,7 @@ public class VariableDeclaration {
 				Date previousDate = cal.getTime();
 				
 		//Old
+				
 	    BufferedReader bufReader = new BufferedReader(new FileReader(file_name));
 	    String line1 = bufReader.readLine();
 	    while (line1 != null) {
