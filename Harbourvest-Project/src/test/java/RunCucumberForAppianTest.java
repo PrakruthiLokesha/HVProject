@@ -5,7 +5,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = {"src\\test\\java\\testcases"}, glue = {"com.appiancorp.ps.cucumber"}, plugin = {"pretty", "json:target/cucumber-reports/Cucumber.json","junit:target/cucumber-reports/Cucumber.xml","html:target/cucumber-reports"}, tags = {"@UpdateStatuswithCloseStatus"})
+@CucumberOptions(features = {"src\\test\\java\\testcases"}, glue = {"com.appiancorp.ps.cucumber"}, plugin = {"pretty", "json:target/cucumber-reports/Cucumber.json","junit:target/cucumber-reports/Cucumber.xml","html:target/cucumber-reports"}, tags = {"@LinkRequest, @ReLinkthenUnlinkRequest"})
 public class RunCucumberForAppianTest{
 	
 	

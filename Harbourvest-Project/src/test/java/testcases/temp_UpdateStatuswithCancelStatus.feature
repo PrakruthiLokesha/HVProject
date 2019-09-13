@@ -24,6 +24,7 @@ Feature: Update status related action submission with status cancel
     And I set appian version to "18.4"
     And I set appian locale to "en_US"
     Given I login with username "csaUser1"
+    Given I set screenshot path to "C:\\Users\\prakruthil\\git\\HVProject\\Harbourvest-Project\\Screenshots/"
  
    @Test
   Scenario: Fill out Automated Testing Data to update the status of the request with cancel status
@@ -61,6 +62,7 @@ Feature: Update status related action submission with status cancel
     Given I wait for "5" seconds
     Given I click on button "YES"
     Given I wait for "10" seconds
+    Given I take screenshot "Cancel Status"
     
     #Logout and then close the browser
     Given I logout

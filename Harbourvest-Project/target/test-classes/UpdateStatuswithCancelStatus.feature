@@ -24,6 +24,7 @@ Feature: Update status related action submission with status cancel
     And I set appian version to "$$$AppVer$$$"
     And I set appian locale to "$$$en_US$$$"
     Given I login with username "$$$CSAUSER$$$"
+    Given I set screenshot path to "$$$Link/UnlinkValidationScreenshot$$$"
  
    @Test
   Scenario: Fill out Automated Testing Data to update the status of the request with cancel status
@@ -61,6 +62,7 @@ Feature: Update status related action submission with status cancel
     Given I wait for "5" seconds
     Given I click on button "$$$confButtonYes$$$"
     Given I wait for "10" seconds
+    Given I take screenshot "Cancel Status"
     
     #Logout and then close the browser
     Given I logout

@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 
@@ -18,6 +19,16 @@ public class VariableDeclaration {
 		DateFormat datetimeformat= new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
 		Date datetime= new Date();
 		
+		//New
+				Calendar calendar = Calendar.getInstance();
+				calendar.add(Calendar.DAY_OF_YEAR, 1);
+				Date tomorrow = calendar.getTime();
+				
+				Calendar cal = Calendar.getInstance();
+				cal.add(Calendar.DATE, -1); // -days
+				Date previousDate = cal.getTime();
+				
+		//Old
 	    BufferedReader bufReader = new BufferedReader(new FileReader(file_name));
 	    String line1 = bufReader.readLine();
 	    while (line1 != null) {
@@ -38,11 +49,11 @@ public class VariableDeclaration {
 					}
 				else
 				if(arrOfStr[1].equals("pastdate")) {
-					  everything=everything.replace(arrOfStr[1],dateformat.format(date));
+					  everything=everything.replace(arrOfStr[1],dateformat.format(previousDate));
 					}
 				else
 				if(arrOfStr[1].equals("futuredate")) {
-					  everything=everything.replace(arrOfStr[1],dateformat.format(date));
+					  everything=everything.replace(arrOfStr[1],dateformat.format(tomorrow));
 					}
 		      }
 		      }

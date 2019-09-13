@@ -42,6 +42,7 @@ Feature: Link and Unlink Request
     Given I click on grid "[1]" column "[3]" row "[2]"
     Given I wait for "5" seconds
     
+    
     #Navigate to link/unlink request related action, then unlink the linked request
     Given I click on record related action "LINK/UNLINK REQUESTS"
     Given I wait for "10" seconds
@@ -56,6 +57,8 @@ Feature: Link and Unlink Request
     Given I click on grid "[2]" column "[4]" row "[1]"
     Given I wait for "10" seconds
     Given I click on button "COMPLETE"
+    Given I set take error screenshots to "true"
+    Given I take screenshot "RELINK Request"
     
     #Navigate to link/unlink request related action, then unlink the linked request
     Given I wait for "10" seconds

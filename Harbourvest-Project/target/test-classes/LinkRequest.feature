@@ -66,7 +66,7 @@ Feature: Link and Unlink Request
     Given I sort grid "[1]" by column "Request Owner"
     Given I wait for "5" seconds
     
-    #Click on link request, check sorting in newly linked requests and remove the row from the grid
+    #Click on link request
     Given I click on grid "[1]" column "[10]" row "[1]"
     Given I wait for "5" seconds
     Given I click on grid "[1]" column "[10]" row "[1]"

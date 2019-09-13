@@ -51,6 +51,10 @@ Feature: Security and visibility of related actions using functional team member
     Given I wait for "5" seconds
     Given I verify record related action "$$$REOPENREQUEST$$$" is not present
     Given I wait for "5" seconds
+    Given I verify record related action "$$$MANAGETEAMS$$$" is not present
+    Given I wait for "5" seconds
+    Given I verify record related action "$$$EDITREQUEST$$$" is not present
+    Given I wait for "5" seconds
     Given I verify record related action "$$$AddNotes$$$" is present
     Given I wait for "5" seconds
     Given I verify record related action "$$$AttachDocuments$$$" is present

@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="181.802162">
-<testcase classname="Update status related action submission with status cancel" name="Fill out Automated Testing Data to update the status of the request with close status" time="181.802162">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="565.199056">
+<testcase classname="Link and Unlink Request" name="Link request" time="366.746439">
 <system-out><![CDATA[Given I setup with "CHROME" browser.........................................passed
 When I set appian URL to "https://harbourvesttest.appiancloud.com/suite/portal/login.jsp".passed
 And I set appian version to "18.4"..........................................passed
 And I set appian locale to "en_US"..........................................passed
 Given I login with username "csaUser1"......................................passed
-Given I set screenshot path to "C:\\Users\\prakruthil\\git\\HVProject\\Harbourvest-Project\\Screenshots/".passed
 Given I wait for "5" seconds................................................passed
 Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service".passed
 Given I wait for "5" seconds................................................passed
@@ -13,27 +12,94 @@ Given I click on site page "CLIENT SERVICE REQUEST".........................pass
 Given I wait for "5" seconds................................................passed
 Given I click on grid "[1]" column "[3]" row "[2]"..........................passed
 Given I wait for "5" seconds................................................passed
-Given I click on record related action "Update Status"......................passed
+Given I click on record related action "LINK/UNLINK REQUESTS"...............passed
+Given I wait for "10" seconds...............................................passed
+Given I click on grid "[1]" navigation "next"...............................passed
+Given I click on grid "[1]" navigation "last"...............................passed
+Given I click on grid "[1]" navigation "previous"...........................passed
+Given I click on grid "[1]" navigation "first"..............................passed
 Given I wait for "5" seconds................................................passed
-Given I click on radio option "Close".......................................passed
+Given I sort grid "[1]" by column "Priority"................................passed
+Given I sort grid "[1]" by column "Priority"................................passed
+Given I sort grid "[1]" by column "Request Id"..............................passed
+Given I sort grid "[1]" by column "Request Id"..............................passed
+Given I sort grid "[1]" by column "Request Type"............................passed
+Given I sort grid "[1]" by column "Request Type"............................passed
+Given I sort grid "[1]" by column "Received Date"...........................passed
+Given I sort grid "[1]" by column "Received Date"...........................passed
+Given I sort grid "[1]" by column "Due Date"................................passed
+Given I sort grid "[1]" by column "Due Date"................................passed
+Given I sort grid "[1]" by column "Status"..................................passed
+Given I sort grid "[1]" by column "Status"..................................passed
+Given I sort grid "[1]" by column "Request Owner"...........................passed
+Given I sort grid "[1]" by column "Request Owner"...........................passed
 Given I wait for "5" seconds................................................passed
-Given I populate field "Comments" with "Updating Status"....................passed
-Given I click on checkbox option "[1]"......................................passed
+Given I click on grid "[1]" column "[10]" row "[1]".........................passed
 Given I wait for "5" seconds................................................passed
-Given I populate field "Issue Description" with "Issue with Client Data"....passed
+Given I click on grid "[1]" column "[10]" row "[1]".........................passed
+Given I wait for "10" seconds...............................................passed
+Given I click on grid "[2]" column "[10]" row "[2]".........................passed
+Given I wait for "10" seconds...............................................passed
+Given I click on grid "[2]" column "[10]" row "[1]".........................passed
+Given I wait for "5" seconds................................................passed
+Given I populate field "Request ID" with "1904-1600"........................passed
+Given I wait for "2" seconds................................................passed
+Given I populate field "Request Type" with "Cash Flow"......................passed
+Given I wait for "2" seconds................................................passed
+Given I populate field "Request Owner" with "CSA user1".....................passed
+Given I wait for "5" seconds................................................passed
+Given I click on grid "[1]" column "[10]" row "[1]".........................passed
+Given I wait for "10" seconds...............................................passed
+Given I click on button "CLEAR FILTERS".....................................passed
+Given I wait for "10" seconds...............................................passed
+Given I click on grid "[1]" column "[10]" row "[1]".........................passed
 Given I wait for "5" seconds................................................passed
 Given I verify button "CANCEL" is present...................................passed
-Given I click on button "CLOSE".............................................passed
+Given I click on button "COMPLETE"..........................................passed
 Given I wait for "5" seconds................................................passed
 Given I click on button "YES"...............................................passed
 Given I wait for "10" seconds...............................................passed
-Given I verify record related action "Update Status" is not present.........passed
+Given I logout..............................................................passed
+Given I tear down...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Link and Unlink Request" name="Relink request" time="198.452617">
+<system-out><![CDATA[Given I setup with "CHROME" browser.........................................passed
+When I set appian URL to "https://harbourvesttest.appiancloud.com/suite/portal/login.jsp".passed
+And I set appian version to "18.4"..........................................passed
+And I set appian locale to "en_US"..........................................passed
+Given I login with username "csaUser1"......................................passed
+Given I set screenshot path to "C:\\Users\\prakruthil\\git\\HVProject\\Harbourvest-Project\\Screenshots/".passed
+Given I set take error screenshots to "true"................................passed
 Given I wait for "5" seconds................................................passed
-Given I verify record related action "ADD RECURRENCE" is present............passed
+Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service".passed
 Given I wait for "5" seconds................................................passed
-Given I verify record related action "REOPEN REQUEST" is present............passed
+Given I click on site page "CLIENT SERVICE REQUEST".........................passed
+Given I wait for "5" seconds................................................passed
+Given I click on grid "[1]" column "[3]" row "[2]"..........................passed
+Given I wait for "5" seconds................................................passed
+Given I click on record related action "LINK/UNLINK REQUESTS"...............passed
 Given I wait for "10" seconds...............................................passed
-Given I take screenshot "Close Status"......................................passed
+Given I click on grid "[1]" column "[4]" row "[1]"..........................passed
+Given I wait for "5" seconds................................................passed
+Given I click on grid "[1]" column "[4]" row "[1]"..........................passed
+Given I wait for "10" seconds...............................................passed
+Given I click on grid "[2]" column "[4]" row "[2]"..........................passed
+Given I wait for "5" seconds................................................passed
+Given I click on grid "[2]" column "[4]" row "[1]"..........................passed
+Given I wait for "10" seconds...............................................passed
+Given I click on button "COMPLETE"..........................................passed
+Given I set take error screenshots to "true"................................passed
+Given I take screenshot "RELINK Request"....................................passed
+Given I wait for "10" seconds...............................................passed
+Given I click on grid "[1]" column "[4]" row "[1]"..........................passed
+Given I wait for "5" seconds................................................passed
+Given I click on grid "[1]" column "[4]" row "[1]"..........................passed
+Given I verify button "CANCEL" is present...................................passed
+Given I click on button "COMPLETE"..........................................passed
+Given I wait for "5" seconds................................................passed
+Given I click on button "YES"...............................................passed
+Given I wait for "10" seconds...............................................passed
 Given I logout..............................................................passed
 Given I tear down...........................................................passed
 ]]></system-out>
