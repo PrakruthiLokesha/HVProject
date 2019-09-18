@@ -30,7 +30,7 @@ Feature: Send back the task to CSA Team User which assigned to Functional Team-T
    Given I wait for "4" seconds
    Given I click on grid "[1]" column "[3]" row "[1]"
    Given I wait for "4" seconds
-   Given I click on button "ACCEPT"
+   Given I click on button "$$$Accept$$$"
    Given I wait for "4" seconds
    Given I populate field type "PARAGRAPH" named "[1]" with "$$$SendBack_Comments$$$"
    Given I wait for "5" seconds

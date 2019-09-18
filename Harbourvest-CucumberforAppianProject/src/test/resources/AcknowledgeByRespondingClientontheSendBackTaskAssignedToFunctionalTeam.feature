@@ -91,9 +91,20 @@ Feature: Acknowledge the task send back by Functional Team-Treasury and respond 
    #Navigate to Summary dashbaord of Client Service Request
    Given I click on grid "[1]" column "[3]" row "[1]"
    Given I wait for "4" seconds
-   When I click on link "Fulfillment Details"
+   
+    #Navigate to Emails Dashboard to verify the email subject
+   Given I click on link "Emails"
+   Given I wait for "5" seconds
+   When I verify text "$$$EmailSubject$$$" is present
+   Then I wait for "5" seconds
+   
+   #Check the eamil subject link works 
+   Then I click on link "$$$EmailSubject$$$"
+	 Then I wait for "5" seconds
+	 Then I click on link "$$$EmailSubject$$$"
    
     #Check the status updated in Request Fulfillment Details grid under Request Fulfillment Dashbaord
+    Given I click on link "Fulfillment Details"
     Given I toggle box "Request Fulfillment Details" visibility
     Given I wait for "2" seconds
     Given I toggle box "Request Fulfillment Details" visibility
