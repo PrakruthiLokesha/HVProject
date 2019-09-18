@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 
@@ -18,6 +19,17 @@ public class VariableDeclaration {
 		DateFormat datetimeformat= new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
 		Date datetime= new Date();
 		
+		//New
+				Calendar calendar = Calendar.getInstance();
+				calendar.add(Calendar.DAY_OF_YEAR, 1);
+				Date tomorrow = calendar.getTime();
+				
+				Calendar cal = Calendar.getInstance();
+				cal.add(Calendar.DATE, -1); // -days
+				Date previousDate = cal.getTime();
+				
+		//Old
+				
 	    BufferedReader bufReader = new BufferedReader(new FileReader(file_name));
 	    String line1 = bufReader.readLine();
 	    while (line1 != null) {
@@ -38,11 +50,11 @@ public class VariableDeclaration {
 					}
 				else
 				if(arrOfStr[1].equals("pastdate")) {
-					  everything=everything.replace(arrOfStr[1],dateformat.format(date));
+					  everything=everything.replace(arrOfStr[1],dateformat.format(previousDate));
 					}
 				else
 				if(arrOfStr[1].equals("futuredate")) {
-					  everything=everything.replace(arrOfStr[1],dateformat.format(date));
+					  everything=everything.replace(arrOfStr[1],dateformat.format(tomorrow));
 					}
 		      }
 		      }
@@ -54,7 +66,7 @@ public class VariableDeclaration {
 	}
 	  public static void main(String[] args) throws Exception 
 	  {
-		String filePath="C:\\Users\\prakruthil\\eclipse-workspace\\Selenium-cucumber\\Harbourvest-Project\\src\\test\\";
+		String filePath="C:\\Users\\prakruthil\\git\\HVProject\\Harbourvest-Project\\src\\test\\";
 		
 		//String file_name="resources\\ARWMAutomationRequesterforRPAProcess.feature";
         File folder = new File(filePath+"resources");
@@ -69,9 +81,9 @@ public class VariableDeclaration {
 	  
 	  public static void generateUpdateFeatureFile(String file_name,String new_name) throws Exception
 	  {
-			String filePath="C:\\Users\\prakruthil\\eclipse-workspace\\Selenium-cucumber\\Harbourvest-Project\\src\\test\\";
-			String VAR_FILE="C:\\Users\\prakruthil\\eclipse-workspace\\Selenium-cucumber\\Harbourvest-Project\\src\\main\\resources\\configs\\CommonAppianVariables.properties";
-			String VAR1_FILE="C:\\Users\\prakruthil\\eclipse-workspace\\Selenium-cucumber\\Harbourvest-Project\\src\\main\\resources\\configs\\FieldVariables.properties";
+			String filePath="C:\\Users\\prakruthil\\git\\HVProject\\Harbourvest-Project\\src\\test\\";
+			String VAR_FILE="C:\\Users\\prakruthil\\git\\HVProject\\Harbourvest-Project\\src\\main\\resources\\configs\\CommonAppianVariables.properties";
+			String VAR1_FILE="C:\\Users\\prakruthil\\git\\HVProject\\Harbourvest-Project\\src\\main\\resources\\configs\\FieldVariables.properties";
 			BufferedReader br = new BufferedReader(new FileReader(filePath+file_name));
 			try {
 			    StringBuilder sb = new StringBuilder();
@@ -86,7 +98,7 @@ public class VariableDeclaration {
 			    
 			    feature_file_data= VariableDeclaration.replaceVaribaleFromFile(VAR_FILE, feature_file_data);		    
 			    feature_file_data= VariableDeclaration.replaceVaribaleFromFile(VAR1_FILE, feature_file_data);		   
-			    String DIR_PATH="C:\\Users\\prakruthil\\eclipse-workspace\\Selenium-cucumber\\Harbourvest-Project\\src\\test\\java\\testcases\\";
+			    String DIR_PATH="C:\\Users\\prakruthil\\git\\HVProject\\Harbourvest-Project\\src\\test\\java\\testcases\\";
 				File yourFile = new File(DIR_PATH+new_name);
 				yourFile.createNewFile();
 				PrintWriter writer = new PrintWriter(DIR_PATH+new_name, "UTF-8");

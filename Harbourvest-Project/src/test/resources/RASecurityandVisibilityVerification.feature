@@ -1,5 +1,5 @@
-@UpdateStatuswithCloseStatus
-Feature: Update status related action submission with status cancel
+@SecurityandVisibilityCheckforRelatedActions
+Feature: Security and visibility of related actions using functional team member
 
   Configuring your site with the sample application:
   1. Import the applicable version of Automated Testing - XX.X.zip application, provided in the Shared Components page, into your Appian environment
@@ -23,11 +23,9 @@ Feature: Update status related action submission with status cancel
     When I set appian URL to "$$$HVUrl$$$"
     And I set appian version to "$$$AppVer$$$"
     And I set appian locale to "$$$en_US$$$"
-    Given I login with username "$$$CSAUSER$$$"
-    Given I set screenshot path to "$$$Link/UnlinkValidationScreenshot$$$"
-    
-   @Test
-  Scenario: Fill out Automated Testing Data to update the status of the request with close status
+    Given I login with username "$$$treasuryUser1$$$"
+ 
+    Scenario: Security and visibility of related actions
     
     #Open client service site  
     Given I wait for "5" seconds
@@ -38,41 +36,31 @@ Feature: Update status related action submission with status cancel
     Given I click on site page "$$$ClientServiceRequest$$$"
     Given I wait for "5" seconds
     
-    #Select the record to update status
+    #Select the record to navigate inside it
     Given I click on grid "[1]" column "[3]" row "[2]"
-    #Given I open "$$$1905-4892Close$$$"
     Given I wait for "5" seconds
     
-    #Navigate to update status related action, select close status and then enter comments for the same
-    Given I click on record related action "$$$UpdateStatus$$$"
+    #Navigate to record nad validate which all the related action are available
+    Given I verify record related action "$$$LINK/UNLINKREQUESTS$$$" is not present
     Given I wait for "5" seconds
-    Given I click on radio option "$$$Close$$$"
-    Given I wait for "5" seconds
-    Given I populate field "Comments" with "$$$Comments$$$"
-    
-    #Select the issue checkbox and then enter the issue description
-    Given I click on checkbox option "[1]"
-    Given I wait for "5" seconds
-    Given I populate field "Issue Description" with "$$$IssueDescription$$$"
-    Given I wait for "5" seconds
-    
-    #Verfiy that cancel buttion is present and then click on close button to submit
-    Given I verify button "$$$CANCELBUTTON$$$" is present
-    Given I click on button "$$$CLOSE$$$"
-    Given I wait for "5" seconds
-    Given I click on button "$$$confButtonYes$$$"
-    Given I wait for "10" seconds
-    
-    
-    #Verify Update status related action is not available and others are available
     Given I verify record related action "$$$UpdateStatus$$$" is not present
     Given I wait for "5" seconds
-    Given I verify record related action "$$$ADDRECURRENCE$$$" is present
+    Given I verify record related action "$$$Respond$$$" is not present
     Given I wait for "5" seconds
-    Given I verify record related action "$$$REOPENREQUEST$$$" is present
-    Given I wait for "10" seconds
-    Given I take screenshot "Close Status"
+    Given I verify record related action "$$$ADDRECURRENCE$$$" is not present
+    Given I wait for "5" seconds
+    Given I verify record related action "$$$REOPENREQUEST$$$" is not present
+    Given I wait for "5" seconds
+    Given I verify record related action "$$$MANAGETEAMS$$$" is not present
+    Given I wait for "5" seconds
+    Given I verify record related action "$$$EDITREQUEST$$$" is not present
+    Given I wait for "5" seconds
+    Given I verify record related action "$$$AddNotes$$$" is present
+    Given I wait for "5" seconds
+    Given I verify record related action "$$$AttachDocuments$$$" is present
+    Given I wait for "5" seconds
     
     #Logout and then close the browser
     Given I logout
-    Given I tear down
+    Given I tear down 
+    

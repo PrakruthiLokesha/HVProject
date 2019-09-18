@@ -1,5 +1,5 @@
-@UpdateStatuswithCancelStatus
-Feature: Update status related action submission with status cancel
+@ReLinkthenUnlinkRequest
+Feature: Link and Unlink Request
 
   Configuring your site with the sample application:
   1. Import the applicable version of Automated Testing - XX.X.zip application, provided in the Shared Components page, into your Appian environment
@@ -25,9 +25,9 @@ Feature: Update status related action submission with status cancel
     And I set appian locale to "en_US"
     Given I login with username "csaUser1"
     Given I set screenshot path to "C:\\Users\\prakruthil\\git\\HVProject\\Harbourvest-Project\\Screenshots/"
- 
-   @Test
-  Scenario: Fill out Automated Testing Data to update the status of the request with cancel status
+    Given I set take error screenshots to "true"
+    
+    Scenario: Relink request
     
     #Open client service site  
     Given I wait for "5" seconds
@@ -38,23 +38,33 @@ Feature: Update status related action submission with status cancel
     Given I click on site page "CLIENT SERVICE REQUEST"
     Given I wait for "5" seconds
     
-    #Select the record to update status
+    #Select the record to link the request
     Given I click on grid "[1]" column "[3]" row "[2]"
-    #Given I open "https://harbourvesttest.appiancloud.com/suite/sites/client-service/page/client-service-requests/record/lUBfsMZM-I0--5FqVTNDp5aJ9ZmNSvOCpmbXr_hU_9A1mMudqUiMYDVB-0VO8f_RzndI8vUblG_ScN7k7hhvohKZsMzIeHFyvDhdHoIBqO3p6yGy2ei/view/summary"
     Given I wait for "5" seconds
     
-    #Navigate to update status related action, select cancel status and then enter comments for the same
-    Given I click on record related action "Update Status"
-    Given I wait for "5" seconds
-    Given I click on radio option "Cancel"
-    Given I wait for "5" seconds
-    Given I populate field "Comments" with "Updating Status"
     
-    #Select the issue checkbox and then enter the issue description
-    Given I click on checkbox option "[1]"
+    #Navigate to link/unlink request related action, then unlink the linked request
+    Given I click on record related action "LINK/UNLINK REQUESTS"
+    Given I wait for "10" seconds
+    Given I click on grid "[1]" column "[4]" row "[1]"
     Given I wait for "5" seconds
-    Given I populate field "Issue Description" with "Issue with Client Data"
+    Given I click on grid "[1]" column "[4]" row "[1]"
+    
+    #Navigate to unlinked requests grid, re link the unlinked requests
+    Given I wait for "10" seconds
+    Given I click on grid "[2]" column "[4]" row "[2]"
     Given I wait for "5" seconds
+    Given I click on grid "[2]" column "[4]" row "[1]"
+    Given I wait for "10" seconds
+    Given I click on button "COMPLETE"
+    Given I set take error screenshots to "true"
+    Given I take screenshot "RELINK Request"
+    
+    #Navigate to link/unlink request related action, then unlink the linked request
+    Given I wait for "10" seconds
+    Given I click on grid "[1]" column "[4]" row "[1]"
+    Given I wait for "5" seconds
+    Given I click on grid "[1]" column "[4]" row "[1]"
     
     #Verfiy that cancel buttion is present and then click on complete button to submit
     Given I verify button "CANCEL" is present
@@ -62,9 +72,11 @@ Feature: Update status related action submission with status cancel
     Given I wait for "5" seconds
     Given I click on button "YES"
     Given I wait for "10" seconds
-    Given I take screenshot "Cancel Status"
     
     #Logout and then close the browser
     Given I logout
     Given I tear down
+    
+    
+    
 

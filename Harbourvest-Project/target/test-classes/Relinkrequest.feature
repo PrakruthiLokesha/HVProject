@@ -1,5 +1,5 @@
-@UpdateStatuswithCloseStatus
-Feature: Update status related action submission with status cancel
+@ReLinkthenUnlinkRequest
+Feature: Link and Unlink Request
 
   Configuring your site with the sample application:
   1. Import the applicable version of Automated Testing - XX.X.zip application, provided in the Shared Components page, into your Appian environment
@@ -25,9 +25,9 @@ Feature: Update status related action submission with status cancel
     And I set appian locale to "$$$en_US$$$"
     Given I login with username "$$$CSAUSER$$$"
     Given I set screenshot path to "$$$Link/UnlinkValidationScreenshot$$$"
+    Given I set take error screenshots to "true"
     
-   @Test
-  Scenario: Fill out Automated Testing Data to update the status of the request with close status
+    Scenario: Relink request
     
     #Open client service site  
     Given I wait for "5" seconds
@@ -38,41 +38,44 @@ Feature: Update status related action submission with status cancel
     Given I click on site page "$$$ClientServiceRequest$$$"
     Given I wait for "5" seconds
     
-    #Select the record to update status
+    #Select the record to link the request
     Given I click on grid "[1]" column "[3]" row "[2]"
-    #Given I open "$$$1905-4892Close$$$"
     Given I wait for "5" seconds
     
-    #Navigate to update status related action, select close status and then enter comments for the same
-    Given I click on record related action "$$$UpdateStatus$$$"
-    Given I wait for "5" seconds
-    Given I click on radio option "$$$Close$$$"
-    Given I wait for "5" seconds
-    Given I populate field "Comments" with "$$$Comments$$$"
     
-    #Select the issue checkbox and then enter the issue description
-    Given I click on checkbox option "[1]"
+    #Navigate to link/unlink request related action, then unlink the linked request
+    Given I click on record related action "$$$LINK/UNLINKREQUESTS$$$"
+    Given I wait for "10" seconds
+    Given I click on grid "[1]" column "[4]" row "[1]"
     Given I wait for "5" seconds
-    Given I populate field "Issue Description" with "$$$IssueDescription$$$"
-    Given I wait for "5" seconds
+    Given I click on grid "[1]" column "[4]" row "[1]"
     
-    #Verfiy that cancel buttion is present and then click on close button to submit
+    #Navigate to unlinked requests grid, re link the unlinked requests
+    Given I wait for "10" seconds
+    Given I click on grid "[2]" column "[4]" row "[2]"
+    Given I wait for "5" seconds
+    Given I click on grid "[2]" column "[4]" row "[1]"
+    Given I wait for "10" seconds
+    Given I click on button "$$$COMPLETE$$$"
+    Given I set take error screenshots to "true"
+    Given I take screenshot "RELINK Request"
+    
+    #Navigate to link/unlink request related action, then unlink the linked request
+    Given I wait for "10" seconds
+    Given I click on grid "[1]" column "[4]" row "[1]"
+    Given I wait for "5" seconds
+    Given I click on grid "[1]" column "[4]" row "[1]"
+    
+    #Verfiy that cancel buttion is present and then click on complete button to submit
     Given I verify button "$$$CANCELBUTTON$$$" is present
-    Given I click on button "$$$CLOSE$$$"
+    Given I click on button "$$$COMPLETE$$$"
     Given I wait for "5" seconds
     Given I click on button "$$$confButtonYes$$$"
     Given I wait for "10" seconds
     
-    
-    #Verify Update status related action is not available and others are available
-    Given I verify record related action "$$$UpdateStatus$$$" is not present
-    Given I wait for "5" seconds
-    Given I verify record related action "$$$ADDRECURRENCE$$$" is present
-    Given I wait for "5" seconds
-    Given I verify record related action "$$$REOPENREQUEST$$$" is present
-    Given I wait for "10" seconds
-    Given I take screenshot "Close Status"
-    
     #Logout and then close the browser
     Given I logout
     Given I tear down
+    
+    
+    
