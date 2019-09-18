@@ -35,7 +35,7 @@ Feature: Submit the task assigned to Functional Team-Treasury
    Given I wait for "4" seconds
    
    #Accept the task and Navigate between the tabs available in task and click on links available under Emails
-   Given I click on button "ACCEPT"
+   Given I click on button "$$$Accept$$$"
    Given I wait for "4" seconds
    
    #Enter the Reassign Comments and reassign to group
@@ -54,7 +54,7 @@ Feature: Submit the task assigned to Functional Team-Treasury
    Given I wait for "4" seconds
    Given I click on grid "[1]" column "[3]" row "[1]"
    Given I wait for "4" seconds
-   Given I click on button "ACCEPT"
+   Given I click on button "$$$Accept$$$"
    Given I wait for "4" seconds
    When I populate picker field "[2]" with partially matching suggestions for "test"
    When I wait for "5" seconds

@@ -33,7 +33,7 @@ Feature: Submit the task assigned to Functional Team-Treasury
    Given I wait for "4" seconds
    
    #Accept the task and Navigate between the tabs available in task and click on links available under Emails
-   Given I click on button "ACCEPT"
+   Given I click on button "$$$Accept$$$"
    Given I wait for "4" seconds
    
    #Check for the details provided by CSA user while initiating request and provide the comments to complete the task
