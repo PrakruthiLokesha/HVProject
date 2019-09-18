@@ -1,0 +1,122 @@
+#When I verify text "RPA Request Details" is present
+  #When I wait for "6" seconds
+  #Given I verify field "Process Name" contains "Process_Name"
+  #When I verify field "Description" contains "Testing2"
+  #When I wait for "2" seconds
+  #When I verify field "Business Justification" contains "Testing3"
+  #When I wait for "2" seconds
+  #When I verify field "Estimate No. of Processes Executed Per Month" contains "343"
+  #When I wait for "2" seconds
+  #When I verify field "Mins. Per Request" contains "345"
+  #When I wait for "2" seconds
+  #When I verify field "FTEs Required(Number)" contains "344"
+  #When I wait for "2" seconds
+  #When I verify field "SLAs or Other Considerations" contains "Testing4"
+  #When I wait for "2" seconds
+  #When I verify field "Ideal Date to be in Production?" contains "08/12/2019"
+  #When I wait for "2" seconds
+  #When I verify field "The Reasoning for this Date" contains "Testing 5"
+  #When I wait for "2" seconds
+  #When I verify field "Is Partially automated?" contains "No"
+  #When I wait for "2" seconds
+  #When I verify link "C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC" in section "Process Documents"
+  #When I wait for "2" seconds
+  #When I verify text "Applications to be impacted" is present
+  #When I wait for "2" seconds
+  #When I verify grid "[1]" column "[1]" row "[1]" contains "Word Application"
+  #When I wait for "2" seconds
+  #When I verify grid "[1]" column "[2]" row "[1]" contains "Testing 6"
+  #When I wait for "2" seconds
+  #When I verify text "Business COE Feedback" is present
+  
+  
+  #Given I verify text "Technical Review of RPA Request" is present
+  #Given I verify text "RPA Request Details" is present
+  #Given I verify field "Process Name" contains "tv!Process_Name"
+  #Given I verify field "Description" contains "Testing2"
+  #Given I verify field "Business Justification" contains "Testing3"
+  #Given I verify field "Estimate No. of Processes Executed Per Month" contains "343"
+  #Given I verify field "Mins. Per Request" contains "345"
+  #Given I verify field "FTEs Required(Number)" contains "344"
+  #Given I verify field "SLAs or Other Considerations" contains "Testing4"
+  #Given I verify field "Ideal Date to be in Production?" contains "08/12/2019"
+  #Given I verify field "The Reasoning for this Date" contains "Testing 5"
+  #Given I verify field "Is Partially automated?" contains "No"
+  #Given I verify link "C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC" in section "Process Documents"
+  #Given I verify text "Applications to be impacted" is present
+  #Given I verify grid "[1]" column "[1]" row "[1]" contains "Word"
+  #Given I verify grid "[1]" column "[2]" row "[1]" contains "Testing 6"
+  #Given I verify text "Business COE Feedback" is present
+  #Given I verify field "More Information required from the LOB?" contains "No"
+  #Given I verify field "Priority of the Process" contains "Medium"
+  #Given I verify field "Projected Monthly Savings" contains "23434"
+  #Given I verify field "Savings Types" contains
+      #| Overhead |
+      #| Compliance |
+  #Given I verify field "Comments for the Technical Operations Team" contains "Test Comments for the Technical Operations Team."
+  #Given I verify text "Technical COE Feedback" is present
+  
+  #And I verify text "Technical Review of RPA Request" is present
+  #And I verify text "RPA Request Details" is present
+  #And I verify field "Process Name" contains "Test RPA Pro"
+  #And I verify field "Description" contains "Testing2"
+  #And I verify field "Business Justification" contains "Testing3"
+  #And I verify field "Estimate No. of Processes Executed Per Month" contains "343"
+  #And I verify field "Mins. Per Request" contains "345"
+  #And I verify field "FTEs Required(Number)" contains "344"
+  #And I verify field "SLAs or Other Considerations" contains "Testing4"
+  #And I verify field "Ideal Date to be in Production?" contains "08/12/2019"
+  #And I verify field "The Reasoning for this Date" contains "Testing 5"
+  #And I verify field "Is Partially automated?" contains "No"
+  #And I verify link "C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC" in section "Process Documents"
+  #And I verify text "Business COE Feedback" is present
+  #And I verify field "Priority of the Process" contains "Medium"
+  #And I verify field "Projected Monthly Savings" contains "23434"
+  #And I verify field "Savings Types" contains
+      #| Overhead |
+      #| Compliance |
+  #And I verify field "Comments for the Technical Operations Team" contains "Test Comments for the Technical Operations Team
+  #And I verify text "Applications to be impacted" is present
+  #And I verify grid "[1]" column "[1]" row "[1]" contains "Word"
+  #And I verify grid "[1]" column "[2]" row "[1]" contains "Testing 6"
+  #And I verify text "Technical COE Feedback" is present
+  #And I verify field "Risk/Complexity assessment if request is implemented" contains "Medium"
+  #And I verify field "Comments(Assessment Reasoning)" contains "Test Comments(Assessment Reasoning)"
+  #And I verify field "Estimated # man hours for Development" contains "3434"
+  #And I verify field "Estimated Developer cost per Hour" contains "15"
+  #And I verify field "Impact Analysis Review Documents" with "C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC"
+  #And I verify text "Approve Project Budget" is present
+  
+    #Given I verify text "Set Project Start" is present
+  #Given I verify text "RPA Request Details" is present
+  #Given I verify field "Process Name" contains "Test RPA Pro"
+  #Given I verify field "Description" contains "Testing2"
+  #Given I verify field "Business Justification" contains "Testing3"
+  #Given I verify field "Estimate No. of Processes Executed Per Month" contains "343"
+  #Given I verify field "Mins. Per Request" contains "345"
+  #Given I verify field "FTEs Required(Number)" contains "344"
+  #Given I verify field "SLAs or Other Considerations" contains "Testing4"
+  #Given I verify field "Ideal Date to be in Production?" contains "08/12/2019"
+  #Given I verify field "The Reasoning for this Date" contains "Testing 5"
+  #Given I verify field "Is Partially automated?" contains "No"
+  #Given I verify link "C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC" in section "Process Documents"
+  #Given I verify text "Business COE Feedback" is present
+  #Given I verify field "Priority of the Process" contains "Medium"
+  #Given I verify field "Projected Monthly Savings" contains "23434"
+  #Given I verify field "Savings Types" contains
+      #| Overhead |
+      #| Compliance |
+  #Given I verify field "Comments for the Technical Operations Team" contains "Test Comments for the Technical Operations Team
+  #Given I verify text "Applications to be impacted" is present
+  #Given I verify grid "[1]" column "[1]" row "[1]" contains "Word"
+  #Given I verify grid "[1]" column "[2]" row "[1]" contains "Testing 6"
+  #Given I verify text "Technical COE Feedback" is present
+  #Given I verify field "Risk/Complexity assessment if request is implemented" contains "Medium"
+  #Given I verify field "Comments(Assessment Reasoning)" contains "Test Comments(Assessment Reasoning)"
+  #Given I verify field "Estimated # man hours for Development" contains "3434"
+  #Given I verify field "Estimated Developer cost per Hour" contains "15"
+  #Given I verify text "Estimated overall implementation cost" is present
+  #Given I verify field "Impact Analysis Review Documents" with "C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC"
+  #Given I verify text "Approve Project Budget" is present
+  #Given I verify field "Approve Project Budget" contains "Yes"
+  #Given I verify field "Comments[3]" with "Test Comments"
