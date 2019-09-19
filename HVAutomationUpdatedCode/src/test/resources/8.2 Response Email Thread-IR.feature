@@ -59,7 +59,6 @@ Given I wait for "8" seconds
 #Verify the Status of Request in Client Service Records
 Given I click on site page "$$$Records$$$"
 Given I clear field "Select Filter Set(s)"
-#Then I tear down
  Given I wait for "5" seconds
 Given I sort grid "[1]" by column "Request Id"
 Given I wait for "5" seconds
@@ -67,19 +66,10 @@ Given I sort grid "[1]" by column "Request Id"
 Given I wait for "5" seconds
 Given I verify grid "[1]" column "[10]" row "[1]" contains "Open"
 Given I wait for "5" seconds
+Then I logout
+    Then I tear down
 
-#Verify the Task in Active tasks additional dashboard
-Given I click on site page "$$$Records$$$"
-Given I clear field "Select Filter Set(s)"
-Given I sort grid "[1]" by column "Request Id"
-Given I wait for "4" seconds
-Given I sort grid "[1]" by column "Request Id"
-Given I wait for "6" seconds
-Given I click on grid "[1]" column "[3]" row "[1]"
-Given I wait for "4" seconds
-Given I click on link "Active Tasks"
-Given I wait for "8" seconds
-Given I verify grid "[1]" column "[1]" row "[1]" contains "Review & Take Action on Response Email Thread"   
+
 
 
   
