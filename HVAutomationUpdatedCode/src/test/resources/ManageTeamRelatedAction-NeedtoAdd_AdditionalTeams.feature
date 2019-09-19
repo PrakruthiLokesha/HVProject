@@ -32,18 +32,21 @@ Feature: Add Another Functional Team using Manage Teams Related Action- Need to 
     Given I click on link "Add Functional Team"
     Given I wait for "2" seconds
     
-    #Below will select Tax Team
-    Given I populate grid "[1]" column "[1]" row "[2]" with partially matching picker field suggestions for "Tax"
-    Given I wait for "3" seconds
-    Given I populate grid "[1]" column "[4]" row "[2]" with "$$$Comments$$$"
-    Given I wait for "3" seconds
-    Given I verify grid "[1]" column "[5]" row "[2]" contains "Added"
-    Given I wait for "3" seconds
-    When I verify button "CANCEL" is present
+     Given I populate grid "[1]" column "[1]" row "[2]" with partially matching picker field suggestions for "$$$FunctionalTeam1$$$"
+    Given I wait for "5" seconds
+    Given I populate grid "[1]" column "[2]" row "[2]" with partially matching picker field suggestions for "$$$FunctionalTeam1$$$"
+    Given I wait for "5" seconds
+   Given I populate grid "[1]" column "[3]" row "[2]" with "$$$Duedate$$$"
+   Given I wait for "5" seconds
+    Given I populate grid "[1]" column "[4]" row "[2]" with "$$$FTComments$$$"    
+    
+    #I verify the functionality of all the buttons   
+    When I verify button "$$$Cancel$$$" is present
 	  When I wait for "3" seconds
-	  When I click on button "COMPLETE"
-	  When I click on button "YES"
-	  Then I wait for "5" seconds
+	  When I click on button "$$$Complete$$$"
+	   Then I wait for "5" seconds
+	  And I click on button "$$$confButtonYes$$$"
+ 	  And I wait for "10" seconds
     Then I click on link "Fulfillment Details"
 	  Then I wait for "5" seconds
 	  
@@ -97,4 +100,34 @@ Feature: Add Another Functional Team using Manage Teams Related Action- Need to 
     Given I sort grid "[2]" by column "Comments"
     Given I wait for "3" seconds
     Then I click on link "Close"
+      Given I wait for "6" seconds
+      
+    #Navigate to Active tasks additional dashboard and verify the Request fulfillment task in other active tasks
+  Given I click on link "ACtive Tasks"
+   Given I wait for "4" seconds
+  Given I sort grid "[2]" by column "Assigned On"
+    Given I wait for "4" seconds
+    Given I sort grid "[2]" by column "Assigned On"
+    Given I wait for "4" seconds
+  Given I verify grid "[2]" column "[1]" row "[1]" contains "Request Fulfillment"
+  Given I wait for "3" seconds
+  Given I verify grid "[2]" column "[4]" row "[1]" contains "$$$InitialAssignmantFT1$$$"
+   Given I wait for "4" seconds
+  Given I verify grid "[2]" column "[1]" row "[2]" contains "Request Fulfillment"
+  Given I wait for "3" seconds
+  Given I verify grid "[2]" column "[4]" row "[2]" contains "$$$InitialAssignmantFT3$$$"
+  Given I wait for "6" seconds
   
+  
+  #Navigate to Audit history additional dashboard and verify
+ Given I click on link "Audit History"
+ Given I wait for "4" seconds
+ Given I sort grid "[1]" by column "Received On"
+Given I wait for "4" seconds
+Given I sort grid "[1]" by column "Received On"
+Given I wait for "4" seconds
+Given I verify grid "[1]" column "[1]" row "[1]" contains "Request Fulfillment"
+Given I wait for "4" seconds
+Given I verify grid "[1]" column "[1]" row "[3]" contains "Manage Functional Teams"
+Then I logout
+    Then I tear down

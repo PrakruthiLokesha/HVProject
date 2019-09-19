@@ -52,12 +52,6 @@ Given I click on button "$$$Complete$$$"
 Given I wait for "4" seconds
 And I click on button "$$$confButtonYes$$$"
 Given I wait for "6" seconds
-
-#Verify the warning messae
-#Given I verify section "[1]" contains validation message "This task has been already completed. So kindly close this page and please check the status"
-Given I wait for "5" seconds
-Given I click on button "Close[1]"
-Given I wait for "5" seconds
  
 #Verify the Status of Request in Client Service Records
 Given I click on site page "$$$Records$$$"
