@@ -42,7 +42,7 @@ Feature: Submit the task assigned to Functional Team-Treasury
    Given I wait for "4" seconds
    Given I populate field type "PARAGRAPH" named "[1]" with "[2]"
    Given I wait for "5" seconds
-   Given I populate field type "FILE_UPLOAD" named "[1]" with "$$$DOCUploadpath$$$"
+   Given I populate field type "FILE_UPLOAD" named "[1]" with "C:\Users\swetar.VURAM.000\Documents\C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC2.pdf"
    When I wait for "7" seconds
    
    #Check for the Save button Functionality

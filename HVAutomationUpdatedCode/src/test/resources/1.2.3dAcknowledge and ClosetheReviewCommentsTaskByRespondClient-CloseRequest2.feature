@@ -82,9 +82,7 @@ Then I wait for "8" seconds
    When I populate field type "FILE_UPLOAD" named "Add Attachments" with "$$$docPath$$$"
    When I wait for "5" seconds 
    When I populate grid "[1]" column "[1]" row "[1]" with "$$$RenamingAttachmentName$$$"
- When I wait for "5" seconds
-   When I populate grid "[1]" column "[1]" row "[1]" with "Rename the Attachment Name"
-          
+ 
    #Update Status based on two options which is not mandatory . Select Option as Close
    Given I click on radio option "[1]"
    Given I wait for "5" seconds
@@ -195,8 +193,40 @@ Given I verify grid "[1]" column "[1]" row "[2]" contains "Prepare Response Emai
 Given I wait for "6" seconds
 Given I verify grid "[1]" column "[9]" row "[3]" contains "$$$CSARCComments$$$"
 Given I wait for "4" seconds
- Then I logout
- Then I tear down
+
+ #Navigate to Documents Dashboard to view the attached documents
+    Then I click on link "Documents"
+    Then I wait for "5" seconds
+    
+   #Verify the attached documents and sort the grid
+   Given I sort grid "[1]" by column "Uploaded On"
+   Given I wait for "5" seconds
+   Given I sort grid "[1]" by column "Uploaded On"
+   Given I wait for "5" seconds
+   Given I verify grid "[1]" column "[1]" row "[1]" contains "$$$RenamingAttachmentName$$$"
+   Given I wait for "5" seconds
+   Given I verify grid "[1]" column "[2]" row "[1]" contains "Outgoing Email Attachments"
+   Given I wait for "2" seconds
+   Given I verify grid "[1]" column "[1]" row "[2]" contains "$$$DocUploadedLink1$$$"
+   Given I wait for "5" seconds
+   Given I verify grid "[1]" column "[2]" row "[2]" contains "Task-Related Documents"
+   Given I wait for "2" seconds
+   Given I sort grid "[1]" by column "Documents"
+   Given I wait for "2" seconds
+   Given I sort grid "[1]" by column "Category"
+   Given I wait for "5" seconds
+   Given I sort grid "[1]" by column "Uploaded By"
+   Given I wait for "5" seconds
+   
+    #Set the filter available in documents Dashboard 
+	   Then I populate field "[2]" with "Task-Related Documents"
+	   Then I wait for "5" seconds
+	   Then I populate field "[2]" with "Outgoing Email Attachments"
+	   Then I wait for "5" seconds
+	   Then I click on button "CLEAR"
+	   Then I wait for "3" seconds
+     Then I logout
+     Then I tear down
 
    
    

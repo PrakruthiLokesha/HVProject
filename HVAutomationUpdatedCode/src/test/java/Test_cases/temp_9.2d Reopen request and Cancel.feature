@@ -125,7 +125,7 @@ Given I verify grid "[3]" column "[8]" row "[1]" contains "Canceled"
     Given I sort grid "[1]" by column "Received On"
     Given I wait for "4" seconds
 Given I verify grid "[1]" column "[1]" row "[1]" contains "Close Request"
-Then I logout
-    Then I tear down
+#Then I logout
+    #Then I tear down
 
 

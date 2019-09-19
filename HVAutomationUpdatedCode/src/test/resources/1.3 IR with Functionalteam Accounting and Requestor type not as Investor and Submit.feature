@@ -180,6 +180,36 @@ Given I verify grid "[1]" column "[1]" row "[2]" contains "Assign Task Owner"
 Given I wait for "4" seconds
 Given I verify grid "[1]" column "[1]" row "[1]" contains "Prepare Response Email"
 Given I wait for "4" seconds
+
+#Navigate to Documents and view attachments
+   Then I click on link "Documents"
+   Then I wait for "10" seconds
+    
+   #Verify the documents and Set the filters to select document category and sort the grid
+   Given I sort grid "[1]" by column "Uploaded On"
+   Given I wait for "5" seconds
+   Given I sort grid "[1]" by column "Uploaded On"
+   Given I wait for "5" seconds
+   Given I verify grid "[1]" column "[1]" row "[1]" contains "$$$RenamingAttachmentName$$$"
+   Given I wait for "5" seconds
+   Given I verify grid "[1]" column "[2]" row "[1]" contains "Outgoing Email Attachments"
+   Given I wait for "2" seconds
+   Given I verify grid "[1]" column "[1]" row "[2]" contains "$$$DocUploadedLink1$$$"
+   Given I wait for "5" seconds
+   Given I verify grid "[1]" column "[2]" row "[2]" contains "Task-Related Documents"
+   Given I wait for "2" seconds
+   Given I sort grid "[1]" by column "Documents"
+   Given I wait for "2" seconds
+   Given I sort grid "[1]" by column "Category"
+   Given I wait for "5" seconds
+   Given I sort grid "[1]" by column "Uploaded By"
+   Given I wait for "5" seconds
+   Then I populate field "[2]" with "Outgoing Email Attachments"
+	 Then I wait for "5" seconds
+   Then I populate field "[2]" with "Task-Related Documents"
+   Then I wait for "5" seconds
+   Then I click on button "CLEAR"
+   Then I wait for "5" seconds
  Then I logout
  Then I tear down
  

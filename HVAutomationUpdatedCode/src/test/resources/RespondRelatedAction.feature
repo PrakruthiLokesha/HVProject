@@ -74,7 +74,7 @@ Feature: Attach Documents to Client Service Request using Related Action-Attach 
    Then I wait for "5" seconds
    Then I click on button "CLEAR"
    
-   #Navigate to Emails Dashbaord to see the Email Subject
+   #Navigate to Emails Dashboard to see the Email Subject
    When I click on link "Emails"
    When I wait for "5" seconds
    Then I verify text "$$$EmailSubject$$$" is present

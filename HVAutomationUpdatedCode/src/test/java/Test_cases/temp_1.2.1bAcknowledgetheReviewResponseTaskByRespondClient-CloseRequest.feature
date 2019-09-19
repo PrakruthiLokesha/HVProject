@@ -83,8 +83,6 @@ Then I wait for "8" seconds
    When I populate field type "FILE_UPLOAD" named "Add Attachments" with "C:\Users\srishakthim\Pictures\Warning.png"
    When I wait for "5" seconds 
    When I populate grid "[1]" column "[1]" row "[1]" with "Respond related document "
- When I wait for "5" seconds
-   When I populate grid "[1]" column "[1]" row "[1]" with "Rename the Attachment Name"
           
    #Update Status based on two options which is not mandatory . Select Option as Close
    Given I click on radio option "[1]"
@@ -105,12 +103,12 @@ Given I wait for "5" seconds
    Given I verify grid "[1]" column "[10]" row "[1]" contains "Closed"
    When I wait for "5" seconds
    
-   #Navigate to Summary dashbaord of Client Service Request
+   #Navigate to Summary dashboard of Client Service Request
    Given I click on grid "[1]" column "[3]" row "[1]"
    Given I wait for "4" seconds
    When I click on link "Fulfillment Details"
    
-    #Check the status updated in Request Fulfillment Details grid under Request Fulfillment Dashbaord
+    #Check the status updated in Request Fulfillment Details grid under Request Fulfillment Dashboard
     Given I toggle box "Request Fulfillment Details" visibility
     Given I wait for "2" seconds
     Given I toggle box "Request Fulfillment Details" visibility
@@ -173,12 +171,12 @@ Given I wait for "5" seconds
   #Navigate to Emails dashboard and verify
  Given I click on link "Emails"
  Given I click on link "All Emails"
-   Given I wait for "4" seconds
+ Given I wait for "4" seconds
  Given I wait for "5" seconds
  Given I verify link "Respond to Client" is present
  Given I wait for "3" seconds
  Given I click on link "Outgoing Emails"
-   Given I wait for "4" seconds
+ Given I wait for "4" seconds
  Given I verify link "Respond to Client" is present
  Given I wait for "4" seconds
     
@@ -186,17 +184,47 @@ Given I wait for "5" seconds
  Given I click on link "Audit History"
  Given I wait for "4" seconds
  Given I sort grid "[1]" by column "Received On"
-    Given I wait for "4" seconds
-    Given I sort grid "[1]" by column "Received On"
-    Given I wait for "4" seconds
-Given I verify grid "[1]" column "[1]" row "[1]" contains "Update Status"
-Given I wait for "4" seconds
-Given I verify grid "[1]" column "[1]" row "[2]" contains "Prepare Response Email"
-Given I wait for "6" seconds
-Given I verify grid "[1]" column "[9]" row "[3]" contains "Response comments"
-Given I wait for "4" seconds
- Then I logout
- Then I tear down
+ Given I wait for "4" seconds
+ Given I sort grid "[1]" by column "Received On"
+ Given I wait for "4" seconds
+ Given I verify grid "[1]" column "[1]" row "[1]" contains "Update Status"
+ Given I wait for "4" seconds
+ Given I verify grid "[1]" column "[1]" row "[2]" contains "Prepare Response Email"
+ Given I wait for "6" seconds
+ Given I verify grid "[1]" column "[9]" row "[3]" contains "Response comments"
+ Given I wait for "4" seconds
+
+ #Navigate to Documents and view attachments
+   Then I click on link "Documents"
+   Then I wait for "10" seconds
+    
+   #Verify the documents and Set the filters to select document category and sort the grid
+   Given I sort grid "[1]" by column "Uploaded On"
+   Given I wait for "5" seconds
+   Given I sort grid "[1]" by column "Uploaded On"
+   Given I wait for "5" seconds
+   Given I verify grid "[1]" column "[1]" row "[1]" contains "Respond related document "
+   Given I wait for "5" seconds
+   Given I verify grid "[1]" column "[2]" row "[1]" contains "Outgoing Email Attachments"
+   Given I wait for "2" seconds
+   Given I verify grid "[1]" column "[1]" row "[2]" contains "Warning"
+   Given I wait for "5" seconds
+   Given I verify grid "[1]" column "[2]" row "[2]" contains "Task-Related Documents"
+   Given I wait for "2" seconds
+   Given I sort grid "[1]" by column "Documents"
+   Given I wait for "2" seconds
+   Given I sort grid "[1]" by column "Category"
+   Given I wait for "5" seconds
+   Given I sort grid "[1]" by column "Uploaded By"
+   Given I wait for "5" seconds
+   Then I populate field "[2]" with "Outgoing Email Attachments"
+	 Then I wait for "5" seconds
+   Then I populate field "[2]" with "Task-Related Documents"
+   Then I wait for "5" seconds
+   Then I click on button "CLEAR"
+   Then I wait for "5" seconds
+   Then I logout
+   Then I tear down
 
    
    

@@ -131,6 +131,32 @@ Given I sort grid "[1]" by column "Received On"
 Given I wait for "4" seconds
 Given I verify grid "[1]" column "[1]" row "[1]" contains "Review Response from Accounting Team"
 Given I wait for "4" seconds
-Then I logout
+
+#Navigate to Documents Dashboard to view the attached documents
+    Then I click on link "Documents"
+    Then I wait for "5" seconds
+    
+   #Verify the attached documents and sort the grid
+   Given I sort grid "[1]" by column "Uploaded On"
+   Given I wait for "5" seconds
+   Given I sort grid "[1]" by column "Uploaded On"
+   Given I wait for "5" seconds
+   Given I verify grid "[1]" column "[1]" row "[1]" contains "Warning"
+   Given I wait for "5" seconds
+   Given I verify grid "[1]" column "[2]" row "[1]" contains "Task-Related Documents"
+   Given I wait for "2" seconds
+   Given I sort grid "[1]" by column "Documents"
+   Given I wait for "2" seconds
+   Given I sort grid "[1]" by column "Category"
+   Given I wait for "5" seconds
+   Given I sort grid "[1]" by column "Uploaded By"
+   Given I wait for "5" seconds
+   
+  #Set the filter available in documents Dashboard 
+   Then I populate field "[2]" with "Task-Related Documents"
+   Then I wait for "5" seconds
+   Then I click on button "CLEAR"
+   Then I wait for "5" seconds
+    Then I logout
     Then I tear down
 

@@ -114,7 +114,7 @@ Given I wait for "5" seconds
 Given I verify grid "[1]" column "[10]" row "[1]" contains "$$$Status6$$$"
 Given I wait for "5" seconds
   
- #Navigate to Fulfillment details dashbaord of Client Service Request
+ #Navigate to Fulfillment details dashboard of Client Service Request
  Given I click on grid "[1]" column "[3]" row "[1]"
  Given I wait for "4" seconds
  When I click on link "Fulfillment Details"
@@ -149,6 +149,32 @@ Given I verify grid "[1]" column "[9]" row "[2]" contains "$$$ResponseComments$$
 Given I wait for "4" seconds
 Given I verify grid "[1]" column "[1]" row "[1]" contains "Close Request"
 Given I wait for "4" seconds
-Then I logout
-    Then I tear down
+
+#Navigate to Documents Dashboard to view the attached documents
+    Then I click on link "Documents"
+    Then I wait for "5" seconds
+    
+   #Verify the attached documents and sort the grid
+   Given I sort grid "[1]" by column "Uploaded On"
+   Given I wait for "5" seconds
+   Given I sort grid "[1]" by column "Uploaded On"
+   Given I wait for "5" seconds
+   Given I verify grid "[1]" column "[1]" row "[1]" contains "$$$DocUploadedLink1$$$"
+   Given I wait for "5" seconds
+   Given I verify grid "[1]" column "[2]" row "[1]" contains "Task-Related Documents"
+   Given I wait for "2" seconds
+   Given I sort grid "[1]" by column "Documents"
+   Given I wait for "2" seconds
+   Given I sort grid "[1]" by column "Category"
+   Given I wait for "5" seconds
+   Given I sort grid "[1]" by column "Uploaded By"
+   Given I wait for "5" seconds
+   
+  #Verify the filter available in documents Dashboard 
+   Then I populate field "[2]" with "Task-Related Documents"
+   Then I wait for "5" seconds
+   Then I click on button "CLEAR"
+   Then I wait for "5" seconds
+   Then I logout
+   Then I tear down
  

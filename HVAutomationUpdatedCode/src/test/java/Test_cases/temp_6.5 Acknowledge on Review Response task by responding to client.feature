@@ -123,7 +123,7 @@ Then I wait for "5" seconds
     Given I wait for "5" seconds 
    #Given I populate picker field "[1]" with partially matching suggestions for "csa"
    #Given I wait for "5" seconds 
-   When I populate field type "FILE_UPLOAD" named "Add Attachments" with "$$$DOCUploadpath$$$"
+   When I populate field type "FILE_UPLOAD" named "Add Attachments" with "C:\Users\swetar.VURAM.000\Documents\C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC2.pdf"
    When I wait for "5" seconds
    When I populate grid "[1]" column "[1]" row "[1]" with "Respond related document "
  When I wait for "5" seconds
@@ -183,18 +183,50 @@ Given I verify grid "[1]" column "[3]" row "[1]" contains "Test"
  Given I wait for "4" seconds
     
  # Observe in Audit History
- Given I click on link "Audit History"
- Given I wait for "4" seconds
- Given I sort grid "[1]" by column "Received On"
+		Given I click on link "Audit History"
+		Given I wait for "4" seconds
+		Given I sort grid "[1]" by column "Received On"
     Given I wait for "4" seconds
     Given I sort grid "[1]" by column "Received On"
     Given I wait for "4" seconds
-Given I verify grid "[1]" column "[1]" row "[1]" contains "Update Status"
-Given I wait for "4" seconds
-Given I verify grid "[1]" column "[1]" row "[2]" contains "Prepare Response Email"
-Given I wait for "6" seconds
-Given I verify grid "[1]" column "[9]" row "[3]" contains "Response comments"
-Given I wait for "4" seconds
- Then I logout
- Then I tear down
+		Given I verify grid "[1]" column "[1]" row "[1]" contains "Update Status"
+		Given I wait for "4" seconds
+		Given I verify grid "[1]" column "[1]" row "[2]" contains "Prepare Response Email"
+		Given I wait for "6" seconds
+		Given I verify grid "[1]" column "[9]" row "[3]" contains "Response comments"
+		Given I wait for "4" seconds
+
+  #Navigate to Documents and view attachments
+   Then I click on link "Documents"
+   Then I wait for "10" seconds
+    
+   #Verify the documents and Set the filters to select document category and sort the grid
+   Given I sort grid "[1]" by column "Uploaded On"
+   Given I wait for "5" seconds
+   Given I sort grid "[1]" by column "Uploaded On"
+   Given I wait for "5" seconds
+   Given I verify grid "[1]" column "[1]" row "[1]" contains "Respond related document "
+   Given I wait for "5" seconds
+   Given I verify grid "[1]" column "[2]" row "[1]" contains "Outgoing Email Attachments"
+   Given I wait for "2" seconds
+   Given I verify grid "[1]" column "[1]" row "[2]" contains "Warning"
+   Given I wait for "5" seconds
+   Given I verify grid "[1]" column "[2]" row "[2]" contains "Task-Related Documents"
+   Given I wait for "2" seconds
+   Given I sort grid "[1]" by column "Documents"
+   Given I wait for "2" seconds
+   Given I sort grid "[1]" by column "Category"
+   Given I wait for "5" seconds
+   Given I sort grid "[1]" by column "Uploaded By"
+   Given I wait for "5" seconds
+   
+   #Verify the filters to select document category
+   Then I populate field "[2]" with "Outgoing Email Attachments"
+	 Then I wait for "5" seconds
+   Then I populate field "[2]" with "Task-Related Documents"
+   Then I wait for "5" seconds
+   Then I click on button "CLEAR"
+   Then I wait for "5" seconds
+	 Then I logout
+	 Then I tear down
 

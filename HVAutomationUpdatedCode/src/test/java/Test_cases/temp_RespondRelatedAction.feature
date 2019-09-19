@@ -40,7 +40,7 @@ Feature: Attach Documents to Client Service Request using Related Action-Attach 
    Given I populate field type "PARAGRAPH" named "[1]" with "Acknowledge"
    Given I wait for "5" seconds 
    #Given I populate picker field "[1]" with partially matching suggestions for "csa"
-   When I populate field type "FILE_UPLOAD" named "Add Attachments" with "$$$DOCUploadpath$$$"
+   When I populate field type "FILE_UPLOAD" named "Add Attachments" with "C:\Users\swetar.VURAM.000\Documents\C_TESTESTEST_,.)(123&%$!_TESTESTEST DOC2.pdf"
    When I wait for "5" seconds
    When I populate grid "[1]" column "[1]" row "[1]" with "Respond related document "
      
@@ -74,7 +74,7 @@ Feature: Attach Documents to Client Service Request using Related Action-Attach 
    Then I wait for "5" seconds
    Then I click on button "CLEAR"
    
-   #Navigate to Emails Dashbaord to see the Email Subject
+   #Navigate to Emails Dashboard to see the Email Subject
    When I click on link "Emails"
    When I wait for "5" seconds
    Then I verify text "Respond to Client" is present

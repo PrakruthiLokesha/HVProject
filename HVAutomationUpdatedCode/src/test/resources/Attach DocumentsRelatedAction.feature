@@ -34,16 +34,16 @@ Feature: Attach Documents to Client Service Request using Related Action-Attach 
     Then I verify button "CANCEL" is present
     Then I click on button "SUBMIT"
     
-    #Navigate to Documents Dashbaord to view the added Notes
+    #Navigate to Documents Dashboard to view the attached documents
     Then I click on link "Documents"
     Then I wait for "5" seconds
     
-   #Set the filters to search notes and sort the grid
-   Given I verify grid "[1]" column "[1]" row "[1]" contains "$$$DocUploadedLink1$$$"
+   #Verify the documents and sort the grid
+   Given I verify grid "[1]" column "[1]" row "[1]" contains "$$$DocUploadedLink2$$$"
    Given I wait for "5" seconds
    Given I verify grid "[1]" column "[2]" row "[1]" contains "Task-Related Documents"
    Given I wait for "2" seconds
-   Given I verify grid "[1]" column "[1]" row "[2]" contains "$$$DocUploadedLink2$$$"
+   Given I verify grid "[1]" column "[1]" row "[2]" contains "$$$DocUploadedLink3$$$"
    Given I wait for "2" seconds
    Given I verify grid "[1]" column "[2]" row "[2]" contains "Task-Related Documents"
    Given I wait for "2" seconds
@@ -61,13 +61,13 @@ Feature: Attach Documents to Client Service Request using Related Action-Attach 
      Given I wait for "2" seconds
      Given I click on record related action "Attach Documents"
      Given I wait for "2" seconds
-     Given I populate field type "FILE_UPLOAD" named "[1]" with "$$$DOCUploadpath3$$$"
+     Given I populate field type "FILE_UPLOAD" named "[1]" with "$$$DOCUploadpath$$$"
      When I wait for "5" seconds
-     Then I verify grid "[1]" column "[1]" row "[1]" contains "$$$DocUploadedLink1$$$"
+     Then I verify grid "[1]" column "[1]" row "[1]" contains "$$$DocUploadedLink2$$$"
 	   Then I wait for "5" seconds
 	   Then I verify grid "[1]" column "[2]" row "[1]" contains "Task-Related Documents"
 	   Then I wait for "2" seconds
-	   Then I verify grid "[1]" column "[1]" row "[2]" contains "$$$DocUploadedLink2$$$"
+	   Then I verify grid "[1]" column "[1]" row "[2]" contains "$$$DocUploadedLink3$$$"
 	   Then I wait for "2" seconds
 	   Then I verify grid "[1]" column "[2]" row "[2]" contains "Task-Related Documents"
 	   Then I wait for "2" seconds
