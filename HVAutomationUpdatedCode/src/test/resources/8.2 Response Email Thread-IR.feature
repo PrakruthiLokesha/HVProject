@@ -59,7 +59,6 @@ Given I wait for "8" seconds
 #Verify the Status of Request in Client Service Records
 Given I click on site page "$$$Records$$$"
 Given I clear field "Select Filter Set(s)"
-#Then I tear down
  Given I wait for "5" seconds
 Given I sort grid "[1]" by column "Request Id"
 Given I wait for "5" seconds
@@ -67,6 +66,8 @@ Given I sort grid "[1]" by column "Request Id"
 Given I wait for "5" seconds
 Given I verify grid "[1]" column "[10]" row "[1]" contains "Open"
 Given I wait for "5" seconds
+Then I logout
+    Then I tear down
 
 
 

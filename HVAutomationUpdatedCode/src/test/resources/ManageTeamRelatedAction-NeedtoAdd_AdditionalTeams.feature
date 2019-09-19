@@ -12,12 +12,12 @@ Feature: Add Another Functional Team using Manage Teams Related Action- Need to 
   
    Given I open "$$$URL_ClientService$$$"
     Given I wait for "10" seconds
-    Given I click on site page "CLIENT SERVICE REQUESTS"
+    Given I click on site page "$$$Records$$$"
     #Given I populate field "Search" with "$$$RequestID$$$"
     #Given I wait for "2" seconds
      Given I clear field "Status"
     Given I wait for "5" seconds
-     Given I populate field "Type" with "$$$RequestType$$$"
+     Given I populate field "Type" with "$$$RequestType(s)$$$"
    Given I wait for "5" seconds
    Given I sort grid "[1]" by column "Request Id"
    Given I wait for "4" seconds

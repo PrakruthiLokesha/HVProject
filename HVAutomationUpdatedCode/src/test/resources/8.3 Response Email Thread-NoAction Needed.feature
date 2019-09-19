@@ -80,7 +80,8 @@ Given I wait for "4" seconds
 Given I click on link "Active Tasks"
 Given I wait for "8" seconds
 Given I verify grid "[1]" column "[1]" row "[1]" contains "Review & Take Action on Response Email Thread"
-
+Then I logout
+    Then I tear down
 
 
   

@@ -73,6 +73,13 @@ Given I wait for "8" seconds
 Given I click on link "Active Tasks"
 Given I wait for "8" seconds
 Given I verify grid "[1]" column "[1]" row "[1]" contains "Review & Take Action on Response Email Thread"
+Given I wait for "4" seconds
+Given I click on grid "[1]" column "[1]" row "[1]"
+Given I wait for "8" seconds
+Given I verify text "$$$CommentsValue$$$" is present
+Given I wait for "4" seconds
+Then I logout
+    Then I tear down
 
 
 
