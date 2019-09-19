@@ -65,7 +65,7 @@ Given I sort grid "[1]" by column "Request Id"
 Given I wait for "5" seconds
 Given I sort grid "[1]" by column "Request Id"
 Given I wait for "5" seconds
-Given I verify grid "[1]" column "[10]" row "[1]" contains "Open"
+Given I verify grid "[1]" column "[10]" row "[1]" contains "$$$Status2$$$"
 Given I wait for "5" seconds
 
 #Verify the Task in Active tasks additional dashboard
