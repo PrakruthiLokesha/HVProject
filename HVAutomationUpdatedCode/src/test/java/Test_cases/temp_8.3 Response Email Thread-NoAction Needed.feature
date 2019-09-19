@@ -65,7 +65,7 @@ Given I sort grid "[1]" by column "Request Id"
 Given I wait for "5" seconds
 Given I sort grid "[1]" by column "Request Id"
 Given I wait for "5" seconds
-Given I verify grid "[1]" column "[10]" row "[1]" contains "Open"
+Given I verify grid "[1]" column "[10]" row "[1]" contains "Pending Functional Team Response"
 Given I wait for "5" seconds
 
 #Verify the Task in Active tasks additional dashboard
@@ -80,7 +80,8 @@ Given I wait for "4" seconds
 Given I click on link "Active Tasks"
 Given I wait for "8" seconds
 Given I verify grid "[1]" column "[1]" row "[1]" contains "Review & Take Action on Response Email Thread"
-
+Then I logout
+    Then I tear down
 
 
   
