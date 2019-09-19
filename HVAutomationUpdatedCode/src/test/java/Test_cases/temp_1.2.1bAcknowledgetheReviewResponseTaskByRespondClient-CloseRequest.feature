@@ -166,7 +166,7 @@ Given I wait for "5" seconds
     Given I sort grid "[2]" by column "Comments"
     Given I wait for "3" seconds
     Then I click on link "Close"
-      Given I wait for "4" seconds
+    Then I wait for "5" seconds
   
   #Navigate to Emails dashboard and verify
  Given I click on link "Emails"

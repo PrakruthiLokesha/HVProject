@@ -45,5 +45,12 @@
       <scope>system</scope>
       <systemPath>${project.basedir}/lib/cucumber-for-appian-19.3.jar</systemPath>
     </dependency>
+    
+    <dependency>
+     <groupId>info.cukes</groupId>
+     <artifactId>cucumber-junit</artifactId>
+     <version>1.2.5</version>
+ </dependency>
+ 
   </dependencies>
 </project>

@@ -55,7 +55,7 @@ public class Variable_Declaration {
 	}
 	  public static void main(String[] args) throws Exception 
 	  {
-		String filePath="C:\\Users\\srishakthim\\git\\repository\\HVAutomationUpdatedCode\\src\\test\\";
+		String filePath="C:\\Users\\swetar.VURAM.000\\git\\HVProject\\HVAutomationUpdatedCode\\src\\test\\";
 		
 		//String file_name="resources\\ARWMAutomationRequesterforRPAProcess.feature";
         File folder = new File(filePath+"resources");
@@ -70,9 +70,9 @@ public class Variable_Declaration {
 	  
 	  public static void generateUpdateFeatureFile(String file_name,String new_name) throws Exception
 	  {
-			String filePath="C:\\Users\\srishakthim\\git\\repository\\HVAutomationUpdatedCode\\src\\test\\";
-			String VAR_FILE="C:\\Users\\srishakthim\\git\\repository\\HVAutomationUpdatedCode\\src\\main\\resources\\configs\\Variables.properties\\";
-			String VAR1_FILE="C:\\Users\\srishakthim\\git\\repository\\HVAutomationUpdatedCode\\src\\main\\resources\\configs\\FieldVariables.properties\\";
+			String filePath="C:\\Users\\swetar.VURAM.000\\git\\HVProject\\HVAutomationUpdatedCode\\src\\test\\";
+			String VAR_FILE="C:\\Users\\swetar.VURAM.000\\git\\HVProject\\HVAutomationUpdatedCode\\src\\main\\resources\\configs\\Variables.properties\\";
+			String VAR1_FILE="C:\\Users\\swetar.VURAM.000\\git\\HVProject\\HVAutomationUpdatedCode\\src\\main\\resources\\configs\\FieldVariables.properties\\";
 			BufferedReader br = new BufferedReader(new FileReader(filePath+file_name));
 			try {
 			    StringBuilder sb = new StringBuilder();
@@ -87,7 +87,7 @@ public class Variable_Declaration {
 			    
 			    feature_file_data= Variable_Declaration.replaceVaribaleFromFile(VAR_FILE, feature_file_data);		    
 			    feature_file_data= Variable_Declaration.replaceVaribaleFromFile(VAR1_FILE, feature_file_data);		   
-			    String DIR_PATH="C:\\Users\\srishakthim\\git\\repository\\HVAutomationUpdatedCode\\src\\test\\java\\Test_cases\\";
+			    String DIR_PATH="C:\\Users\\swetar.VURAM.000\\git\\HVProject\\HVAutomationUpdatedCode\\src\\test\\java\\Test_cases\\";
 				File yourFile = new File(DIR_PATH+new_name);
 				yourFile.createNewFile();
 				PrintWriter writer = new PrintWriter(DIR_PATH+new_name, "UTF-8");
