@@ -7,6 +7,6 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "C:\\Users\\srishakthim\\git\\repository\\HVAutomationUpdatedCode\\src\\test\\java\\Test_cases", glue = {
-    "com.appiancorp.ps.cucumber"}, plugin = {"pretty"}, tags = "@1.3_Request_Initiation-Submit_FunctionalTeamAccounting" )
+    "com.appiancorp.ps.cucumber"}, plugin = {"pretty"}, tags = "@LinkRequest" )
 public class RunCucumberForAppianTest {
 }
